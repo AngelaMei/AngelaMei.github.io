@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const nunito = Nunito({
-  variable: "--font-nunito",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} antialiased`}
+        className={`${montserrat.variable} antialiased`}
       >
         {children}
       </body>
