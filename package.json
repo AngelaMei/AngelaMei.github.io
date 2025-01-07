@@ -1,0 +1,9 @@
+{
+  "name": "AngelaMei.github.io",
+  "version": "1.0.0",
+  "description": "Angela's Portfolio",
+  "main": "index.js",
+  "repository": "git@github.com:AngelaMei/AngelaMei.github.io.git",
+  "author": "Angela Mei",
+  "license": "MIT"
+}
