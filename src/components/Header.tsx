@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="absolute l-0 t-0 w-full flex items-center text-sm sm:text-2xl gap-4 sm:gap-7 h-24 my-0.5 font-sans">
+    <header className="absolute l-0 t-0 w-full flex items-center text-sm sm:text-xl gap-4 sm:gap-7 h-24 my-0.5 font-sans">
       <div className="flex items-center sm:gap-2">
         Yu-Chi 
         <Image
