@@ -3,14 +3,14 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="absolute l-0 t-0 w-full flex items-center text-sm sm:text-xl gap-4 sm:gap-7 h-24 my-0.5 font-sans">
-      <div className="flex items-center sm:gap-2">
+      <div className="flex items-center gap-3">
         Yu-Chi 
         <Image
           aria-hidden
           src="/eyes.svg"
           alt="Eyes icon"
-          width={55}
-          height={44}
+          width={50}
+          height={40}
         />
         Mei
       </div>
