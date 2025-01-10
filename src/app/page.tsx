@@ -4,32 +4,46 @@ import ProjectCard, { ProjectCardProps } from "@/components/ProjectCard";
 
 const projects: ProjectCardProps[] = [
   {
-    imageUrl: '/mockImage.png',
+    imageUrl: '/cover/Cover_Gemini.gif',
     type: 'Google Hackathon',
     name: 'Coin Toss',
     description: 'A Line Bot to reduce business human resources and narrow the gap between customer and business.',
-    iconUrl: '/eyes.svg',
+    iconUrl: '/cover/Logo_Gemini.png',
   },
   {
-    imageUrl: 'mockImage.png',
+    imageUrl: '/cover/Cover_Guide.gif',
     type: 'Capstone',
     name: 'Guide App',
     description: 'A Line Bot to reduce business human resources and narrow the gap between customer and business.',
-    iconUrl: '/eyes.svg',
+    iconUrl: '/cover/Logo_Guide.png',
   },
   {
-    imageUrl: 'mockImage.png',
+    imageUrl: '/cover/Cover_Patpet_4x.png',
     type: 'AR',
     name: 'Gesture Recognition Pet',
     description: 'A Line Bot to reduce business human resources and narrow the gap between customer and business.',
-    iconUrl: '/eyes.svg',
+    iconUrl: '/cover/Logo_Unity.png',
   },
   {
-    imageUrl: 'mockImage.png',
+    imageUrl: '/cover/Cover_UserResearch_4x.png',
     type: 'User Research',
     name: 'Student Social Life',
     description: 'Our research goal is to conduct a thorough investigation of the factors that impact student participation and engagement.',
-    iconUrl: '/eyes.svg',
+    iconUrl: '/cover/Logo_UMD.png',
+  },
+  {
+    imageUrl: '/cover/Cover_Milky_4x.png',
+    type: 'UX Project',
+    name: 'Dairy Subscription Service',
+    description: 'A Line Bot to reduce business human resources and narrow the gap between customer and business.',
+    iconUrl: '/cover/Logo_Milky.png',
+  },
+  {
+    imageUrl: '/cover/Cover_AT_4x.png',
+    type: 'UX Project',
+    name: 'Future Trading App',
+    description: 'This Trading Application is built for retail investors to approach trading futures contracts easily',
+    iconUrl: '/cover/Logo_AT.png',
   },
 ];
 

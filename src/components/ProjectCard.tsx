@@ -11,9 +11,9 @@ export type ProjectCardProps = {
 export default function ProjectCard(props: ProjectCardProps) {
   return (
     <div className="relative rounded-[2rem] border-none grid grid-cols-1 sm:grid-cols-2 items-center sm:gap-7 w-[stretch] mx-6 min-h-[500px] sm:min-h-[670px] bg-[#F5F5F7] font-sans">
-      <div className="relative self-center sm:justify-self-center min-h-60 sm:w-4/5 sm:h-4/5">
+      <div className="relative self-center sm:justify-self-center min-h-60 sm:w-full sm:h-full">
         <Image
-          className="object-contain py-5"
+          className="object-contain"
           aria-hidden
           src={props.imageUrl}
           alt="thumbnail"
