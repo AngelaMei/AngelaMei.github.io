@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 export type ProjectCardProps = {
+  pageUrl: string;
   imageUrl: string;
   type: string;
   name: string;
@@ -26,11 +27,12 @@ export default function ProjectCard(props: ProjectCardProps) {
         >
           {props.type}
         </span>
-        <span
+        <a
           className="text-3xl sm:text-5xl font-semibold pb-10"
+          href={props.pageUrl}
         >
           {props.name}
-        </span>
+        </a>
         <span
           className="text-md sm:text-xl pb-10"
         >

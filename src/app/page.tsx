@@ -4,6 +4,7 @@ import ProjectCard, { ProjectCardProps } from "@/components/ProjectCard";
 
 const projects: ProjectCardProps[] = [
   {
+    pageUrl: '/project/coin-toss',
     imageUrl: '/cover/Cover_Gemini.gif',
     type: 'Google Hackathon',
     name: 'Coin Toss',
@@ -11,6 +12,7 @@ const projects: ProjectCardProps[] = [
     iconUrl: '/cover/Logo_Gemini.png',
   },
   {
+    pageUrl: '/',
     imageUrl: '/cover/Cover_Guide.gif',
     type: 'Capstone',
     name: 'Guide App',
@@ -18,6 +20,7 @@ const projects: ProjectCardProps[] = [
     iconUrl: '/cover/Logo_Guide.png',
   },
   {
+    pageUrl: '/',
     imageUrl: '/cover/Cover_Patpet_4x.png',
     type: 'AR',
     name: 'Gesture Recognition Pet',
@@ -25,6 +28,7 @@ const projects: ProjectCardProps[] = [
     iconUrl: '/cover/Logo_Unity.png',
   },
   {
+    pageUrl: '/',
     imageUrl: '/cover/Cover_UserResearch_4x.png',
     type: 'User Research',
     name: 'Student Social Life',
@@ -32,6 +36,7 @@ const projects: ProjectCardProps[] = [
     iconUrl: '/cover/Logo_UMD.png',
   },
   {
+    pageUrl: '/',
     imageUrl: '/cover/Cover_Milky_4x.png',
     type: 'UX Project',
     name: 'Dairy Subscription Service',
@@ -39,6 +44,7 @@ const projects: ProjectCardProps[] = [
     iconUrl: '/cover/Logo_Milky.png',
   },
   {
+    pageUrl: '/',
     imageUrl: '/cover/Cover_AT_4x.png',
     type: 'UX Project',
     name: 'Future Trading App',
