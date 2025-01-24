@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ['var(--font-montserrat)'],
+        sans: ['var(--font-albertsans)'],
       },
     },
   },
