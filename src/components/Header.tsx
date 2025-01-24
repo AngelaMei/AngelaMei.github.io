@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="absolute l-0 t-0 w-full flex items-center text-sm sm:text-xl gap-4 sm:gap-7 h-24 my-0.5 font-sans">
-      <div className="flex items-center gap-3">
+      <a className="flex items-center gap-3" href="/">
         Yu-Chi 
         <Image
           aria-hidden
@@ -13,7 +13,7 @@ export default function Header() {
           height={40}
         />
         Mei
-      </div>
+      </a>
       <div className="flex grow items-center justify-center gap-5">
         <a className="hidden sm:block" href="mailto:angela101475@gmail.com">
           <Image
