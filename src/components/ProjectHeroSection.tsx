@@ -11,7 +11,7 @@ export type ProjectHeroSectionProps = {
 
 export default function ProjectHeroSection(props: ProjectHeroSectionProps) {
   return (
-    <main className="relative flex flex-col min-h-[70vh] items-center justify-center">
+    <main className="relative flex flex-col w-full min-h-[70vh] items-center justify-center">
       <div className="pt-7 pb-7">
         <Image
           src={props.iconUrl}
@@ -37,7 +37,7 @@ export default function ProjectHeroSection(props: ProjectHeroSectionProps) {
         />
       </div>
       <div
-        className="flex w-screen p-20 min-h-[450px] -mt-20 items-center justify-center"
+        className="flex w-full p-20 min-h-[450px] -mt-20 items-center justify-center"
         style={{backgroundColor: props.themeColor}}
       >
         <span className="text-white text-center text-[40px] leading-normal tracking-[.01em] whitespace-pre-line max-w-5xl font-medium">

@@ -13,10 +13,8 @@ const projectMetadata: ProjectHeroSectionProps = {
 
 export default function Page() {
   return (
-    <div className="relative flex flex-col mx-4 sm:mx-20">
-      <div className="flex flex-col items-center py-24 gap-y-8 sm:gap-y-20 font-sans">
-        <ProjectHeroSection { ...projectMetadata }/>
-      </div>
+    <div className="flex flex-col items-center py-24 gap-y-8 sm:gap-y-20 font-sans">
+      <ProjectHeroSection { ...projectMetadata }/>
     </div>
   );
 }
