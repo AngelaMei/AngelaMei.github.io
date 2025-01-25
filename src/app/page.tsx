@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Header from "@/components/Header";
 import ProjectCard, { ProjectCardProps } from "@/components/ProjectCard";
 
 const projects: ProjectCardProps[] = [
@@ -56,7 +55,6 @@ const projects: ProjectCardProps[] = [
 export default function Home() {
   return (
     <div className="relative flex flex-col mx-4 sm:mx-20">
-      <Header />
       <div className="flex flex-col items-center py-24 gap-y-8 sm:gap-y-20 font-sans">
         <main className="relative flex flex-col min-h-[70vh] items-center justify-center">
           <Image
