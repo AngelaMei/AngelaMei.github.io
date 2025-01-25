@@ -11,7 +11,7 @@ const projects: ProjectCardProps[] = [
     iconUrl: '/cover/Logo_Gemini.png',
   },
   {
-    pageUrl: '/',
+    pageUrl: '/project/guide-app',
     imageUrl: '/cover/Cover_Guide.gif',
     type: 'Capstone',
     name: 'Guide App',
@@ -19,7 +19,7 @@ const projects: ProjectCardProps[] = [
     iconUrl: '/cover/Logo_Guide.png',
   },
   {
-    pageUrl: '/',
+    pageUrl: '/project/gesture-recognition-pet',
     imageUrl: '/cover/Cover_Patpet_4x.png',
     type: 'AR',
     name: 'Gesture Recognition Pet',
@@ -27,7 +27,7 @@ const projects: ProjectCardProps[] = [
     iconUrl: '/cover/Logo_Unity.png',
   },
   {
-    pageUrl: '/',
+    pageUrl: '/project/student-social-life',
     imageUrl: '/cover/Cover_UserResearch_4x.png',
     type: 'User Research',
     name: 'Student Social Life',
@@ -35,7 +35,7 @@ const projects: ProjectCardProps[] = [
     iconUrl: '/cover/Logo_UMD.png',
   },
   {
-    pageUrl: '/',
+    pageUrl: '/project/dairy-subscription-service',
     imageUrl: '/cover/Cover_Milky_4x.png',
     type: 'UX Project',
     name: 'Dairy Subscription Service',

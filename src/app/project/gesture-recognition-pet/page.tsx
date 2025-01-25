@@ -3,12 +3,11 @@ import ProjectHeroSection, { ProjectHeroSectionProps } from "@/components/Projec
 
 const projectMetadata: ProjectHeroSectionProps = {
   imageUrl: '/mock_main.png',
-  type: 'Google Hackathon',
-  name: 'AI Travel Agent',
-  description: `Have you ever felt overwhelmed by travel planning?
-    You're not alone. Flip a coin!`,
-  themeColor: '#6750A4',
-  iconUrl: '/cover/Logo_Gemini.png',
+  type: 'Augmented Reality',
+  name: 'Gesture Recognition Pet',
+  description: `Bring joy and connection to your world with an AR pet that learns, grows, and plays by your side!`,
+  themeColor: '#3EA3F9',
+  iconUrl: '/cover/Logo_Unity.png',
 };
 
 export default function Page() {
