@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 export type ProjectHeroSectionProps = {
-  imageUrl: string;
+  heroCoverUrl: string;
   type: string;
   name: string;
-  description: string;
+  bannerText: string;
   themeColor: string;
   iconUrl?: string;
 };
@@ -30,7 +30,7 @@ export default function ProjectHeroSection(props: ProjectHeroSectionProps) {
       <div className="relative h-[440px] w-full">
         <Image
           className="object-contain"
-          src={props.imageUrl}
+          src={props.heroCoverUrl}
           alt="photo"
           fill={true}
           priority
@@ -41,7 +41,7 @@ export default function ProjectHeroSection(props: ProjectHeroSectionProps) {
         style={{backgroundColor: props.themeColor}}
       >
         <span className="text-white text-center text-[40px] leading-normal tracking-[.01em] whitespace-pre-line max-w-5xl font-medium">
-          {props.description}
+          {props.bannerText}
         </span>
       </div>
     </main>

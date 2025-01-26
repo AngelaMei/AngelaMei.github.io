@@ -59,10 +59,11 @@ export function IconBullet({
 }>) {
   return (
     <div
-      className="flex gap-x-7 py-3 items-start"
+      className="flex gap-x-6 py-3 items-start"
     >
       <div className="self-start">
         <Image
+          className="min-w-12"
           aria-hidden
           src={iconUrl}
           alt="icon"

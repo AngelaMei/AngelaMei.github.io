@@ -2,13 +2,13 @@ import Image from "next/image";
 import ProjectHeroSection, { ProjectHeroSectionProps } from "@/components/ProjectHeroSection";
 
 const projectMetadata: ProjectHeroSectionProps = {
-  imageUrl: '/mock_main.png',
+  heroCoverUrl: '/mock_main.png',
   type: 'Google Hackathon',
   name: 'AI Travel Agent',
-  description: `Have you ever felt overwhelmed by travel planning?
+  bannerText: `Have you ever felt overwhelmed by travel planning?
     You're not alone. Flip a coin!`,
   themeColor: '#6750A4',
-  iconUrl: '/cover/Logo_Gemini.png',
+  iconUrl: '/icons/logo/Gemini.png',
 };
 
 export default function Page() {

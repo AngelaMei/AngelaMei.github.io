@@ -2,15 +2,11 @@ import Image from "next/image";
 
 import ProjectHeroSection, { ProjectHeroSectionProps } from "@/components/ProjectHeroSection";
 import { IconBullet, PaddedFlexBox, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
+import projects from "@/data/projects";
 
-const projectMetadata: ProjectHeroSectionProps = {
-  imageUrl: '/mock_main.png',
-  type: 'Augmented Reality',
-  name: 'Gesture Recognition Pet',
-  description: 'Bring joy and connection to your world with an AR pet that learns, grows, and plays by your side!',
-  themeColor: '#3EA3F9',
-  iconUrl: '/cover/Logo_Unity.png',
-};
+const projectName = 'gesture-recognition-pet';
+
+const projectMetadata: ProjectHeroSectionProps = projects.find(project => project.id === projectName);
 
 export default function Page() {
   return (
@@ -19,7 +15,7 @@ export default function Page() {
 
       <div className="flex bg-black w-full text-white justify-center">
         <div
-          className="flex grow flex-col max-w-6xl gap-y-8 sm:gap-y-20 py-20 sm:p-20"
+          className="flex grow flex-col max-w-7xl gap-y-8 sm:gap-y-20 py-20 sm:p-20"
         >
           <TwoColumn>
             <PaddedFlexBox>
@@ -70,10 +66,175 @@ export default function Page() {
               </span>
             </PaddedFlexBox>
           </ThreeColumn>
+          <PaddedFlexBox>
+            <span className="text-[32px] font-medium">User Persona</span>
+            <div className="relative min-h-20 w-full">
+              <Image
+                className="object-contain w-full h-auto"
+                aria-hidden
+                src="/media/project/gesture-recognition-pet/UserPersona.png"
+                alt="User Persona Image"
+                width={4256}
+                height={2518}
+              />
+            </div>
+          </PaddedFlexBox>
+          <PaddedFlexBox>
+            <span className="text-[32px] font-medium">User Journey</span>
+            <div className="relative min-h-20 w-full">
+              <Image
+                className="object-contain w-full h-auto"
+                aria-hidden
+                src="/media/project/gesture-recognition-pet/UserJourney.png"
+                alt="User Journey Image"
+                width={4256}
+                height={3365}
+              />
+            </div>
+          </PaddedFlexBox>
+          <TwoColumn>
+            <PaddedFlexBox>
+              <span className="text-[32px] font-medium">User Story</span>
+              <span className="text-xl font-medium">
+                The user downloads the app, completes a simple onboarding process, and select a pet in app, the user sees the chosen virtual pet appear in their space through their phone.<br/><br/>
+                The pet responds to real-world objects, like playing fetch with a tennis ball, and interacts with gestures, such as shaking hands virtually.<br/><br/>
+                The user talks to the pet, which responds with supportive emotions and expressions, enhancing the sense of companionship.<br/><br/>
+                The user walks the virtual pet in the real world, creating an immersive, engaging experience.
+              </span>
+            </PaddedFlexBox>
+            <PaddedFlexBox className="justify-items-end">
+              <Image
+                className="object-contain w-full h-auto grow"
+                aria-hidden
+                src="/media/project/gesture-recognition-pet/UserStory.gif"
+                alt="User Story image"
+                width={1069}
+                height={1095}
+              />
+            </PaddedFlexBox>
+          </TwoColumn>
           <SectionTitle id="02" title="Core Functionalities"/>
+          <ThreeColumn>
+            <PaddedFlexBox className="items-center">
+              <Image
+                className="object-contain"
+                aria-hidden
+                src="/media/project/gesture-recognition-pet/deer1.png"
+                alt="pet image"
+                width={100}
+                height={103}
+              />
+              <span className="text-[32px] font-medium">Virtual Doll</span>
+              <span className="text-xl font-medium">
+                We aim to let users scan their own doll, and bring their emotion support object come to live.  Users would have more attachments to their familiar object.
+              </span>
+            </PaddedFlexBox>
+            <PaddedFlexBox className="items-center">
+              <Image
+                className="object-contain"
+                aria-hidden
+                src="/media/project/gesture-recognition-pet/deer2.png"
+                alt="pet image"
+                width={100}
+                height={103}
+              />
+              <span className="text-[32px] font-medium">Mood Tracking</span>
+              <span className="text-xl font-medium">
+                We worked on features such as recognition of users’ facial expressions and identify emotions such as happiness, sadness, anger, and stress.<br/><br/>
+                Then, the AR pet can give some feedback and use generative AI to communicate with users.
+              </span>
+            </PaddedFlexBox>
+            <PaddedFlexBox className="items-center">
+              <Image
+                className="object-contain"
+                aria-hidden
+                src="/media/project/gesture-recognition-pet/deer3.png"
+                alt="pet image"
+                width={100}
+                height={103}
+              />
+              <span className="text-[32px] font-medium">Gesture Recognition</span>
+              <span className="text-xl font-medium">
+                Users could engage with their AR doll in activities and create more intimacy with it.<br/><br/>
+                Now we have gesture teaching and mood sharing. We would like to have more features like feeding and walking.
+              </span>
+            </PaddedFlexBox>
+          </ThreeColumn>
           <SectionTitle id="03" title="Challenges, Breakthrough, & Detour"/>
+          <TwoColumn>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <span className="text-[28px] font-medium">Unable to Use Unity Cloud</span>
+              <span className="text-xl">Due to obstacles encountered while collaborating on Unity Cloud, we transitioned our project code to GitHub. </span>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <span className="text-[28px] font-medium">Hand Collision Detection</span>
+              <span className="text-xl">Achieving accurate and robust collision detection between hands and objects in interactive environments can be complex.</span>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <span className="text-[28px] font-medium">Length of Fingers Varies</span>
+              <span className="text-xl">The length of a user's fingers may have an impact on the effectiveness and accuracy of finger detection technologies.</span>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <span className="text-[28px] font-medium">Plugin Confliction</span>
+              <span className="text-xl">The Emotion Recognition Plugin is causing conflicts with certain settings within our Unity project, resulting in unexpected behavior or errors.</span>
+            </IconBullet>
+          </TwoColumn>
           <SectionTitle id="04" title="Design Strategy"/>
+          <TwoColumn>
+            <PaddedFlexBox>
+              <span className="text-[32px] font-medium">MDA Framework</span>
+              <span className="text-xl font-medium">
+                Guided by the principles of the MDA framework (Mechanics-Dynamics-Aesthetics), our app was designed to cultivate deep emotional connections.<br/><br/>
+                Interactive elements go beyond passive engagement, fostering intimacy and trust between users and their virtual companions.<br/><br/>
+                These dynamic interactions encourage users to express their emotions freely within a safe and supportive space, ultimately providing a valuable outlet for stress relief and emotional well-being.
+              </span>
+            </PaddedFlexBox>
+            <PaddedFlexBox className="justify-items-end">
+              <Image
+                className="object-contain w-full h-auto grow"
+                aria-hidden
+                src="/media/project/gesture-recognition-pet/Moodboard.png"
+                alt="Moodboard Image"
+                width={2021}
+                height={1317}
+              />
+            </PaddedFlexBox>
+          </TwoColumn>
           <SectionTitle id="05" title="User Feedback & Improving"/>
+          <Image
+            className="w-4/5 h-auto self-center"
+            aria-hidden
+            src="/media/project/gesture-recognition-pet/UserFeedback.png"
+            alt="User Feedback Image"
+            width={3885}
+            height={1669}
+          />
+          <TwoColumn>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <span className="text-[28px] font-medium">Onboarding Process</span>
+              <span className="text-xl">
+                Recognizing the unique challenges of navigating AR experiences, we incorporated Coach Marks into our onboarding process. These interactive tutorials address user confusion identified during testing, providing clear and concise instructions for interacting with AR elements.
+              </span>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <span className="text-[28px] font-medium">Gesture Instruction guide</span>
+              <span className="text-xl">
+                To empower users to fully interact with their virtual pets, we implemented an in-app Gesture Instruction guide, which can clearly demonstrate the available gestures and provide exciting incentives for users to deepen their bond with their pet, unlocking new and engaging interaction possibilities.
+              </span>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <span className="text-[28px] font-medium">Add Progress Bar</span>
+              <span className="text-xl">
+                A visually engaging Progress Bar has been implemented to incentivize consistent interaction with the virtual pet. This dynamic indicator visually represents the growing bond between the user and their pet, providing clear and motivating feedback.
+              </span>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <span className="text-[28px] font-medium">Emotion Diary</span>
+              <span className="text-xl">
+                To enhance self-reflection and emotional awareness, we've integrated an Emotion Diary feature. Users can record their daily emotions, and the app will provide personalized suggestions based on their entries.
+              </span>
+            </IconBullet>
+          </TwoColumn>
           <SectionTitle id="06" title="Prototype" subtitle="The prototype before user testing and after user testing."/>
         </div>
       </div>

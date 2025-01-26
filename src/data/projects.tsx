@@ -1,4 +1,5 @@
 import { ProjectCardProps } from "@/components/ProjectCard";
+import { ProjectHeroSectionProps } from "@/components/ProjectHeroSection";
 
 // Note: updating the project list may break the Footer grid layout
 
@@ -20,12 +21,16 @@ export default [
     iconUrl: '/icons/logo/Guide.png',
   },
   {
+    id: 'gesture-recognition-pet',
     pageUrl: '/project/gesture-recognition-pet',
     imageUrl: '/media/homepage/Cover_Patpet_4x.png',
-    type: 'AR',
+    type: 'Augmented Reality',
     name: 'Gesture Recognition Pet',
     description: 'Augmented Reality (AR) pet app that can interact with the user through intuitive gestures, and user can train and have fun with their AR pet.',
     iconUrl: '/icons/logo/Unity.png',
+    heroCoverUrl: '/mock_main.png',
+    bannerText: 'Bring joy and connection to your world with an AR pet that learns, grows, and plays by your side!',
+    themeColor: '#3EA3F9',
   },
   {
     pageUrl: '/project/student-social-life',
@@ -53,5 +58,5 @@ export default [
     iconUrl: '/icons/logo/AT.png',
   },
   */
-] satisfies ProjectCardProps[];
+] satisfies (ProjectCardProps & ProjectHeroSectionProps)[];
 

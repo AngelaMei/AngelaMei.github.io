@@ -2,10 +2,10 @@ import Image from "next/image";
 import ProjectHeroSection, { ProjectHeroSectionProps } from "@/components/ProjectHeroSection";
 
 const projectMetadata: ProjectHeroSectionProps = {
-  imageUrl: '/mock_main.png',
+  heroCoverUrl: '/mock_main.png',
   type: 'UX Project',
   name: 'Dairy Subscription Service',
-  description: 'Improving Efficiency and Customer Satisfaction with a Line Bot Solution',
+  bannerText: 'Improving Efficiency and Customer Satisfaction with a Line Bot Solution',
   themeColor: '#005DCA',
   iconUrl: '/cover/Logo_Milky.png',
 };

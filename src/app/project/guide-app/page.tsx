@@ -2,10 +2,10 @@ import Image from "next/image";
 import ProjectHeroSection, { ProjectHeroSectionProps } from "@/components/ProjectHeroSection";
 
 const projectMetadata: ProjectHeroSectionProps = {
-  imageUrl: '/mock_main.png',
+  heroCoverUrl: '/mock_main.png',
   type: 'Capstone',
   name: 'Guide App',
-  description: `Mark, Snip, and Succeed
+  bannerText: `Mark, Snip, and Succeed
     Make training and learning like TikTok`,
   themeColor: '#0C1743',
   iconUrl: '/cover/Logo_Guide.png',
