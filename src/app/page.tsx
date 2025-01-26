@@ -5,8 +5,8 @@ import projects from "@/data/projects";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col mx-4 sm:mx-20">
-      <div className="flex flex-col items-center py-24 gap-y-8 sm:gap-y-20 font-sans">
+    <div className="relative flex w-full justify-center">
+      <div className="flex flex-col items-center max-w-6xl py-24 px-4 sm:px-20 gap-y-8 sm:gap-y-20 font-sans">
         <main className="relative flex flex-col min-h-[70vh] items-center justify-center">
           <Image
             src="/eyes.gif"
