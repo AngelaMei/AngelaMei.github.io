@@ -8,7 +8,7 @@ export default [
     imageUrl: '/media/homepage/Cover_Gemini.gif',
     type: 'Google Hackathon',
     name: 'AI Travel Assistant',
-    description: 'A Line Bot to reduce business human resources and narrow the gap between customer and business.',
+    description: 'An AI-Powered Travel Planner redefines the travel planning experience by combining advanced AI capabilities with intuitive design.',
     iconUrl: '/icons/logo/Gemini.png',
   },
   {
@@ -16,7 +16,7 @@ export default [
     imageUrl: '/media/homepage/Cover_Guide.gif',
     type: 'Capstone',
     name: 'Guide App',
-    description: 'A Line Bot to reduce business human resources and narrow the gap between customer and business.',
+    description: 'Collaborated with a startup to enhance Guide App, a Learning Management System by developing features that streamline user interaction with long-form content.',
     iconUrl: '/icons/logo/Guide.png',
   },
   {
@@ -24,7 +24,7 @@ export default [
     imageUrl: '/media/homepage/Cover_Patpet_4x.png',
     type: 'AR',
     name: 'Gesture Recognition Pet',
-    description: 'A Line Bot to reduce business human resources and narrow the gap between customer and business.',
+    description: 'Augmented Reality (AR) pet app that can interact with the user through intuitive gestures, and user can train and have fun with their AR pet.',
     iconUrl: '/icons/logo/Unity.png',
   },
   {
@@ -41,7 +41,7 @@ export default [
     type: 'UX Project',
     name: 'Dairy Subscription Service',
     description: 'A Line Bot to reduce business human resources and narrow the gap between customer and business.',
-    iconUrl: '/icons/logo/Milky.png',
+    iconUrl: '/icons/logo/Milk.png',
   },
   /*
   {
@@ -50,7 +50,7 @@ export default [
     type: 'UX Project',
     name: 'Future Trading App',
     description: 'This Trading Application is built for retail investors to approach trading futures contracts easily',
-    iconUrl: '/media/homepage/Logo_AT.png',
+    iconUrl: '/icons/logo/AT.png',
   },
   */
 ] satisfies ProjectCardProps[];
