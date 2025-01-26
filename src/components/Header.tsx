@@ -18,7 +18,7 @@ export default function Header() {
         <div className="flex grow items-center justify-center gap-5">
           <a className="hidden sm:block" href="mailto:angela101475@gmail.com">
             <Image
-              src="/Email.svg"
+              src="/icons/Email.svg"
               alt="email icon"
               width={28}
               height={28}
@@ -31,7 +31,7 @@ export default function Header() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/LinkedinLogo.svg"
+              src="/icons/LinkedinLogo.svg"
               alt="Linkedin icon"
               width={28}
               height={28}
@@ -44,7 +44,7 @@ export default function Header() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/GithubLogo.svg"
+              src="/icons/GithubLogo.svg"
               alt="Github icon"
               width={28}
               height={28}
@@ -57,7 +57,7 @@ export default function Header() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/CV.svg"
+              src="/icons/CV.svg"
               alt="CV icon"
               width={28}
               height={28}
