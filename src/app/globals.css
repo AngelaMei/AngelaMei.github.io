@@ -1,10 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
+@theme inline {
   --background: #ffffff;
   --foreground: #171717;
+
+  --font-sans: var(--font-albertsans);
 }
 
 /* Uncomment the following section for dark theme */
