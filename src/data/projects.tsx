@@ -13,12 +13,17 @@ export default [
     iconUrl: '/icons/logo/Gemini.png',
   },
   {
+    id: 'guide-app',
     pageUrl: '/project/guide-app',
     imageUrl: '/media/homepage/Cover_Guide.gif',
     type: 'Capstone',
     name: 'Guide App',
     description: 'Collaborated with a startup to enhance Guide App, a Learning Management System by developing features that streamline user interaction with long-form content.',
     iconUrl: '/icons/logo/Guide.png',
+    heroCoverUrl: '/mock_main.png',
+    bannerText: `Mark, Snip, and Succeed
+      Make training and learning like TikTok`,
+    themeColor: '#0C1743',
   },
   {
     id: 'gesture-recognition-pet',

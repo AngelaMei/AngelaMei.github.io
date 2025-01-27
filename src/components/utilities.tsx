@@ -1,5 +1,23 @@
 import Image from "next/image";
 
+export function PageContentContainer({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <div className="flex bg-black w-full text-white justify-center">
+      <div
+        className="flex grow flex-col max-w-7xl gap-y-8 sm:gap-y-20 py-20 sm:p-20"
+      >
+
+      {children}
+
+      </div>
+    </div>
+  );
+};
+
 export function TwoColumn({
   children,
 }: Readonly<{
@@ -29,10 +47,12 @@ export function ThreeColumn({
 }
 
 export function SectionTitle({
+  children,
   id,
   title,
   subtitle,
 }: Readonly<{
+  children: React.ReactNode;
   id: string;
   title: string;
   subtitle?: string;
@@ -46,6 +66,7 @@ export function SectionTitle({
       {
         subtitle ? (<span className="text-xl">{subtitle}</span>) : ''
       }
+      {children}
     </div>
   );
 }
