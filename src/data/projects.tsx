@@ -42,6 +42,7 @@ export default [
     bannerText: 'Bring joy and connection to your world with an AR pet that learns, grows, and plays by your side!',
     themeColor: '#3EA3F9',
   },
+  /*
   {
     pageUrl: '/project/student-social-life',
     imageUrl: '/media/homepage/Cover_UserResearch_4x.png',
@@ -58,7 +59,6 @@ export default [
     description: 'A Line Bot to reduce business human resources and narrow the gap between customer and business.',
     iconUrl: '/icons/logo/Milk.png',
   },
-  /*
   {
     pageUrl: '/',
     imageUrl: '/media/homepage/Cover_AT_4x.png',
@@ -68,5 +68,5 @@ export default [
     iconUrl: '/icons/logo/AT.png',
   },
   */
-] satisfies (ProjectCardProps & ProjectHeroSectionProps)[];
+] satisfies (ProjectCardProps & ProjectHeroSectionProps & { id: string })[];
 

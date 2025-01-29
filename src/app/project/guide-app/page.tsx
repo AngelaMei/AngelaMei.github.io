@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 import ProjectHeroSection from "@/components/ProjectHeroSection";
-import { IconBullet, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
+import { IconBullet, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn } from "@/components/utilities";
 import projects from "@/data/projects";
 
 const projectName = 'guide-app';
 
-const projectMetadata = projects.find(project => project.id === projectName);
+const projectMetadata = projects.find(project => project.id === projectName)!;
 
 export default function Page() {
   return (

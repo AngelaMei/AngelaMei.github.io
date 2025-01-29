@@ -52,7 +52,7 @@ export function SectionTitle({
   title,
   subtitle,
 }: Readonly<{
-  children: React.ReactNode;
+  children?: React.ReactNode;
   id: string;
   title: string;
   subtitle?: string;

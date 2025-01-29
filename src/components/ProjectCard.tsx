@@ -6,7 +6,7 @@ export type ProjectCardProps = {
   type: string;
   name: string;
   description: string;
-  iconUrl?: string;
+  iconUrl: string;
 };
 
 export default function ProjectCard(props: ProjectCardProps) {

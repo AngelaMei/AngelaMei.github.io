@@ -1,4 +1,4 @@
-import Image from "next/image";
+//import Image from "next/image";
 import ProjectHeroSection, { ProjectHeroSectionProps } from "@/components/ProjectHeroSection";
 
 const projectMetadata: ProjectHeroSectionProps = {

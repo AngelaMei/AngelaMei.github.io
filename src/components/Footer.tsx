@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import projects from "@/data/projects";
 
@@ -20,36 +21,36 @@ export default function Footer() {
         <span className="text-xl sm:text-3xl font-medium py-2">
           Site Map
         </span>
-        <a
+        <Link
           className="hover:underline hover:underline-offset-4"
           href="/"
         >
           Home
-        </a>
-        <a
+        </Link>
+        <Link
           className="hover:underline hover:underline-offset-4"
           href="/about"
         >
           About
-        </a>
-        <a
+        </Link>
+        <Link
           className="hover:underline hover:underline-offset-4"
           href="/works"
         >
           All Works
-        </a>
+        </Link>
         <span className="sm:row-start-1 sm:col-span-2 text-xl sm:text-3xl font-medium py-2">
           Selected Projects
         </span>
         {
           projects.map(project => (
-            <a
+            <Link
               key={project.id}
               className="hover:underline hover:underline-offset-4"
               href={project.pageUrl}
             >
               {project.name}
-            </a>
+            </Link>
           ))
         }
       </div>

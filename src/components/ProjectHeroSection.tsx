@@ -6,7 +6,7 @@ export type ProjectHeroSectionProps = {
   name: string;
   bannerText: string;
   themeColor: string;
-  iconUrl?: string;
+  iconUrl: string;
 };
 
 export default function ProjectHeroSection(props: ProjectHeroSectionProps) {

@@ -6,7 +6,7 @@ import projects from "@/data/projects";
 
 const projectName = 'gesture-recognition-pet';
 
-const projectMetadata = projects.find(project => project.id === projectName);
+const projectMetadata = projects.find(project => project.id === projectName)!;
 
 export default function Page() {
   return (
