@@ -107,7 +107,7 @@ export function PaddedFlexBox({
   className?: string;
 }>) {
   return (
-    <div className={`flex flex-col p-7 gap-y-3 ${className}`}>
+    <div className={`flex flex-col p-7 gap-y-3 ${className ? className : ''}`}>
       {children}
     </div>
   );

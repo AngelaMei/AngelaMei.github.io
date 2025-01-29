@@ -5,12 +5,17 @@ import { ProjectHeroSectionProps } from "@/components/ProjectHeroSection";
 
 export default [
   {
+    id: 'coin-toss',
     pageUrl: '/project/coin-toss',
     imageUrl: '/media/homepage/Cover_Gemini.gif',
     type: 'Google Hackathon',
     name: 'AI Travel Assistant',
     description: 'An AI-Powered Travel Planner redefines the travel planning experience by combining advanced AI capabilities with intuitive design.',
     iconUrl: '/icons/logo/Gemini.png',
+    heroCoverUrl: '/mock_main.png',
+    bannerText: `Have you ever felt overwhelmed by travel planning?
+      You're not alone. Flip a coin!`,
+    themeColor: '#6750A4',
   },
   {
     id: 'guide-app',

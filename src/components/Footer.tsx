@@ -44,6 +44,7 @@ export default function Footer() {
         {
           projects.map(project => (
             <a
+              key={project.id}
               className="hover:underline hover:underline-offset-4"
               href={project.pageUrl}
             >
