@@ -201,7 +201,7 @@ Guide faces challenges in supporting users who need to efficiently manage and in
             <span className="text-xl">
               With numerous ideas on the table, the team will evaluate, refine, and select the most promising solutions. Activities include:
             </span>
-            <ul className="list-outside list-disc pl-4">
+            <ul className="text-xl list-outside list-disc pl-4">
               <li>Voting on Ideas: Client and team members voted on sketches and designs that best meet user needs.</li>
               <li>Creating a Storyboard: Developing a step-by-step blueprint for the selected solution, outlining how the user will interact with the app.</li>
               <li>Risk Assessment: Identifying potential technical or usability challenges and creating mitigation strategies.</li>
