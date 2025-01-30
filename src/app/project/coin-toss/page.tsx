@@ -47,14 +47,14 @@ export default function Page() {
             </ul>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">02 Planning</span>
+            <span className="text-[32px] font-medium">02 Research</span>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>Structured Interview</li>
               <li>Competitor Analysis</li>
             </ul>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">03 Planning</span>
+            <span className="text-[32px] font-medium">03 Mapping</span>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>User Story</li>
               <li>Sketch</li>
@@ -63,7 +63,7 @@ export default function Page() {
             </ul>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">04 Planning</span>
+            <span className="text-[32px] font-medium">04 Prototyping</span>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>Backend Development</li>
               <li>Design System</li>
@@ -71,14 +71,14 @@ export default function Page() {
             </ul>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">05 Planning</span>
+            <span className="text-[32px] font-medium">05 Testing</span>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>Usability Test</li>
               <li>Prompt Testing</li>
             </ul>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">06 Planning</span>
+            <span className="text-[32px] font-medium">06 Presenting</span>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>Prepare Presentation</li>
               <li>Video Recording</li>
