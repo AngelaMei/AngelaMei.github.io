@@ -1,8 +1,9 @@
 import Image from "next/image";
 
 import ProjectHeroSection from "@/components/ProjectHeroSection";
-import { IconBullet, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn } from "@/components/utilities";
+import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn } from "@/components/utilities";
 import projects from "@/data/projects";
+import macbookSVG from "@/public/media/mockup/Macbook.svg";
 
 const projectName = 'guide-app';
 
@@ -11,7 +12,23 @@ const projectMetadata = projects.find(project => project.id === projectName)!;
 export default function Page() {
   return (
     <div className="flex flex-col items-center pt-24 font-sans">
-      <ProjectHeroSection { ...projectMetadata }/>
+      <ProjectHeroSection
+        { ...projectMetadata }
+        heroCover={(
+          <ImageWrapper className="relative">
+            <Image
+              className="relative h-full w-auto z-50"
+              aria-hidden
+              src={macbookSVG}
+              alt=""
+            />
+            <video autoPlay muted loop className="absolute top-[12px] left-[73px] h-[94%] z-0">
+              <source src="/media/project/guide-app/Video.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+            </video>
+          </ImageWrapper>
+        )}
+      />
 
       <PageContentContainer>
         <TwoColumn>

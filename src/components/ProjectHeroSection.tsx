@@ -1,7 +1,11 @@
+'use client'
+
 import Image from "next/image";
 
+import { ImageClassNameContext } from "@/components/utilities";
+
 export type ProjectHeroSectionProps = {
-  heroCoverUrl: string;
+  heroCover: React.ReactNode;
   type: string;
   name: string;
   bannerText: string;
@@ -27,14 +31,10 @@ export default function ProjectHeroSection(props: ProjectHeroSectionProps) {
       <span className="pb-7 text-5xl font-semibold">
         {props.name}
       </span>
-      <div className="relative h-[440px] w-full">
-        <Image
-          className="object-contain"
-          src={props.heroCoverUrl}
-          alt="photo"
-          fill={true}
-          priority
-        />
+      <div className="relative flex flex-col items-center h-[440px] w-full">
+        <ImageClassNameContext.Provider value="h-full w-auto">
+          {props.heroCover}
+        </ImageClassNameContext.Provider>
       </div>
       <div
         className="flex w-full p-20 min-h-[450px] -mt-20 items-center justify-center"

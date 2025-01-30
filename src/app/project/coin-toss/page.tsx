@@ -1,8 +1,9 @@
 import Image from "next/image";
 
 import ProjectHeroSection from "@/components/ProjectHeroSection";
-import { IconBullet, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
+import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
 import projects from "@/data/projects";
+import cover from "@/public/mock_main.png";
 
 const projectName = 'coin-toss';
 
@@ -11,7 +12,12 @@ const projectMetadata = projects.find(project => project.id === projectName)!;
 export default function Page() {
   return (
     <div className="flex flex-col items-center pt-24 font-sans">
-      <ProjectHeroSection { ...projectMetadata }/>
+      <ProjectHeroSection
+        { ...projectMetadata }
+        heroCover={(
+          <ImageWrapper src={cover} alt="Cover Image"/>
+        )}
+      />
 
       <PageContentContainer>
         <TwoColumn>
@@ -320,7 +326,7 @@ export default function Page() {
           <Image
             className="self-center p-40 max-w-4xl h-auto"
             aria-hidden
-            src="/media/project/coin-toss/coinToss.png"
+            src="/media/project/coin-toss/CoinToss.png"
             alt="Wireframe"
             width={2423}
             height={419}

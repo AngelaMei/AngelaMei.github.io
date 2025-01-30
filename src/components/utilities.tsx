@@ -1,4 +1,9 @@
-import Image from "next/image";
+'use client'
+
+import { createContext, useContext } from 'react';
+import clsx from 'clsx';
+
+import Image, { StaticImageData } from "next/image";
 
 export function PageContentContainer({
   children,
@@ -108,6 +113,31 @@ export function PaddedFlexBox({
 }>) {
   return (
     <div className={`flex flex-col p-7 gap-y-3 ${className ? className : ''}`}>
+      {children}
+    </div>
+  );
+}
+
+
+export const ImageClassNameContext = createContext<string>('');
+
+export function ImageWrapper({
+  className = '',
+  src,
+  alt = 'image',
+  children,
+}: Readonly<{
+  className?: string;
+  src?: StaticImageData;
+  alt?: string;
+  children?: React.ReactNode;
+}>) {
+  const contextClassName = useContext(ImageClassNameContext);
+
+  return src ? (
+    <Image className={clsx(className, contextClassName)} src={src} alt={alt} priority />
+  ) : (
+    <div className={clsx(className, contextClassName)}>
       {children}
     </div>
   );

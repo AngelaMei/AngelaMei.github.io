@@ -1,19 +1,22 @@
 //import Image from "next/image";
-import ProjectHeroSection, { ProjectHeroSectionProps } from "@/components/ProjectHeroSection";
+import ProjectHeroSection from "@/components/ProjectHeroSection";
+import { ImageWrapper } from "@/components/utilities";
+import projects from "@/data/projects";
+import cover from "@/public/mock_main.png";
 
-const projectMetadata: ProjectHeroSectionProps = {
-  heroCoverUrl: '/mock_main.png',
-  type: 'User Research',
-  name: 'Student Social Life',
-  bannerText: 'What encourages/stops students from joining these events and organizations?',
-  themeColor: '#820202',
-  iconUrl: '/cover/Logo_UMD.png',
-};
+const projectName = 'student-social-life';
+
+const projectMetadata = projects.find(project => project.id === projectName)!;
 
 export default function Page() {
   return (
     <div className="flex flex-col items-center py-24 gap-y-8 sm:gap-y-20 font-sans">
-      <ProjectHeroSection { ...projectMetadata }/>
+      <ProjectHeroSection
+        { ...projectMetadata }
+        heroCover={(
+          <ImageWrapper src={cover} alt="Cover Image"/>
+        )}
+      />
     </div>
   );
 }

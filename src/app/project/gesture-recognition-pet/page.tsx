@@ -1,8 +1,9 @@
 import Image from "next/image";
 
 import ProjectHeroSection from "@/components/ProjectHeroSection";
-import { IconBullet, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
+import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
 import projects from "@/data/projects";
+import cover from "@/public/mock_main.png";
 
 const projectName = 'gesture-recognition-pet';
 
@@ -11,7 +12,12 @@ const projectMetadata = projects.find(project => project.id === projectName)!;
 export default function Page() {
   return (
     <div className="flex flex-col items-center pt-24 font-sans">
-      <ProjectHeroSection { ...projectMetadata }/>
+      <ProjectHeroSection
+        { ...projectMetadata }
+        heroCover={(
+          <ImageWrapper src={cover} alt="Cover Image"/>
+        )}
+      />
 
       <PageContentContainer>
         <TwoColumn>
@@ -116,7 +122,7 @@ export default function Page() {
             <Image
               className="object-contain"
               aria-hidden
-              src="/media/project/gesture-recognition-pet/deer1.png"
+              src="/media/project/gesture-recognition-pet/Deer1.png"
               alt="pet image"
               width={100}
               height={103}
@@ -130,7 +136,7 @@ export default function Page() {
             <Image
               className="object-contain"
               aria-hidden
-              src="/media/project/gesture-recognition-pet/deer2.png"
+              src="/media/project/gesture-recognition-pet/Deer2.png"
               alt="pet image"
               width={100}
               height={103}
@@ -145,7 +151,7 @@ export default function Page() {
             <Image
               className="object-contain"
               aria-hidden
-              src="/media/project/gesture-recognition-pet/deer3.png"
+              src="/media/project/gesture-recognition-pet/Deer3.png"
               alt="pet image"
               width={100}
               height={103}
