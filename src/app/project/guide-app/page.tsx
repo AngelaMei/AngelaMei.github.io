@@ -3,7 +3,19 @@ import Image from "next/image";
 import ProjectHeroSection from "@/components/ProjectHeroSection";
 import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn } from "@/components/utilities";
 import projects from "@/data/projects";
+
 import macbookSVG from "@/public/media/mockup/Macbook.svg";
+import HeatmapImage from "@/public/media/project/guide-app/heatmap.png";
+import chartImage from "@/public/media/project/guide-app/Chart.png";
+import votesImage from "@/public/media/project/guide-app/Votes.png";
+import sketchImage from "@/public/media/project/guide-app/Sketch.png";
+import persona2Image from "@/public/media/project/guide-app/Persona2.png";
+import persona1Image from "@/public/media/project/guide-app/Persona1.png";
+import userJourneyImage from "@/public/media/project/guide-app/UserJourney.png";
+import competitiveImage from "@/public/media/project/guide-app/Competitive.png";
+import keyInsightsImage from "@/public/media/project/guide-app/KeyInsights.png";
+import canvasImage from "@/public/media/project/guide-app/Canvas.png";
+import designSprintImage from "@/public/media/project/guide-app/DesignSprint.jpg";
 
 const projectName = 'guide-app';
 
@@ -55,14 +67,12 @@ Guide faces challenges in supporting users who need to efficiently manage and in
           </PaddedFlexBox>
         </TwoColumn>
         <TwoColumn>
-          <PaddedFlexBox>
+          <PaddedFlexBox className="items-center justify-center">
             <Image
-              className="object-contain rounded-2xl"
+              className="rounded-2xl"
               aria-hidden
-              src="/media/project/guide-app/DesignSprint.jpg"
+              src={designSprintImage}
               alt="Design Sprint Image"
-              width={1175}
-              height={653}
             />
           </PaddedFlexBox>
           <PaddedFlexBox>
@@ -112,42 +122,32 @@ Guide faces challenges in supporting users who need to efficiently manage and in
               Current user challenges include reliance on multiple external tools for video editing. The hypothesis is that creators will prefer integrated tools over external ones, leading to improved productivity, while viewers will find chapter-wise snippets more engaging.
             </span>
           </PaddedFlexBox>
-          <PaddedFlexBox>
+          <PaddedFlexBox className="items-center justify-center">
             <Image
-              className="object-contain w-full h-auto grow"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/guide-app/Canvas.png"
+              src={canvasImage}
               alt="Canvas Image"
-              width={1717}
-              height={1136}
             />
           </PaddedFlexBox>
         </TwoColumn>
         <PaddedFlexBox>
           <span className="text-[32px] font-medium">Key Insights from User Interviews</span>
-          <div className="relative min-h-20 w-full">
-            <Image
-              className="object-contain w-full h-auto"
-              aria-hidden
-              src="/media/project/guide-app/KeyInsights.png"
-              alt="Key Insights Image"
-              width={4257}
-              height={1940}
-            />
-          </div>
+          <Image
+            className="w-full h-auto"
+            aria-hidden
+            src={keyInsightsImage}
+            alt="Key Insights Image"
+          />
         </PaddedFlexBox>
         <PaddedFlexBox>
           <span className="text-[32px] font-medium">Competitive Analysis</span>
-          <div className="relative min-h-20 w-full">
-            <Image
-              className="object-contain w-full h-auto"
-              aria-hidden
-              src="/media/project/guide-app/Competitive.png"
-              alt="Competitive Analysis Image"
-              width={4256}
-              height={2625}
-            />
-          </div>
+          <Image
+            className="w-full h-auto"
+            aria-hidden
+            src={competitiveImage}
+            alt="Competitive Analysis Image"
+          />
         </PaddedFlexBox>
         <SectionTitle id="02" title="Sketch: Ideation and Exploration">
           <ul className="list-inside list-disc pl-3 text-xl">
@@ -164,30 +164,24 @@ Guide faces challenges in supporting users who need to efficiently manage and in
         <TwoColumn>
           <PaddedFlexBox>
             <Image
-              className="object-contain w-full h-auto grow"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/guide-app/UserJourney.png"
+              src={userJourneyImage}
               alt="User Journey Image"
-              width={2016}
-              height={2801}
             />
           </PaddedFlexBox>
           <PaddedFlexBox>
             <Image
-              className="object-contain w-full h-auto flex-none"
+              className="w-full h-auto flex-none"
               aria-hidden
-              src="/media/project/guide-app/Persona1.png"
+              src={persona1Image}
               alt="Persona Image"
-              width={1973}
-              height={1136}
             />
             <Image
-              className="object-contain w-full h-auto flex-none"
+              className="w-full h-auto flex-none"
               aria-hidden
-              src="/media/project/guide-app/Persona2.png"
+              src={persona2Image}
               alt="Persona Image"
-              width={1973}
-              height={1136}
             />
           </PaddedFlexBox>
         </TwoColumn>
@@ -200,14 +194,12 @@ Guide faces challenges in supporting users who need to efficiently manage and in
               Sketching allowed for quick visualization and iteration, ultimately leading to the refined, user-friendly design of the app.
             </span>
           </PaddedFlexBox>
-          <PaddedFlexBox>
+          <PaddedFlexBox className="items-center justify-center">
             <Image
-              className="object-contain w-full h-auto grow"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/guide-app/Sketch.png"
+              src={sketchImage}
               alt="Sketch Image"
-              width={1968}
-              height={2033}
             />
           </PaddedFlexBox>
         </TwoColumn>
@@ -224,14 +216,12 @@ Guide faces challenges in supporting users who need to efficiently manage and in
               <li>Risk Assessment: Identifying potential technical or usability challenges and creating mitigation strategies.</li>
             </ul>
           </PaddedFlexBox>
-          <PaddedFlexBox>
+          <PaddedFlexBox className="items-center justify-center">
             <Image
-              className="object-contain w-full h-auto grow"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/guide-app/Votes.png"
+              src={votesImage}
               alt="Votes Image"
-              width={1993}
-              height={1349}
             />
           </PaddedFlexBox>
         </TwoColumn>
@@ -246,8 +236,8 @@ Guide faces challenges in supporting users who need to efficiently manage and in
           </div>
         </SectionTitle>
         <TwoColumn>
-          <PaddedFlexBox>
-            <video autoPlay muted loop className="object-contain w-full h-auto grow rounded-xl">
+          <PaddedFlexBox className="items-center justify-center">
+            <video autoPlay muted loop className="w-full h-auto rounded-xl">
               <source src="/media/project/guide-app/Video.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
@@ -281,15 +271,13 @@ Guide faces challenges in supporting users who need to efficiently manage and in
           </div>
         </SectionTitle>
         <TwoColumn>
-          <PaddedFlexBox>
+          <PaddedFlexBox className="items-center justify-start">
             <span className="text-[32px] font-medium">6 Scenario Ease Score</span>
             <Image
-              className="object-contain w-full h-auto grow-none"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/guide-app/Chart.png"
+              src={chartImage}
               alt="Chart Image"
-              width={2016}
-              height={1385}
             />
           </PaddedFlexBox>
           <PaddedFlexBox>
@@ -315,14 +303,12 @@ Guide faces challenges in supporting users who need to efficiently manage and in
           </PaddedFlexBox>
         </TwoColumn>
         <TwoColumn>
-          <PaddedFlexBox>
+          <PaddedFlexBox className="items-center justify-center">
             <Image
-              className="object-contain w-full h-auto grow"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/guide-app/heatmap.png"
+              src={HeatmapImage}
               alt="Chart Image"
-              width={2016}
-              height={1429}
             />
           </PaddedFlexBox>
           <PaddedFlexBox>

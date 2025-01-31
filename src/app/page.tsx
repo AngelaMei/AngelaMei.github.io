@@ -3,16 +3,17 @@ import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
 import projects from "@/data/projects";
 
+import eyesAnimation from "@/public/eyes.gif";
+
 export default function Home() {
   return (
     <div className="relative flex w-full justify-center">
       <div className="flex flex-col items-center max-w-7xl py-24 px-4 sm:px-20 gap-y-8 sm:gap-y-20 font-sans">
         <main className="relative flex flex-col min-h-[70vh] items-center justify-center">
           <Image
-            src="/eyes.gif"
+            className="w-80 h-auto"
+            src={eyesAnimation}
             alt="Portfolio logo"
-            width={320}
-            height={38}
             priority
           />
           <div

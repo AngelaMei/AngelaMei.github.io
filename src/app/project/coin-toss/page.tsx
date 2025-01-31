@@ -3,7 +3,18 @@ import Image from "next/image";
 import ProjectHeroSection from "@/components/ProjectHeroSection";
 import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
 import projects from "@/data/projects";
+
 import cover from "@/public/mock_main.png";
+import coinTossImage from "@/public/media/project/coin-toss/CoinToss.png";
+import iPhoneFrameImage from "@/public/media/project/coin-toss/iPhoneFrame.png";
+import wireframesImage from "@/public/media/project/coin-toss/Wireframes.png";
+import typographyImage from "@/public/media/project/coin-toss/Typography.png";
+import sketchImage from "@/public/media/project/coin-toss/Sketch.png";
+import userPainImage from "@/public/media/project/coin-toss/UserPain.png";
+import competitive1Logo from "@/public/media/project/coin-toss/Competitive1.png";
+import competitive2Logo from "@/public/media/project/coin-toss/Competitive2.png";
+import competitive3Logo from "@/public/media/project/coin-toss/Competitive3.png";
+import competitive4Logo from "@/public/media/project/coin-toss/Competitive4.png";
 
 const projectName = 'coin-toss';
 
@@ -94,12 +105,10 @@ export default function Page() {
         <SectionTitle id="01" title="Understand User Pain"/>
         <PaddedFlexBox>
           <Image
-            className="object-contain w-full h-auto"
+            className="w-full h-auto"
             aria-hidden
-            src="/media/project/coin-toss/UserPain.png"
+            src={userPainImage}
             alt="User Pain Image"
-            width={3968}
-            height={1584}
           />
         </PaddedFlexBox>
         <TwoColumn>
@@ -151,23 +160,23 @@ export default function Page() {
           {
             [
               {
-                imageUrl: '/media/project/coin-toss/Competitive2.png',
+                image: competitive2Logo,
                 content: 'It features an AI chatbot, but users must manually transfer the information into the app.',
               },
               {
-                imageUrl: '/media/project/coin-toss/Competitive3.png',
+                image: competitive3Logo,
                 content: 'It simplifies trip planning with its collaborative features, but its lack of real-time updates and limited customization options.',
               },
               {
-                imageUrl: '/media/project/coin-toss/Competitive4.png',
+                image: competitive4Logo,
                 content: 'It personalized travel recommendations, but offers occasional inaccuracies in local information can be frustrating.',
               },
               {
-                imageUrl: '/media/project/coin-toss/Competitive1.png',
+                image: competitive1Logo,
                 content: 'It provides personalized itineraries and real-time insights, but the itineraries can sometimes feel overly packed.',
               },
-            ].map(({ imageUrl, content }) => (
-              <PaddedFlexBox key={imageUrl}>
+            ].map(({ image, content }) => (
+              <PaddedFlexBox key={image.src}>
                 <div
                   className="flex gap-x-5 px-7 py-6 items-start"
                 >
@@ -175,10 +184,8 @@ export default function Page() {
                     <Image
                       className="max-w-31"
                       aria-hidden
-                      src={imageUrl}
+                      src={image}
                       alt="icon"
-                      height={496}
-                      width={600}
                     />
                   </div>
                   <span className="grow self-center text-xl">
@@ -199,26 +206,22 @@ export default function Page() {
               Sketching allowed for quick visualization and iteration, ultimately leading to the refined, user-friendly design of the app.
             </span>
           </PaddedFlexBox>
-          <PaddedFlexBox>
+          <PaddedFlexBox className="items-center justify-center">
             <Image
-              className="object-contain w-full h-auto grow"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/coin-toss/Sketch.png"
+              src={sketchImage}
               alt="Sketch image"
-              width={2016}
-              height={1564}
             />
           </PaddedFlexBox>
         </TwoColumn>
         <TwoColumn>
-          <PaddedFlexBox>
+          <PaddedFlexBox className="items-center justify-center">
             <Image
-              className="object-contain w-full h-auto grow"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/coin-toss/Typography.png"
+              src={typographyImage}
               alt="Sketch image"
-              width={2016}
-              height={1964}
             />
           </PaddedFlexBox>
           <PaddedFlexBox className="self-center">
@@ -235,10 +238,8 @@ export default function Page() {
           <Image
             className="w-full h-auto"
             aria-hidden
-            src="/media/project/coin-toss/Wireframes.png"
+            src={wireframesImage}
             alt="Wireframe"
-            width={4256}
-            height={3104}
           />
         </PaddedFlexBox>
         <PaddedFlexBox>
@@ -258,10 +259,8 @@ export default function Page() {
               <Image
                 className="relative w-full h-full z-50"
                 aria-hidden
-                src="/media/project/coin-toss/iPhoneFrame.png"
+                src={iPhoneFrameImage}
                 alt="Wireframe"
-                width={1419}
-                height={2796}
               />
               <video
                 autoPlay muted loop
@@ -293,10 +292,8 @@ export default function Page() {
               <Image
                 className="relative w-full h-full z-50"
                 aria-hidden
-                src="/media/project/coin-toss/iPhoneFrame.png"
+                src={iPhoneFrameImage}
                 alt="Wireframe"
-                width={1419}
-                height={2796}
               />
               <video
                 autoPlay muted loop
@@ -323,14 +320,12 @@ export default function Page() {
           </PaddedFlexBox>
         </TwoColumn>
       </PageContentContainer>
-          <Image
-            className="self-center p-40 max-w-4xl h-auto"
-            aria-hidden
-            src="/media/project/coin-toss/CoinToss.png"
-            alt="Wireframe"
-            width={2423}
-            height={419}
-          />
+      <Image
+        className="self-center p-40 max-w-4xl h-auto"
+        aria-hidden
+        src={coinTossImage}
+        alt="Wireframe"
+      />
     </div>
   );
 }

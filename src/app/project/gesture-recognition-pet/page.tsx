@@ -3,7 +3,16 @@ import Image from "next/image";
 import ProjectHeroSection from "@/components/ProjectHeroSection";
 import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
 import projects from "@/data/projects";
+
 import cover from "@/public/mock_main.png";
+import userFeedbackImage from "@/public/media/project/gesture-recognition-pet/UserFeedback.png";
+import moodboardImage from "@/public/media/project/gesture-recognition-pet/Moodboard.png";
+import deer3Image from "@/public/media/project/gesture-recognition-pet/Deer3.png";
+import deer2Image from "@/public/media/project/gesture-recognition-pet/Deer2.png";
+import deer1Image from "@/public/media/project/gesture-recognition-pet/Deer1.png";
+import userStoryImage from "@/public/media/project/gesture-recognition-pet/UserStory.gif";
+import userJourneyImage from "@/public/media/project/gesture-recognition-pet/UserJourney.png";
+import userPersonaImage from "@/public/media/project/gesture-recognition-pet/UserPersona.png";
 
 const projectName = 'gesture-recognition-pet';
 
@@ -73,12 +82,10 @@ export default function Page() {
           <span className="text-[32px] font-medium">User Persona</span>
           <div className="relative min-h-20 w-full">
             <Image
-              className="object-contain w-full h-auto"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/gesture-recognition-pet/UserPersona.png"
+              src={userPersonaImage}
               alt="User Persona Image"
-              width={4256}
-              height={2518}
             />
           </div>
         </PaddedFlexBox>
@@ -86,12 +93,10 @@ export default function Page() {
           <span className="text-[32px] font-medium">User Journey</span>
           <div className="relative min-h-20 w-full">
             <Image
-              className="object-contain w-full h-auto"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/gesture-recognition-pet/UserJourney.png"
+              src={userJourneyImage}
               alt="User Journey Image"
-              width={4256}
-              height={3365}
             />
           </div>
         </PaddedFlexBox>
@@ -105,14 +110,12 @@ export default function Page() {
               The user walks the virtual pet in the real world, creating an immersive, engaging experience.
             </span>
           </PaddedFlexBox>
-          <PaddedFlexBox>
+          <PaddedFlexBox className="items-center justify-center">
             <Image
-              className="object-contain w-full h-auto grow"
+              className="w-4/5 h-auto"
               aria-hidden
-              src="/media/project/gesture-recognition-pet/UserStory.gif"
+              src={userStoryImage}
               alt="User Story image"
-              width={1069}
-              height={1095}
             />
           </PaddedFlexBox>
         </TwoColumn>
@@ -120,12 +123,10 @@ export default function Page() {
         <ThreeColumn>
           <PaddedFlexBox className="items-center">
             <Image
-              className="object-contain"
+              className="w-25 h-auto"
               aria-hidden
-              src="/media/project/gesture-recognition-pet/Deer1.png"
+              src={deer1Image}
               alt="pet image"
-              width={100}
-              height={103}
             />
             <span className="text-[32px] font-medium">Virtual Doll</span>
             <span className="text-xl">
@@ -134,12 +135,10 @@ export default function Page() {
           </PaddedFlexBox>
           <PaddedFlexBox className="items-center">
             <Image
-              className="object-contain"
+              className="w-25 h-auto"
               aria-hidden
-              src="/media/project/gesture-recognition-pet/Deer2.png"
+              src={deer2Image}
               alt="pet image"
-              width={100}
-              height={103}
             />
             <span className="text-[32px] font-medium">Mood Tracking</span>
             <span className="text-xl">
@@ -149,12 +148,10 @@ export default function Page() {
           </PaddedFlexBox>
           <PaddedFlexBox className="items-center">
             <Image
-              className="object-contain"
+              className="w-25 h-auto"
               aria-hidden
-              src="/media/project/gesture-recognition-pet/Deer3.png"
+              src={deer3Image}
               alt="pet image"
-              width={100}
-              height={103}
             />
             <span className="text-[32px] font-medium">Gesture Recognition</span>
             <span className="text-xl">
@@ -192,14 +189,12 @@ export default function Page() {
               These dynamic interactions encourage users to express their emotions freely within a safe and supportive space, ultimately providing a valuable outlet for stress relief and emotional well-being.
             </span>
           </PaddedFlexBox>
-          <PaddedFlexBox className="justify-items-end">
+          <PaddedFlexBox className="items-center justify-center">
             <Image
-              className="object-contain w-full h-auto grow"
+              className="w-full h-auto"
               aria-hidden
-              src="/media/project/gesture-recognition-pet/Moodboard.png"
+              src={moodboardImage}
               alt="Moodboard Image"
-              width={2021}
-              height={1317}
             />
           </PaddedFlexBox>
         </TwoColumn>
@@ -207,10 +202,8 @@ export default function Page() {
         <Image
           className="w-4/5 h-auto self-center"
           aria-hidden
-          src="/media/project/gesture-recognition-pet/UserFeedback.png"
+          src={userFeedbackImage}
           alt="User Feedback Image"
-          width={3885}
-          height={1669}
         />
         <TwoColumn>
           <IconBullet iconUrl="/icons/ArrowRight.svg">
