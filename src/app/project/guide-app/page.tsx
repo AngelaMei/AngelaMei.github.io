@@ -76,7 +76,7 @@ Guide faces challenges in supporting users who need to efficiently manage and in
             />
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">Project Size</span>
+            <span className="text-[32px] font-medium">Process</span>
             <span className="text-xl">
               The Design Sprint methodology is at the core of our approach to developing the "Mark & Snip" functionality.<br/><br/>
               This proven framework allows us to quickly address user challenges, generate innovative solutions, and validate them through user-centric testing.
