@@ -7,6 +7,8 @@
   --font-sans: var(--font-albertsans);
   --font-serif: var(--font-alegreya);
   --font-picasso: var(--font-barriecito);
+
+  --color-dark-bg: #161410;
 }
 
 /* Uncomment the following section for dark theme */

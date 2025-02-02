@@ -58,7 +58,7 @@ function RotatingText({
 
 export default function Home() {
   return (
-    <div className="relative flex w-full justify-center bg-[#161410]">
+    <div className="relative flex w-full justify-center bg-dark-bg">
       <main className="flex flex-col items-center max-w-7xl pt-35 pb-24 px-4 sm:px-20 gap-y-8 sm:gap-y-20 font-sans">
         {/* Name banner */}
         <div
