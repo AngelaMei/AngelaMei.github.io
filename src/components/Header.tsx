@@ -1,85 +1,35 @@
-import Image from "next/image";
+'use client'
+
+import { useContext } from 'react';
 import Link from "next/link";
 
+import { DarkModeContext } from "@/context";
+
 export default function Header() {
+  const darkMode = useContext(DarkModeContext);
+
   return (
-    <header className="relative z-50 mx-4 sm:mx-20">
-      <div className="absolute l-0 t-0 w-full flex items-center text-sm sm:text-xl gap-4 sm:gap-7 h-24 my-0.5 font-sans">
-        <Link className="flex items-center gap-3" href="/">
-          Yu-Chi
-          <Image
-            aria-hidden
-            src="/eyes.svg"
-            alt="Eyes icon"
-            width={50}
-            height={40}
-          />
-          Mei
+    <header className={`absolute l-0 t-0 w-full flex justify-center z-50 ${darkMode ? 'text-white' : 'text-black'}`}>
+      <div className="flex px-4 sm:px-20 w-full min-[1450px]:px-0 min-[1450px]:w-7xl items-center text-sm sm:text-xl gap-4 sm:gap-7 h-24 my-0.5">
+        <Link href="/">
+          <span className="text-[2.5rem] select-none font-picasso">ang</span>
         </Link>
-        <div className="flex grow items-center justify-center gap-5">
-          <Link className="hidden sm:block" href="mailto:angela101475@gmail.com">
-            <Image
-              className="w-7 h-auto"
-              src="/icons/Email.svg"
-              alt="email icon"
-              width={28}
-              height={28}
-            />
-          </Link>
-          <Link
-            className="hidden sm:block"
-            href="https://www.linkedin.com/in/angela-mei"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="w-7 h-auto"
-              src="/icons/LinkedinLogo.svg"
-              alt="Linkedin icon"
-              width={28}
-              height={28}
-            />
-          </Link>
-          <Link
-            className="hidden sm:block"
-            href="https://github.com/AngelaMei"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="w-7 h-auto"
-              src="/icons/GithubLogo.svg"
-              alt="Github icon"
-              width={28}
-              height={28}
-            />
-          </Link>
-          <Link
-            className="hidden sm:block"
-            href="/docs/cv.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="w-7 h-auto"
-              src="/icons/CV.svg"
-              alt="CV icon"
-              width={28}
-              height={28}
-            />
-          </Link>
+        <div className="grow">
         </div>
-        <Link
-          className="flex items-center hover:underline hover:underline-offset-4"
-          href="/about"
-        >
-          About
+        <Link href="/about">
+          <span className="hover:underline hover:underline-offset-4 font-serif">
+            about me.
+          </span>
         </Link>
-        <Link
-          className="flex items-center hover:underline hover:underline-offset-4"
-          href="/works"
-        >
-          All Works
+        <Link href="/works">
+          <span className="hover:underline hover:underline-offset-4 font-serif">
+            all works.
+          </span>
+        </Link>
+        <Link href="/docs/cv.pdf" target="_blank" rel="noopener noreferrer">
+          <span className="hover:underline hover:underline-offset-4 font-serif">
+            résumé.
+          </span>
         </Link>
       </div>
     </header>

@@ -5,6 +5,8 @@
   --foreground: #171717;
 
   --font-sans: var(--font-albertsans);
+  --font-serif: var(--font-alegreya);
+  --font-picasso: var(--font-barriecito);
 }
 
 /* Uncomment the following section for dark theme */
