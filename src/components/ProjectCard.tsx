@@ -11,7 +11,7 @@ export type ProjectCardProps = {
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
-    <div className="relative rounded-[2rem] border-none grid grid-cols-1 sm:grid-cols-2 items-center sm:gap-7 w-[stretch] mx-6 min-h-125 bg-[#F5F5F7] font-sans">
+    <div className="relative rounded-[2rem] border-none grid grid-cols-1 sm:grid-cols-2 items-center sm:gap-7 w-[stretch] mx-6 min-h-125 bg-[#1C1C1C] font-sans">
       <div className="relative self-center sm:justify-self-center min-h-60 sm:w-full sm:h-full">
         <Image
           className="object-contain"
