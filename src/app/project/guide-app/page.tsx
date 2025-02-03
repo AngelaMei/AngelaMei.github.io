@@ -38,7 +38,7 @@ export default function Page() {
               alt=""
             />
             <video autoPlay muted loop className="absolute top-[12px] left-[73px] h-[94%] z-0">
-              <source src="/media/project/guide-app/Video.mp4" type="video/mp4"/>
+              <source src="/media/project/guide-app/10secVideo.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
           </ImageWrapper>
@@ -211,7 +211,7 @@ export default function Page() {
           />
         </PaddedFlexBox>
         <SectionTitle id="02" title="Sketch: Ideation and Exploration">
-          <span className="text-xl">Through collaborative ideation sessions, including 'Crazy 8' exercises, I contributed to the generation of a diverse range of design concepts. </span>
+          <span className="text-xl">Through collaborative ideation sessions, including 'Crazy 8' and 'How Might We' exercises, I contributed to the generation of a diverse range of design concepts. </span>
         </SectionTitle>
         <PaddedFlexBox>
           <span className="text-[32px] font-medium">Persona & User Journey</span>

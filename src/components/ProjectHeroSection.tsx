@@ -20,8 +20,8 @@ export default function ProjectHeroSection(props: ProjectHeroSectionProps) {
         <Image
           src={props.iconUrl}
           alt="logo"
-          width={50}
-          height={50}
+          width={30}
+          height={30}
           priority
         />
       </div>
