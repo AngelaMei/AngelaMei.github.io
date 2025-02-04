@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Albert_Sans, Alegreya, Barriecito } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css';
 
 import Footer from '@/components/Footer';
@@ -47,6 +48,7 @@ export default function RootLayout({
           </DarkModeContextProvider>
         </SmoothScroll>
       </body>
+      <GoogleAnalytics gaId="G-7GRVFVX2JL"/>
     </html>
   );
 }
