@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import { DarkModeContextProvider } from "@/context";
+import Header from '@/components/Header';
+import { DarkModeContextProvider } from '@/context';
 
 export default function RootLayout({
   children,

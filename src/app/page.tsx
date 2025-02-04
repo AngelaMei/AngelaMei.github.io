@@ -1,22 +1,22 @@
 'use client'
 
-import Image from "next/image";
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion } from 'motion/react';
 import clsx from 'clsx';
 
-import ProjectCard from "@/components/ProjectCard";
-import projects from "@/data/projects";
+import ProjectCard from '@/components/ProjectCard';
+import projects from '@/data/projects';
 
-import letterA from "@/public/media/homepage/angela/A.svg";
-import letterN from "@/public/media/homepage/angela/n.svg";
-import letterG from "@/public/media/homepage/angela/g.svg";
-import letterE from "@/public/media/homepage/angela/e.svg";
-import letterEWhite from "@/public/media/homepage/angela/we.svg";
-import letterL from "@/public/media/homepage/angela/l.svg";
-import letterM from "@/public/media/homepage/angela/M.svg";
-import letterI from "@/public/media/homepage/angela/i.svg";
-import letterDot from "@/public/media/homepage/angela/dot.svg";
+import letterA from '@/public/media/homepage/angela/A.svg';
+import letterN from '@/public/media/homepage/angela/n.svg';
+import letterG from '@/public/media/homepage/angela/g.svg';
+import letterE from '@/public/media/homepage/angela/e.svg';
+import letterEWhite from '@/public/media/homepage/angela/we.svg';
+import letterL from '@/public/media/homepage/angela/l.svg';
+import letterM from '@/public/media/homepage/angela/M.svg';
+import letterI from '@/public/media/homepage/angela/i.svg';
+import letterDot from '@/public/media/homepage/angela/dot.svg';
 
 function RotatingText({
   className,

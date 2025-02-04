@@ -1,24 +1,24 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import ProjectHeroSection from "@/components/ProjectHeroSection";
-import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
-import projects from "@/data/projects";
+import ProjectHeroSection from '@/components/ProjectHeroSection';
+import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from '@/components/utilities';
+import projects from '@/data/projects';
 
-import macbookSVG from "@/public/media/mockup/Macbook.svg";
-import HeatmapImage from "@/public/media/project/guide-app/heatmap.png";
-import chartImage from "@/public/media/project/guide-app/Chart.png";
-import votesImage from "@/public/media/project/guide-app/Votes.png";
-import sketchImage from "@/public/media/project/guide-app/Sketch.png";
-import persona2Image from "@/public/media/project/guide-app/Persona2.png";
-import persona1Image from "@/public/media/project/guide-app/Persona1.png";
-import userJourneyImage from "@/public/media/project/guide-app/UserJourney.png";
-import competitiveImage from "@/public/media/project/guide-app/Competitive.png";
-import keyInsightsImage from "@/public/media/project/guide-app/KeyInsights.png";
-import canvasImage from "@/public/media/project/guide-app/Canvas.png";
-import designSprintImage from "@/public/media/project/guide-app/DesignSprint.jpg";
-import chart95 from "@/public/media/project/guide-app/chart-95.png";
-import chart80 from "@/public/media/project/guide-app/chart-80.png";
-import chart70 from "@/public/media/project/guide-app/chart-70.png";
+import macbookSVG from '@/public/media/mockup/Macbook.svg';
+import HeatmapImage from '@/public/media/project/guide-app/heatmap.png';
+import chartImage from '@/public/media/project/guide-app/Chart.png';
+import votesImage from '@/public/media/project/guide-app/Votes.png';
+import sketchImage from '@/public/media/project/guide-app/Sketch.png';
+import persona2Image from '@/public/media/project/guide-app/Persona2.png';
+import persona1Image from '@/public/media/project/guide-app/Persona1.png';
+import userJourneyImage from '@/public/media/project/guide-app/UserJourney.png';
+import competitiveImage from '@/public/media/project/guide-app/Competitive.png';
+import keyInsightsImage from '@/public/media/project/guide-app/KeyInsights.png';
+import canvasImage from '@/public/media/project/guide-app/Canvas.png';
+import designSprintImage from '@/public/media/project/guide-app/DesignSprint.jpg';
+import chart95 from '@/public/media/project/guide-app/chart-95.png';
+import chart80 from '@/public/media/project/guide-app/chart-80.png';
+import chart70 from '@/public/media/project/guide-app/chart-70.png';
 
 const projectName = 'guide-app';
 

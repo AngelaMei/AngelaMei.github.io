@@ -1,18 +1,18 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import ProjectHeroSection from "@/components/ProjectHeroSection";
-import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
-import projects from "@/data/projects";
+import ProjectHeroSection from '@/components/ProjectHeroSection';
+import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from '@/components/utilities';
+import projects from '@/data/projects';
 
-import cover from "@/public/mock_main.png";
-import userFeedbackImage from "@/public/media/project/gesture-recognition-pet/UserFeedback.png";
-import moodboardImage from "@/public/media/project/gesture-recognition-pet/Moodboard.png";
-import deer3Image from "@/public/media/project/gesture-recognition-pet/Deer3.png";
-import deer2Image from "@/public/media/project/gesture-recognition-pet/Deer2.png";
-import deer1Image from "@/public/media/project/gesture-recognition-pet/Deer1.png";
-import userStoryImage from "@/public/media/project/gesture-recognition-pet/UserStory.gif";
-import userJourneyImage from "@/public/media/project/gesture-recognition-pet/UserJourney.png";
-import userPersonaImage from "@/public/media/project/gesture-recognition-pet/UserPersona.png";
+import cover from '@/public/mock_main.png';
+import userFeedbackImage from '@/public/media/project/gesture-recognition-pet/UserFeedback.png';
+import moodboardImage from '@/public/media/project/gesture-recognition-pet/Moodboard.png';
+import deer3Image from '@/public/media/project/gesture-recognition-pet/Deer3.png';
+import deer2Image from '@/public/media/project/gesture-recognition-pet/Deer2.png';
+import deer1Image from '@/public/media/project/gesture-recognition-pet/Deer1.png';
+import userStoryImage from '@/public/media/project/gesture-recognition-pet/UserStory.gif';
+import userJourneyImage from '@/public/media/project/gesture-recognition-pet/UserJourney.png';
+import userPersonaImage from '@/public/media/project/gesture-recognition-pet/UserPersona.png';
 
 const projectName = 'gesture-recognition-pet';
 

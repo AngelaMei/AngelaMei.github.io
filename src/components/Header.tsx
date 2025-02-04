@@ -1,9 +1,9 @@
 'use client'
 
 import { useContext } from 'react';
-import Link from "next/link";
+import Link from 'next/link';
 
-import { DarkModeContext } from "@/context";
+import { DarkModeContext } from '@/context';
 
 export default function Header() {
   const darkMode = useContext(DarkModeContext);

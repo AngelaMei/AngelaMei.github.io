@@ -3,7 +3,7 @@
 import { createContext, useContext } from 'react';
 import clsx from 'clsx';
 
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from 'next/image';
 
 export function PageContentContainer({
   children,

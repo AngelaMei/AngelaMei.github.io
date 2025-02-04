@@ -8,7 +8,7 @@ export function DarkModeContextProvider({
   value,
 }: Readonly<{
   children: React.ReactNode;
-  value: any;
+  value: boolean;
 }>) {
   return (
     <DarkModeContext.Provider value={value}>

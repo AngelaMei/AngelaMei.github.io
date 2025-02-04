@@ -1,4 +1,4 @@
-import { ProjectCardProps } from "@/components/ProjectCard";
+import { ProjectCardProps } from '@/components/ProjectCard';
 
 // Note: updating the project list may break the Footer grid layout
 

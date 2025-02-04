@@ -1,20 +1,20 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import ProjectHeroSection from "@/components/ProjectHeroSection";
-import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from "@/components/utilities";
-import projects from "@/data/projects";
+import ProjectHeroSection from '@/components/ProjectHeroSection';
+import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from '@/components/utilities';
+import projects from '@/data/projects';
 
-import cover from "@/public/mock_main.png";
-import coinTossImage from "@/public/media/project/coin-toss/CoinToss.png";
-import iPhoneFrameImage from "@/public/media/project/coin-toss/iPhoneFrame.png";
-import wireframesImage from "@/public/media/project/coin-toss/Wireframes.png";
-import typographyImage from "@/public/media/project/coin-toss/Typography.png";
-import sketchImage from "@/public/media/project/coin-toss/Sketch.png";
-import userPainImage from "@/public/media/project/coin-toss/UserPain.png";
-import competitive1Logo from "@/public/media/project/coin-toss/Competitive1.png";
-import competitive2Logo from "@/public/media/project/coin-toss/Competitive2.png";
-import competitive3Logo from "@/public/media/project/coin-toss/Competitive3.png";
-import competitive4Logo from "@/public/media/project/coin-toss/Competitive4.png";
+import cover from '@/public/mock_main.png';
+import coinTossImage from '@/public/media/project/coin-toss/CoinToss.png';
+import iPhoneFrameImage from '@/public/media/project/coin-toss/iPhoneFrame.png';
+import wireframesImage from '@/public/media/project/coin-toss/Wireframes.png';
+import typographyImage from '@/public/media/project/coin-toss/Typography.png';
+import sketchImage from '@/public/media/project/coin-toss/Sketch.png';
+import userPainImage from '@/public/media/project/coin-toss/UserPain.png';
+import competitive1Logo from '@/public/media/project/coin-toss/Competitive1.png';
+import competitive2Logo from '@/public/media/project/coin-toss/Competitive2.png';
+import competitive3Logo from '@/public/media/project/coin-toss/Competitive3.png';
+import competitive4Logo from '@/public/media/project/coin-toss/Competitive4.png';
 
 const projectName = 'coin-toss';
 

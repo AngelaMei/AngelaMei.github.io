@@ -1,8 +1,8 @@
-//import Image from "next/image";
-import ProjectHeroSection from "@/components/ProjectHeroSection";
-import { ImageWrapper } from "@/components/utilities";
-import projects from "@/data/projects";
-import cover from "@/public/mock_main.png";
+//import Image from 'next/image';
+import ProjectHeroSection from '@/components/ProjectHeroSection';
+import { ImageWrapper } from '@/components/utilities';
+import projects from '@/data/projects';
+import cover from '@/public/mock_main.png';
 
 const projectName = 'student-social-life';
 

@@ -1,8 +1,8 @@
 'use client'
 
-import Image from "next/image";
+import Image from 'next/image';
 
-import { ImageClassNameContext } from "@/components/utilities";
+import { ImageClassNameContext } from '@/components/utilities';
 
 export type ProjectHeroSectionProps = {
   heroCover: React.ReactNode;

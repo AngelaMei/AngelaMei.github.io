@@ -1,10 +1,10 @@
 'use client'
 
-import Link from "next/link";
+import Link from 'next/link';
 import { useContext } from 'react';
 
-import projects from "@/data/projects";
-import { DarkModeContext } from "@/context";
+import projects from '@/data/projects';
+import { DarkModeContext } from '@/context';
 
 export default function Footer() {
   const darkMode = useContext(DarkModeContext);

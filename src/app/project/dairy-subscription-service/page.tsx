@@ -1,9 +1,9 @@
-//import Image from "next/image";
+//import Image from 'next/image';
 
-import ProjectHeroSection from "@/components/ProjectHeroSection";
-import { ImageWrapper } from "@/components/utilities";
-import projects from "@/data/projects";
-import cover from "@/public/mock_main.png";
+import ProjectHeroSection from '@/components/ProjectHeroSection';
+import { ImageWrapper } from '@/components/utilities';
+import projects from '@/data/projects';
+import cover from '@/public/mock_main.png';
 
 const projectName = 'dairy-subscription-service';
 
