@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
-import { Albert_Sans, Alegreya, Barriecito } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Albert_Sans, Alegreya, Barriecito } from 'next/font/google';
+import './globals.css';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import { DarkModeContextProvider } from "@/context";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import { DarkModeContextProvider } from '@/context';
+import SmoothScroll from '@/components/SmoothScroll';
 
 const albertSans = Albert_Sans({
   variable: "--font-albertsans",
@@ -37,12 +38,14 @@ export default function RootLayout({
       <body
         className={`${albertSans.variable} ${alegreya.variable} ${barriecito.variable} antialiased relative`}
       >
-        <DarkModeContextProvider value={true}>
-          <Header />
-          {children}
+        <SmoothScroll>
+          <DarkModeContextProvider value={true}>
+            <Header />
+            {children}
 
-          <Footer />
-        </DarkModeContextProvider>
+            <Footer />
+          </DarkModeContextProvider>
+        </SmoothScroll>
       </body>
     </html>
   );
