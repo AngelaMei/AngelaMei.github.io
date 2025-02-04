@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header className={`absolute l-0 t-0 w-full flex justify-center z-50 ${darkMode ? 'text-white' : 'text-black'}`}>
-      <div className="flex px-4 sm:px-20 w-full min-[1450px]:px-0 min-[1450px]:w-7xl items-center text-sm sm:text-xl gap-4 sm:gap-7 h-24 my-0.5">
+      <div className="flex px-4 sm:max-[1450px]:px-20 min-[1450px]:px-0 w-full min-[1450px]:w-7xl items-center text-sm sm:text-xl gap-4 sm:gap-7 h-24 my-0.5">
         <Link href="/">
           <span className="text-[2.5rem] select-none font-picasso">ang</span>
         </Link>
