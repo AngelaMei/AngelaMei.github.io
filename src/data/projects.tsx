@@ -31,7 +31,7 @@ export default [
     iconUrl: '/icons/logo/Guide.png',
     bannerText: `Mark, Snip, and Succeed
       Make training and learning like TikTok`,
-    themeColor: '#0C1743',
+    themeColor: '#48399A',
   },
   {
     id: 'coin-toss',
@@ -56,7 +56,7 @@ export default [
     description: 'Developed an Augmented Reality (AR) pet app with intuitive gesture interactions, allowing users to train and play with their virtual companions.',
     iconUrl: '/icons/logo/Unity.png',
     bannerText: 'Bring joy and connection to your world with an AR pet that learns, grows, and plays by your side!',
-    themeColor: '#3EA3F9',
+    themeColor: '#3382C4',
   },
   /*
   {

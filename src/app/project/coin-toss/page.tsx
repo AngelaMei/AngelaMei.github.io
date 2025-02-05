@@ -35,8 +35,8 @@ export default function Page() {
           <PaddedFlexBox>
             <span className="text-[40px] font-medium">Project Overview</span>
             <span className="text-xl">
-              The Guide App is a Learning Management platform designed to redefine employee training through byte-sized stories. With features that increase engagement, reduce onboarding time, and scale training efforts, Guide has become a go-to solution for businesses aiming to enhance their talent experience and training processes.<br/><br/>
-              Guide faces challenges in supporting users who need to efficiently manage and interact with long-form content. Extracting key information without losing context is a common difficulty for users. Addressing this gap is vital to improving the user experience and boosting productivity.
+              Coin Toss is an innovative mobile application designed to alleviate the stress and overwhelm often associated with travel planning.  Many travelers struggle with decision fatigue, information overload, and the complexities of creating personalized itineraries.
+              <br/><br/>Coin Toss addresses these challenges by leveraging Generative AI to provide users with customized travel itineraries based on their stated preferences and travel style. A key feature, the "Coin Toss," helps users navigate choices and finalize their plans in a fun and engaging way.
             </span>
           </PaddedFlexBox>
           <PaddedFlexBox className="justify-self-end">
