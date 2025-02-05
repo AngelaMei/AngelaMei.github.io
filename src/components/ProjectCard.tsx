@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import type { StaticImageData } from 'next/image';
+
+import MagicLink from '@/components/MagicLink';
 
 export type ProjectCardProps = {
   pageUrl: string;
@@ -15,21 +16,21 @@ export type ProjectCardProps = {
 export default function ProjectCard(props: ProjectCardProps) {
   return (
     <div className={`relative flex flex-col ${props.imageOnLeft ? 'sm:flex-row' : 'sm:flex-row-reverse'} items-end justify-start justify-items-start gap-10 w-full`}>
-      <Link className="relative self-center sm:justify-self-center" href={props.pageUrl}>
+      <MagicLink className="relative self-center sm:justify-self-center" href={props.pageUrl}>
         <Image
           className="w-full h-auto object-contain sm:h-110 sm:w-auto rounded-[2rem] border-none"
           aria-hidden
           src={props.coverImage}
           alt="thumbnail"
         />
-      </Link>
+      </MagicLink>
       <div className={`basis-xs flex flex-col gap-y-4 px-3 items-start ${props.imageOnLeft ? 'sm:items-start sm:text-left' : 'sm:items-end sm:text-right'} text-white font-sans`}>
         <span className="rounded-3xl bg-[#DFAC2B] text-sm text-black px-5 py-1">
           {props.type}
         </span>
-        <Link className="text-3xl sm:text-5xl font-semibold" href={props.pageUrl}>
+        <MagicLink className="text-3xl sm:text-5xl font-semibold" href={props.pageUrl}>
           {props.name}
-        </Link>
+        </MagicLink>
         <span className="text-xl font-medium">
           {props.role}
         </span>

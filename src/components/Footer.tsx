@@ -1,10 +1,10 @@
 'use client'
 
-import Link from 'next/link';
 import { useContext } from 'react';
 
 import projects from '@/data/projects';
 import { DarkModeContext } from '@/context';
+import MagicLink from '@/components/MagicLink';
 
 export default function Footer() {
   const darkMode = useContext(DarkModeContext);
@@ -16,38 +16,38 @@ export default function Footer() {
         <span className="text-xl sm:text-3xl font-medium py-2">
           site map.
         </span>
-        <Link
+        <MagicLink
           className="hover:underline hover:underline-offset-4"
           href="/"
         >
           home.
-        </Link>
-        <Link
+        </MagicLink>
+        <MagicLink
           className="hover:underline hover:underline-offset-4"
           href="/about"
         >
           about me.
-        </Link>
+        </MagicLink>
         {/*
-        <Link
+        <MagicLink
           className="hover:underline hover:underline-offset-4"
           href="/works"
         >
           All Works
-        </Link>
+        </MagicLink>
         */}
         <span className="sm:row-start-1 sm:col-span-2 text-xl sm:text-3xl font-medium py-2">
           selected works.
         </span>
         {
           projects.map(project => (
-            <Link
+            <MagicLink
               key={project.id}
               className="hover:underline hover:underline-offset-4"
               href={project.pageUrl}
             >
               {project.name}
-            </Link>
+            </MagicLink>
           ))
         }
       </div>
