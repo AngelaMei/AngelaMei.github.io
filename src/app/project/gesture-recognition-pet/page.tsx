@@ -13,6 +13,7 @@ import deer1Image from '@/public/media/project/gesture-recognition-pet/Deer1.png
 import userStoryImage from '@/public/media/project/gesture-recognition-pet/UserStory.gif';
 import userJourneyImage from '@/public/media/project/gesture-recognition-pet/UserJourney.png';
 import userPersonaImage from '@/public/media/project/gesture-recognition-pet/UserPersona.png';
+import iPhoneFrameImage from '@/public/media/project/coin-toss/iPhoneFrame.png';
 
 const projectName = 'gesture-recognition-pet';
 
@@ -24,7 +25,21 @@ export default function Page() {
       <ProjectHeroSection
         { ...projectMetadata }
         heroCover={(
-          <ImageWrapper src={cover} alt="Cover Image"/>
+          <div className="self-center relative h-131">
+          <Image
+            className="relative w-full h-full z-30"
+            aria-hidden
+            src={iPhoneFrameImage}
+            alt="Wireframe"
+          />
+          <video
+            autoPlay muted loop
+            className="absolute left-[22px] h-120 top-[23px] rounded-2xl z-0"
+          >
+            <source src="/media/project/gesture-recognition-pet/10secVideo.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+        </video>
+      </div>
         )}
       />
 

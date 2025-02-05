@@ -27,18 +27,18 @@ export default function Page() {
         { ...projectMetadata }
         heroCover={(
           <div className="self-center relative h-131">
-          <Image
-            className="relative w-full h-full z-30"
-            aria-hidden
-            src={iPhoneFrameImage}
-            alt="Wireframe"
-          />
-          <video
-            autoPlay muted loop
-            className="absolute left-[22px] h-120 top-[23px] rounded-2xl z-0"
-          >
-            <source src="/media/project/coin-toss/Video.mp4" type="video/mp4"/>
-            Your browser does not support the video tag.
+            <Image
+              className="relative w-full h-full z-30"
+              aria-hidden
+              src={iPhoneFrameImage}
+              alt="Wireframe"
+            />
+            <video
+              autoPlay muted loop
+              className="absolute left-[22px] h-120 top-[23px] rounded-2xl z-0"
+            >
+              <source src="/media/project/coin-toss/Video.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
           </video>
         </div>
         )}
