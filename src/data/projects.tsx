@@ -38,7 +38,7 @@ export default [
     pageUrl: '/project/coin-toss',
     coverImage: coinTossCover,
     type: 'UX Project',
-    name: 'AI Travel Assistant',
+    name: 'Coin Toss',
     role: 'Product Designer',
     description: 'Led user interviews and developed a user-centered prototype for an AI-Powered Travel Planner at a generative AI hackathon.',
     iconUrl: '/icons/logo/Gemini.png',
