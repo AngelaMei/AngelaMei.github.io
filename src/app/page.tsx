@@ -58,8 +58,8 @@ function RotatingText({
 
 export default function Home() {
   return (
-    <div className="relative flex w-full justify-center bg-dark-bg">
-      <main className="flex flex-col items-center max-w-7xl pt-35 pb-24 px-4 sm:px-20 gap-y-8 sm:gap-y-20 font-sans">
+    <div className="relative flex w-full justify-center bg-dark-bg text-white">
+      <main className="flex flex-col items-center max-w-7xl pt-35 pb-24 px-5 sm:px-20 gap-y-8 sm:gap-y-20 font-sans">
         {/* Name banner */}
         <div
           className="flex flex-col items-center font-picasso leading-none select-none pointer-events-none"
@@ -93,14 +93,17 @@ export default function Home() {
           </span>
         </div>
 
-        {
-          projects.map(project => (
-            <ProjectCard
-              { ...project }
-              key={project.name}
-            />
-          ))
-        }
+        <div className="flex flex-col gap-y-8 sm:gap-y-40">
+          {
+            projects.map((project, id) => (
+              <ProjectCard
+                { ...project }
+                imageOnLeft={(id % 2) ? false : true}
+                key={project.name}
+              />
+            ))
+          }
+        </div>
       </main>
     </div>
   );

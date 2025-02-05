@@ -1,52 +1,41 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import type { StaticImageData } from 'next/image';
 
 export type ProjectCardProps = {
   pageUrl: string;
-  imageUrl: string;
+  coverImage: StaticImageData;
   type: string;
   name: string;
+  role: string;
   description: string;
-  iconUrl: string;
+  imageOnLeft: boolean;
 };
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
-    <div className="relative rounded-[2rem] border-none grid grid-cols-1 sm:grid-cols-2 items-center sm:gap-7 w-[stretch] mx-6 min-h-125 bg-[#1C1C1C] font-sans">
-      <div className="relative self-center sm:justify-self-center min-h-60 sm:w-full sm:h-full">
+    <div className={`relative flex flex-col ${props.imageOnLeft ? 'sm:flex-row' : 'sm:flex-row-reverse'} items-end justify-start justify-items-start gap-10 w-full`}>
+      <Link className="relative self-center sm:justify-self-center" href={props.pageUrl}>
         <Image
-          className="object-contain"
+          className="w-full h-auto object-contain sm:h-110 sm:w-auto rounded-[2rem] border-none"
           aria-hidden
-          src={props.imageUrl}
+          src={props.coverImage}
           alt="thumbnail"
-          fill={true}
         />
-      </div>
-      <div className="flex flex-col items-start px-8 sm:pl-0 sm:pr-20">
-        <span
-          className="text-md sm:text-xl font-medium pb-4"
-        >
+      </Link>
+      <div className={`basis-xs flex flex-col gap-y-4 px-3 items-start ${props.imageOnLeft ? 'sm:items-start sm:text-left' : 'sm:items-end sm:text-right'} text-white font-sans`}>
+        <span className="rounded-3xl bg-[#DFAC2B] text-sm text-black px-5 py-1">
           {props.type}
         </span>
-        <a
-          className="text-3xl sm:text-5xl font-semibold pb-10"
-          href={props.pageUrl}
-        >
+        <Link className="text-3xl sm:text-5xl font-semibold" href={props.pageUrl}>
           {props.name}
-        </a>
-        <span
-          className="text-md sm:text-xl pb-10"
-        >
+        </Link>
+        <span className="text-xl font-medium">
+          {props.role}
+        </span>
+        <span className="text-base pb-10">
           {props.description}
         </span>
-      </div>
-      <div className="absolute hidden sm:block sm:top-12 sm:right-12">
-        <Image
-          aria-hidden
-          src={props.iconUrl}
-          alt="thumbnail"
-          height={50}
-          width={50}
-        />
       </div>
     </div>
   );

@@ -1,4 +1,21 @@
-import { ProjectCardProps } from '@/components/ProjectCard';
+import type { StaticImageData } from 'next/image';
+
+import coinTossCover from '@/public/media/homepage/Cover_Cointoss.png';
+import guideAppCover from '@/public/media/homepage/Cover_Guide.png';
+import patPetCover from '@/public/media/homepage/Cover_Patpet.png';
+
+type ProjectMetadata = {
+  id: string;
+  pageUrl: string;
+  coverImage: StaticImageData;
+  type: string;
+  name: string;
+  role: string;
+  description: string;
+  iconUrl: string;
+  bannerText: string;
+  themeColor: string;
+};
 
 // Note: updating the project list may break the Footer grid layout
 
@@ -6,9 +23,10 @@ export default [
   {
     id: 'guide-app',
     pageUrl: '/project/guide-app',
-    imageUrl: '/media/homepage/Cover_Guide.gif',
+    coverImage: guideAppCover,
     type: 'Capstone',
     name: 'Guide App',
+    role: 'UI/UX Designer & Researcher',
     description: 'Collaborated with a startup to enhance Guide App, a Learning Management System by developing features that streamline user interaction with long-form content.',
     iconUrl: '/icons/logo/Guide.png',
     bannerText: `Mark, Snip, and Succeed
@@ -18,9 +36,10 @@ export default [
   {
     id: 'coin-toss',
     pageUrl: '/project/coin-toss',
-    imageUrl: '/media/homepage/Cover_Gemini.png',
+    coverImage: coinTossCover,
     type: 'Google Hackathon',
     name: 'AI Travel Assistant',
+    role: 'Product Designer',
     description: 'An AI-Powered Travel Planner redefines the travel planning experience by combining advanced AI capabilities with intuitive design.',
     iconUrl: '/icons/logo/Gemini.png',
     bannerText: `Have you ever felt overwhelmed by travel planning?
@@ -30,9 +49,10 @@ export default [
   {
     id: 'gesture-recognition-pet',
     pageUrl: '/project/gesture-recognition-pet',
-    imageUrl: '/media/homepage/Cover_Patpet_4x.png',
+    coverImage: patPetCover,
     type: 'Augmented Reality',
     name: 'Gesture Recognition Pet',
+    role: '',
     description: 'Augmented Reality (AR) pet app that can interact with the user through intuitive gestures, and user can train and have fun with their AR pet.',
     iconUrl: '/icons/logo/Unity.png',
     bannerText: 'Bring joy and connection to your world with an AR pet that learns, grows, and plays by your side!',
@@ -71,5 +91,5 @@ export default [
     iconUrl: '/icons/logo/AT.png',
   },
   */
-] satisfies (ProjectCardProps & { bannerText: string; themeColor: string; id: string; })[];
+] satisfies ProjectMetadata[];
 
