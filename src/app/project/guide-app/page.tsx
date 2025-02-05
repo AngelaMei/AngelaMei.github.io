@@ -37,7 +37,10 @@ export default function Page() {
               src={macbookSVG}
               alt=""
             />
-            <video autoPlay muted loop className="absolute top-[12px] left-[73px] h-[94%] z-0">
+            <video
+              autoPlay muted loop playsInline
+              className="absolute top-[12px] left-[73px] h-[94%] z-0"
+            >
               <source src="/media/project/guide-app/10secVideo.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
             </video>
@@ -291,7 +294,10 @@ export default function Page() {
         </SectionTitle>
         <TwoColumn>
           <PaddedFlexBox className="items-center justify-center">
-            <video autoPlay muted loop className="w-full h-auto rounded-xl">
+            <video
+              autoPlay muted loop playsInline
+              className="w-full h-auto rounded-xl"
+            >
               <source src="/media/project/guide-app/Video.mp4" type="video/mp4"/>
               Your browser does not support the video tag.
             </video>

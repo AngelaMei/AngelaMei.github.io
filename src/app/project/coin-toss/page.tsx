@@ -4,7 +4,6 @@ import ProjectHeroSection from '@/components/ProjectHeroSection';
 import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from '@/components/utilities';
 import projects from '@/data/projects';
 
-import cover from '@/public/mock_main.png';
 import coinTossImage from '@/public/media/project/coin-toss/CoinToss.png';
 import iPhoneFrameImage from '@/public/media/project/coin-toss/iPhoneFrame.png';
 import wireframesImage from '@/public/media/project/coin-toss/Wireframes.png';
@@ -34,7 +33,7 @@ export default function Page() {
               alt="Wireframe"
             />
             <video
-              autoPlay muted loop
+              autoPlay muted loop playsInline
               className="absolute left-[19px] h-101 top-[18px] rounded-2xl z-0"
             >
               <source src="/media/project/coin-toss/Video.mp4" type="video/mp4"/>
@@ -259,7 +258,7 @@ export default function Page() {
         <PaddedFlexBox>
           <span className="text-[32px] font-medium">Prompt Refine</span>
           <video
-            autoPlay muted loop
+            autoPlay muted loop playsInline
             className="object-contain w-full h-auto grow rounded-xl"
           >
             <source src="/media/project/coin-toss/Video2.mp4" type="video/mp4"/>
@@ -277,7 +276,7 @@ export default function Page() {
                 alt="Wireframe"
               />
               <video
-                autoPlay muted loop
+                autoPlay muted loop playsInline
                 className="absolute left-[26px] h-139 top-[24px] rounded-2xl z-0"
               >
                 <source src="/media/project/coin-toss/Video.mp4" type="video/mp4"/>
@@ -310,7 +309,7 @@ export default function Page() {
                 alt="Wireframe"
               />
               <video
-                autoPlay muted loop
+                autoPlay muted loop playsInline
                 className="absolute left-[25px] h-139 top-[24px] rounded-3xl z-0"
               >
                 <source src="/media/project/coin-toss/Video3.mp4" type="video/mp4"/>

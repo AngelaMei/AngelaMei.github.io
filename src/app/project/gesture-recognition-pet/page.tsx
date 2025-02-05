@@ -4,7 +4,6 @@ import ProjectHeroSection from '@/components/ProjectHeroSection';
 import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from '@/components/utilities';
 import projects from '@/data/projects';
 
-import cover from '@/public/mock_main.png';
 import userFeedbackImage from '@/public/media/project/gesture-recognition-pet/UserFeedback.png';
 import moodboardImage from '@/public/media/project/gesture-recognition-pet/Moodboard.png';
 import deer3Image from '@/public/media/project/gesture-recognition-pet/Deer3.png';
@@ -33,7 +32,7 @@ export default function Page() {
               alt="Wireframe"
             />
             <video
-              autoPlay muted loop
+              autoPlay muted loop playsInline
               className="absolute left-[19px] h-101 top-[18px] rounded-2xl z-0"
             >
               <source src="/media/project/gesture-recognition-pet/10secVideo.mp4" type="video/mp4"/>
@@ -257,7 +256,7 @@ export default function Page() {
             alt="Wireframe"
           />
           <video
-            autoPlay muted loop
+            autoPlay muted loop playsInline
             className="absolute left-[25px] h-139 top-[24px] rounded-3xl z-0"
           >
             <source src="/media/project/gesture-recognition-pet/Video1.mp4" type="video/mp4"/>
