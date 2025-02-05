@@ -3,11 +3,11 @@
 import type { FC } from 'react';
 import Image from 'next/image';
 
-import image1 from '@/public/media/about/IMG_1.png';
-import image2 from '@/public/media/about/IMG_2.png';
-import image3 from '@/public/media/about/IMG_3.JPG';
-import image4 from '@/public/media/about/IMG_4.JPG';
-import image5 from '@/public/media/about/IMG_5.JPG';
+import image1 from '@/public/media/about/img1.png';
+import image2 from '@/public/media/about/img2.png';
+import image3 from '@/public/media/about/img3.jpg';
+import image4 from '@/public/media/about/img4.jpg';
+import image5 from '@/public/media/about/img5.jpg';
 import letterA from '@/public/media/homepage/angela/A.svg';
 import letterN from '@/public/media/homepage/angela/n.svg';
 import letterG from '@/public/media/homepage/angela/g.svg';
