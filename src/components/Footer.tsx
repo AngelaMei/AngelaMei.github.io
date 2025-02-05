@@ -20,20 +20,22 @@ export default function Footer() {
           className="hover:underline hover:underline-offset-4"
           href="/"
         >
-          Home
+          home.
         </Link>
         <Link
           className="hover:underline hover:underline-offset-4"
           href="/about"
         >
-          About
+          about me.
         </Link>
+        {/*
         <Link
           className="hover:underline hover:underline-offset-4"
           href="/works"
         >
           All Works
         </Link>
+        */}
         <span className="sm:row-start-1 sm:col-span-2 text-xl sm:text-3xl font-medium py-2">
           selected works.
         </span>
