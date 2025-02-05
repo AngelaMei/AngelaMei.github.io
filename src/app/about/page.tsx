@@ -67,8 +67,8 @@ const Page: FC = () => {
           <div className="basis-3/5 flex flex-col gap-y-8">
             <span className="text-2xl font-serif">about me.</span>
             <span className="text-xl font-sans">
-              My name means "not expected" in Mandarin, but my passion for design certainly is.<br/><br/>
-              With a background in Finance and Business Administration, I bring a unique analytical perspective to design challenges.<br/><br/>
+              My name means "not expected" in Mandarin.<br/><br/>
+              With a background in Finance and HCI, I bring a unique analytical perspective to design challenges.<br/><br/>
               Currently pursuing my Master's in Human-Computer Interaction at the University of Maryland, I strive to create digital experiences that are both innovative and practical.
             </span>
           </div>
