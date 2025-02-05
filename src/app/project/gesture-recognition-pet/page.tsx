@@ -246,8 +246,25 @@ export default function Page() {
             </span>
           </IconBullet>
         </TwoColumn>
-        <SectionTitle id="06" title="Prototype" subtitle="The prototype before user testing and after user testing."/>
+        <SectionTitle id="06" title="Prototype" subtitle="The prototype after user testing."/>
       </PageContentContainer>
+      <PaddedFlexBox className="relative h-165">
+        <div className="self-center relative h-151">
+          <Image
+            className="relative w-full h-full z-30"
+            aria-hidden
+            src={iPhoneFrameImage}
+            alt="Wireframe"
+          />
+          <video
+            autoPlay muted loop
+            className="absolute left-[25px] h-139 top-[24px] rounded-3xl z-0"
+          >
+            <source src="/media/project/gesture-recognition-pet/Video1.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </PaddedFlexBox>
     </div>
   );
 }
