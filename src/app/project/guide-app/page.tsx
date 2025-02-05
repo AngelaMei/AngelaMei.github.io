@@ -32,7 +32,7 @@ export default function Page() {
         heroCover={(
           <ImageWrapper className="relative">
             <Image
-              className="relative h-full w-auto z-50"
+              className="relative h-full w-auto z-30"
               aria-hidden
               src={macbookSVG}
               alt=""
