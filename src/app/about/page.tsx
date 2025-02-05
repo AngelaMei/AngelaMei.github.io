@@ -3,7 +3,11 @@
 import type { FC } from 'react';
 import Image from 'next/image';
 
-import image1 from '@/public/media/about/image1.png';
+import image1 from '@/public/media/about/IMG_1.png';
+import image2 from '@/public/media/about/IMG_2.png';
+import image3 from '@/public/media/about/IMG_3.JPG';
+import image4 from '@/public/media/about/IMG_4.JPG';
+import image5 from '@/public/media/about/IMG_5.JPG';
 import letterA from '@/public/media/homepage/angela/A.svg';
 import letterN from '@/public/media/homepage/angela/n.svg';
 import letterG from '@/public/media/homepage/angela/g.svg';
@@ -31,9 +35,12 @@ const Page: FC = () => {
             </span>
           </div>
           <div className="relative h-440 z-40">
-            <Image src={image1} className="absolute top-40 left-1/8 w-80 h-auto" alt=""/>
-            <Image src={image1} className="absolute top-140 left-5/7 w-70 h-auto" alt=""/>
-            <Image src={image1} className="absolute top-240 left-1/3 w-60 h-auto" alt=""/>
+            <Image src={image1} className="absolute top-30 left-1/20 w-50 h-auto" alt=""/>
+            <Image src={image5} className="absolute top-80 left-5/7 w-80 h-auto" alt=""/>
+            <Image src={image3} className="absolute top-150 left-1/5 w-80 h-auto" alt=""/>
+            <Image src={image2} className="absolute top-250 left-5/7 w-60 h-auto" alt=""/>
+            <Image src={image4} className="absolute top-350 left-1/6 w-60 h-auto" alt=""/>
+
           </div>
         </div>
         {/* About Me section*/}
