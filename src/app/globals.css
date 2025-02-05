@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
 @theme inline {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-dark-bg: #161410;
+  --background: var(--color-dark-bg);
+  --foreground: #ffffff;
 
   --font-sans: var(--font-albertsans);
   --font-serif: var(--font-alegreya);
   --font-picasso: var(--font-barriecito);
-
-  --color-dark-bg: #161410;
 }
 
-/* Uncomment the following section for dark theme */
-/*@media (prefers-color-scheme: dark) {*/
-  /*:root {*/
-    /*--background: #0a0a0a;*/
-    /*--foreground: #ededed;*/
-  /*}*/
-/*}*/
+/* Uncomment the following section for dark theme
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+*/
+
+/* This is required for the CSS rule for body to work. */
+div {
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+

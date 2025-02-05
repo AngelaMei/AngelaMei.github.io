@@ -11,7 +11,7 @@ export function PageContentContainer({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex bg-black w-full text-white justify-center">
+    <div className="flex w-full text-white justify-center">
       <div
         className="flex grow flex-col max-w-7xl gap-y-8 sm:gap-y-20 py-20 sm:p-20"
       >

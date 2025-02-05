@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Albert_Sans, Alegreya, Barriecito } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google'
-import './globals.css';
 
+import '@/app/globals.css';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { DarkModeContextProvider } from '@/context';
