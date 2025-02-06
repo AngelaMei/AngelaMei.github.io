@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import ProjectHeroSection from '@/components/ProjectHeroSection';
-import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn } from '@/components/utilities';
+import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn, Heading1, Heading2, Heading3, BaseText } from '@/components/utilities';
 import projects from '@/data/projects';
 
 import coinTossImage from '@/public/media/project/coin-toss/CoinToss.png';
@@ -46,30 +46,30 @@ export default function Page() {
       <PageContentContainer>
         <TwoColumn>
           <PaddedFlexBox>
-            <span className="text-[40px] font-medium">Project Overview</span>
-            <span className="text-xl">
+            <Heading1>Project Overview</Heading1>
+            <BaseText>
               Coin Toss is an innovative mobile application designed to alleviate the stress and overwhelm often associated with travel planning.  Many travelers struggle with decision fatigue, information overload, and the complexities of creating personalized itineraries.
               <br/><br/>Coin Toss addresses these challenges by leveraging Generative AI to provide users with customized travel itineraries based on their stated preferences and travel style. A key feature, the "Coin Toss," helps users navigate choices and finalize their plans in a fun and engaging way.
-            </span>
+            </BaseText>
           </PaddedFlexBox>
-          <PaddedFlexBox className="justify-self-end">
+          <PaddedFlexBox className="sm:justify-self-end">
             <IconBullet iconUrl="/icons/LegoSmiley.svg">
-              <span className="text-[32px] font-medium">Role</span>
-              <span className="text-xl">UX Researcher & Interface Designer</span>
+              <Heading2>Role</Heading2>
+              <BaseText>UX Researcher & Interface Designer</BaseText>
             </IconBullet>
             <IconBullet iconUrl="/icons/Wrench.svg">
-              <span className="text-[32px] font-medium">Tool</span>
-              <span className="text-xl">Figma, Adobe Illustrator, Gemini</span>
+              <Heading2>Tool</Heading2>
+              <BaseText>Figma, Adobe Illustrator, Gemini</BaseText>
             </IconBullet>
             <IconBullet iconUrl="/icons/Eyes.svg">
-              <span className="text-[32px] font-medium">Project Size</span>
-              <span className="text-xl">10 Days with 6 team members</span>
+              <Heading2>Project Size</Heading2>
+              <BaseText>10 Days with 6 team members</BaseText>
             </IconBullet>
           </PaddedFlexBox>
         </TwoColumn>
         <ThreeColumn>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">01 Planning</span>
+            <Heading2>01 Planning</Heading2>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>Brainstorming</li>
               <li>Project Timeline Setting</li>
@@ -77,14 +77,14 @@ export default function Page() {
             </ul>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">02 Research</span>
+            <Heading2>02 Research</Heading2>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>Structured Interview</li>
               <li>Competitor Analysis</li>
             </ul>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">03 Mapping</span>
+            <Heading2>03 Mapping</Heading2>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>User Story</li>
               <li>Sketch</li>
@@ -93,7 +93,7 @@ export default function Page() {
             </ul>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">04 Prototyping</span>
+            <Heading2>04 Prototyping</Heading2>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>Backend Development</li>
               <li>Design System</li>
@@ -101,14 +101,14 @@ export default function Page() {
             </ul>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">05 Testing</span>
+            <Heading2>05 Testing</Heading2>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>Usability Test</li>
               <li>Prompt Testing</li>
             </ul>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">06 Presenting</span>
+            <Heading2>06 Presenting</Heading2>
             <ul className="text-xl list-disc list-outside pl-8">
               <li>Prepare Presentation</li>
               <li>Video Recording</li>
@@ -126,45 +126,45 @@ export default function Page() {
         </PaddedFlexBox>
         <TwoColumn>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">Pain Points</span>
+            <Heading2>Pain Points</Heading2>
             <IconBullet iconUrl="/icons/SmileyNervous.svg">
-              <span className="text-[28px] font-medium">Indecisiveness</span>
-              <span className="text-xl">
+              <Heading3>Indecisiveness</Heading3>
+              <BaseText>
                 Friend groups or individuals often struggle to reach a consensus on where to travel, what to do
-              </span>
+              </BaseText>
             </IconBullet>
             <IconBullet iconUrl="/icons/SmileySad.svg">
-              <span className="text-[28px] font-medium">Lack of Personalization</span>
-              <span className="text-xl">
+              <Heading3>Lack of Personalization</Heading3>
+              <BaseText>
                 Generic travel recommendations may not align with individual preferences, resulting in suboptimal experiences
-              </span>
+              </BaseText>
             </IconBullet>
             <IconBullet iconUrl="/icons/SmileyXEyes.svg">
-              <span className="text-[28px] font-medium">Indecisiveness</span>
-              <span className="text-xl">
+              <Heading3>Indecisiveness</Heading3>
+              <BaseText>
                 Friend groups or individuals often struggle to reach a consensus on the travel itinerary
-              </span>
+              </BaseText>
             </IconBullet>
           </PaddedFlexBox>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">Potential Solutions</span>
+            <Heading2>Potential Solutions</Heading2>
             <IconBullet iconUrl="/icons/ArrowRight.svg">
-              <span className="text-[28px] font-medium">Limit the Choices</span>
-              <span className="text-xl">
+              <Heading3>Limit the Choices</Heading3>
+              <BaseText>
                 Two itineraries were provided from AI based on their preference for users to do simple decision
-              </span>
+              </BaseText>
             </IconBullet>
             <IconBullet iconUrl="/icons/ArrowRight.svg">
-              <span className="text-[28px] font-medium">Input Travel Style</span>
-              <span className="text-xl">
+              <Heading3>Input Travel Style</Heading3>
+              <BaseText>
                 Input preferred travel styles to generate a customized travel itinerary
-              </span>
+              </BaseText>
             </IconBullet>
             <IconBullet iconUrl="/icons/ArrowRight.svg">
-              <span className="text-[28px] font-medium">Coin Toss</span>
-              <span className="text-xl">
+              <Heading3>Coin Toss</Heading3>
+              <BaseText>
                 If users have trouble choosing between the two options, our unique "coin toss" feature is there to settle the debate
-              </span>
+              </BaseText>
             </IconBullet>
           </PaddedFlexBox>
         </TwoColumn>
@@ -191,19 +191,19 @@ export default function Page() {
             ].map(({ image, content }) => (
               <PaddedFlexBox key={image.src}>
                 <div
-                  className="flex gap-x-5 px-7 py-6 items-start"
+                  className="flex gap-x-5 px-3 sm:px-7 sm:py-6 items-start"
                 >
                   <div className="self-start">
                     <Image
-                      className="max-w-31"
+                      className="max-w-24 sm:max-w-31"
                       aria-hidden
                       src={image}
                       alt="icon"
                     />
                   </div>
-                  <span className="grow self-center text-xl">
+                  <BaseText className="grow self-center">
                     {content}
-                  </span>
+                  </BaseText>
                 </div>
               </PaddedFlexBox>
             ))
@@ -212,12 +212,12 @@ export default function Page() {
         <SectionTitle id="03" title="Design Process & Development"/>
         <TwoColumn>
           <PaddedFlexBox>
-            <span className="text-[32px] font-medium">Sketch</span>
-            <span className="text-xl">
+            <Heading2>Sketch</Heading2>
+            <BaseText>
               During the design phase, our team actively sketched and brainstormed concepts to identify innovative ideas and potential solutions.<br/><br/>
               These sessions played a pivotal role in exploring unique features, such as the "Coin Toss" decision tool, that address user pain points effectively.<br/><br/>
               Sketching allowed for quick visualization and iteration, ultimately leading to the refined, user-friendly design of the app.
-            </span>
+            </BaseText>
           </PaddedFlexBox>
           <PaddedFlexBox className="items-center justify-center">
             <Image
@@ -238,16 +238,16 @@ export default function Page() {
             />
           </PaddedFlexBox>
           <PaddedFlexBox className="self-center">
-            <span className="text-[32px] font-medium">Design System</span>
-            <span className="text-xl">
+            <Heading2>Design System</Heading2>
+            <BaseText>
               We utilize the Existing Design System, Material 3 Design, which is a comprehensive and widely adopted framework created by Google.<br/><br/>
               It serves as the foundational design language, ensuring consistency and a cohesive user experience. Due to working on Google hackathon project, it offers general guidelines for visual, and interaction design.<br/><br/>
               In addition to the Material 3 guidelines, we have also developed a custom font guideline specifically for our app. This ensures that the typography aligns with our app's unique brand identity and enhances overall readability and accessibility for users.
-            </span>
+            </BaseText>
           </PaddedFlexBox>
         </TwoColumn>
         <PaddedFlexBox>
-          <span className="text-[32px] font-medium">Wireframes</span>
+          <Heading2>Wireframes</Heading2>
           <Image
             className="w-full h-auto"
             aria-hidden
@@ -256,7 +256,7 @@ export default function Page() {
           />
         </PaddedFlexBox>
         <PaddedFlexBox>
-          <span className="text-[32px] font-medium">Prompt Refine</span>
+          <Heading2>Prompt Refine</Heading2>
           <video
             autoPlay muted loop playsInline
             className="object-contain w-full h-auto grow rounded-xl"
@@ -286,16 +286,16 @@ export default function Page() {
           </PaddedFlexBox>
           <PaddedFlexBox className="self-center">
             <IconBullet iconUrl="/icons/PenNib.svg">
-              <span className="text-[32px] font-medium">Personalized Prompt</span>
-              <span className="text-xl">Input preferred travel styles, budget, travel companions, and preference, to generate a customized travel itinerary</span>
+              <Heading2>Personalized Prompt</Heading2>
+              <BaseText>Input preferred travel styles, budget, travel companions, and preference, to generate a customized travel itinerary</BaseText>
             </IconBullet>
             <IconBullet iconUrl="/icons/AirplaneTilt.svg">
-              <span className="text-[32px] font-medium">Generate 2 Itineraries</span>
-              <span className="text-xl">Two itineraries were provided from AI for users to do the further decision.</span>
+              <Heading2>Generate 2 Itineraries</Heading2>
+              <BaseText>Two itineraries were provided from AI for users to do the further decision.</BaseText>
             </IconBullet>
             <IconBullet iconUrl="/icons/CoinVertical.svg">
-              <span className="text-[32px] font-medium">Flip a Coin to Decide</span>
-              <span className="text-xl">Whenever there are difficulties in making choices, toss a coin!</span>
+              <Heading2>Flip a Coin to Decide</Heading2>
+              <BaseText>Whenever there are difficulties in making choices, toss a coin!</BaseText>
             </IconBullet>
           </PaddedFlexBox>
         </TwoColumn>
@@ -319,22 +319,22 @@ export default function Page() {
           </PaddedFlexBox>
           <PaddedFlexBox className="self-center">
             <IconBullet iconUrl="/icons/Headphones.svg">
-              <span className="text-[32px] font-medium">Audio Guide</span>
-              <span className="text-xl">Explore destinations with insightful narration tailored to the specific locations  you visit.</span>
+              <Heading2>Audio Guide</Heading2>
+              <BaseText>Explore destinations with insightful narration tailored to the specific locations  you visit.</BaseText>
             </IconBullet>
             <IconBullet iconUrl="/icons/Compass.svg">
-              <span className="text-[32px] font-medium">Social Norm & Local Price</span>
-              <span className="text-xl">AI-powered Social Norms feature leverages Gemini to  inform users about local customs and etiquette.</span>
+              <Heading2>Social Norm & Local Price</Heading2>
+              <BaseText>AI-powered Social Norms feature leverages Gemini to  inform users about local customs and etiquette.</BaseText>
             </IconBullet>
             <IconBullet iconUrl="/icons/Lifebuoy.svg">
-              <span className="text-[32px] font-medium">City Safety & Check Feature</span>
-              <span className="text-xl">The app provide crime rate of the city, and provide solo travel traveler a safety checking during travel.</span>
+              <Heading2>City Safety & Check Feature</Heading2>
+              <BaseText>The app provide crime rate of the city, and provide solo travel traveler a safety checking during travel.</BaseText>
             </IconBullet>
           </PaddedFlexBox>
         </TwoColumn>
       </PageContentContainer>
       <Image
-        className="self-center p-40 max-w-4xl h-auto"
+        className="self-center p-10 sm:p-40 max-w-sm sm:max-w-4xl h-auto"
         aria-hidden
         src={coinTossImage}
         alt="Wireframe"

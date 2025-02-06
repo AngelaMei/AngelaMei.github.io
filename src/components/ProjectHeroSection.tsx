@@ -40,7 +40,7 @@ export default function ProjectHeroSection(props: ProjectHeroSectionProps) {
         className="flex w-full p-20 min-h-[450px] -mt-20 items-center justify-center"
         style={{backgroundColor: props.themeColor}}
       >
-        <span className="text-white text-center text-[40px] leading-normal tracking-[.01em] whitespace-pre-line max-w-5xl font-medium">
+        <span className="text-white text-center text-[36px] sm:text-[40px] leading-normal tracking-[.01em] whitespace-pre-line max-w-5xl font-medium">
           {props.bannerText}
         </span>
       </div>

@@ -30,7 +30,7 @@ export function TwoColumn({
 }>) {
   return (
     <div
-      className="grid grid-cols-2"
+      className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8"
     >
       {children}
     </div>
@@ -44,7 +44,7 @@ export function ThreeColumn({
 }>) {
   return (
     <div
-      className="grid grid-cols-3"
+      className="grid grid-cols-1 sm:grid-cols-3"
     >
       {children}
     </div>
@@ -64,10 +64,10 @@ export function SectionTitle({
 }>) {
   return (
     <div
-      className="flex flex-col gap-y-5 items-start"
+      className="flex flex-col gap-y-5 items-start px-4 sm:px-0"
     >
       <span className="text-8xl font-medium">{id}</span>
-      <span className="text-[40px] font-medium">{title}</span>
+      <span className="text-[36px] sm:text-[40px] font-medium">{title}</span>
       {
         subtitle ? (<span className="text-xl">{subtitle}</span>) : ''
       }
@@ -85,7 +85,7 @@ export function IconBullet({
 }>) {
   return (
     <div
-      className="flex gap-x-6 py-3 items-start"
+      className="flex gap-x-5 py-3 items-start"
     >
       <div className="self-start">
         <Image
@@ -118,7 +118,6 @@ export function PaddedFlexBox({
   );
 }
 
-
 export const ImageClassNameContext = createContext<string>('');
 
 export function ImageWrapper({
@@ -140,5 +139,61 @@ export function ImageWrapper({
     <div className={clsx(className, contextClassName)}>
       {children}
     </div>
+  );
+}
+
+export function Heading1({
+  children,
+  className,
+}: Readonly<{
+  children: React.ReactNode;
+  className?: string;
+}>) {
+  return (
+    <h1 className={`text-[32px] sm:text-[40px] font-medium ${className ? className : ''}`}>
+      {children}
+    </h1>
+  );
+}
+
+export function Heading2({
+  children,
+  className,
+}: Readonly<{
+  children: React.ReactNode;
+  className?: string;
+}>) {
+  return (
+    <h2 className={`text-[28px] sm:text-[32px] font-medium ${className ? className : ''}`}>
+      {children}
+    </h2>
+  );
+}
+
+export function Heading3({
+  children,
+  className,
+}: Readonly<{
+  children: React.ReactNode;
+  className?: string;
+}>) {
+  return (
+    <h3 className={`text-[24px] sm:text-[28px] font-medium ${className ? className : ''}`}>
+      {children}
+    </h3>
+  );
+}
+
+export function BaseText({
+  children,
+  className,
+}: Readonly<{
+  children: React.ReactNode;
+  className?: string;
+}>) {
+  return (
+    <p className={`text-base sm:text-xl ${className ? className : ''}`}>
+      {children}
+    </p>
   );
 }
