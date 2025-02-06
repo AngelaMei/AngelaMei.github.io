@@ -30,16 +30,16 @@ export default function Page() {
       <ProjectHeroSection
         { ...projectMetadata }
         heroCover={(
-          <ImageWrapper className="relative">
+          <ImageWrapper className="relative flex items-end">
             <Image
-              className="relative h-full w-auto z-30"
+              className="relative self-end w-100 h-auto pb-15 md:pb-0 md:h-full md:w-auto z-30"
               aria-hidden
               src={macbookSVG}
               alt=""
             />
             <video
               autoPlay muted loop playsInline
-              className="absolute top-[12px] left-[73px] h-[94%] z-0"
+              className="absolute w-[80.5%] bottom-[67px] left-[40px] md:bottom-[14px] md:left-[73px] md:w-[80.5%] z-0"
             >
               <source src="/media/project/guide-app/10secVideo.mp4" type="video/mp4"/>
               Your browser does not support the video tag.

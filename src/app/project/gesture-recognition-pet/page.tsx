@@ -36,7 +36,7 @@ export default function Page() {
               className="absolute left-[19px] h-101 top-[18px] rounded-2xl z-0"
             >
               <source src="/media/project/gesture-recognition-pet/10secVideo.mp4" type="video/mp4"/>
-                Your browser does not support the video tag.
+              Your browser does not support the video tag.
             </video>
           </ImageWrapper>
         )}
