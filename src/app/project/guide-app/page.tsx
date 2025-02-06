@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import ProjectHeroSection from '@/components/ProjectHeroSection';
-import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn, Heading1, Heading2, Heading3, BaseText } from '@/components/utilities';
+import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn, Heading1, Heading2, Heading3, BaseText, ListBullet } from '@/components/utilities';
 import projects from '@/data/projects';
 
 import macbookSVG from '@/public/media/mockup/Macbook.svg';
@@ -273,11 +273,11 @@ export default function Page() {
             <BaseText>
               To ensure we selected the most promising solution, we conducted a rigorous evaluation and refinement process.
             </BaseText>
-            <ul className="text-base sm:text-xl list-outside list-disc pl-4">
+            <ListBullet>
               <li>Voting on Ideas: Client and team members voted on sketches and designs that best meet user needs.</li>
               <li>Creating a Storyboard: Developing a step-by-step blueprint for the selected solution, outlining how the user will interact with the app.</li>
               <li>Risk Assessment: Identifying potential technical or usability challenges and creating mitigation strategies.</li>
-            </ul>
+            </ListBullet>
           </PaddedFlexBox>
           <PaddedFlexBox className="items-center justify-center">
             <Image

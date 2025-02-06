@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import ProjectHeroSection from '@/components/ProjectHeroSection';
-import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn, Heading1, Heading2, Heading3, BaseText } from '@/components/utilities';
+import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn, Heading1, Heading2, Heading3, BaseText, ListBullet } from '@/components/utilities';
 import projects from '@/data/projects';
 
 import coinTossImage from '@/public/media/project/coin-toss/CoinToss.png';
@@ -70,49 +70,49 @@ export default function Page() {
         <ThreeColumn>
           <PaddedFlexBox>
             <Heading2>01 Planning</Heading2>
-            <ul className="text-xl list-disc list-outside pl-8">
+            <ListBullet>
               <li>Brainstorming</li>
               <li>Project Timeline Setting</li>
               <li>Job Allocation</li>
-            </ul>
+            </ListBullet>
           </PaddedFlexBox>
           <PaddedFlexBox>
             <Heading2>02 Research</Heading2>
-            <ul className="text-xl list-disc list-outside pl-8">
+            <ListBullet>
               <li>Structured Interview</li>
               <li>Competitor Analysis</li>
-            </ul>
+            </ListBullet>
           </PaddedFlexBox>
           <PaddedFlexBox>
             <Heading2>03 Mapping</Heading2>
-            <ul className="text-xl list-disc list-outside pl-8">
+            <ListBullet>
               <li>User Story</li>
               <li>Sketch</li>
               <li>Wireframing</li>
               <li>Prompt Research</li>
-            </ul>
+            </ListBullet>
           </PaddedFlexBox>
           <PaddedFlexBox>
             <Heading2>04 Prototyping</Heading2>
-            <ul className="text-xl list-disc list-outside pl-8">
+            <ListBullet>
               <li>Backend Development</li>
               <li>Design System</li>
               <li>Mid to High-Fi Prototype</li>
-            </ul>
+            </ListBullet>
           </PaddedFlexBox>
           <PaddedFlexBox>
             <Heading2>05 Testing</Heading2>
-            <ul className="text-xl list-disc list-outside pl-8">
+            <ListBullet>
               <li>Usability Test</li>
               <li>Prompt Testing</li>
-            </ul>
+            </ListBullet>
           </PaddedFlexBox>
           <PaddedFlexBox>
             <Heading2>06 Presenting</Heading2>
-            <ul className="text-xl list-disc list-outside pl-8">
+            <ListBullet>
               <li>Prepare Presentation</li>
               <li>Video Recording</li>
-            </ul>
+            </ListBullet>
           </PaddedFlexBox>
         </ThreeColumn>
         <SectionTitle id="01" title="Understand User Pain"/>

@@ -197,3 +197,17 @@ export function BaseText({
     </p>
   );
 }
+
+export function ListBullet({
+  children,
+  className,
+}: Readonly<{
+  children: React.ReactNode;
+  className?: string;
+}>) {
+  return (
+    <ul className={`text-base sm:text-xl list-disc list-outside pl-8 ${className ? className : ''}`}>
+      {children}
+    </ul>
+  );
+}
