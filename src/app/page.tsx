@@ -46,7 +46,7 @@ function RotatingText({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -7 }}
           transition={{ duration: 0.5 }}
-          className="absolute text-center text-nowrap left-0 transform -translate-x-1/2"
+          className="absolute text-center min-w-max text-nowrap left-0 transform -translate-x-1/2"
           style={{ color: colors[index] }}
         >
           {texts[index]}
