@@ -26,7 +26,7 @@ const barriecito = Barriecito({
 
 export const metadata: Metadata = {
   title: "Mei Yu Chi | UI/UX Designer",
-  description: "Mei!",
+  description: "I am a UI / UX designer. Studying Human-Computer Interaction at UMD.",
 };
 
 export default function RootLayout({

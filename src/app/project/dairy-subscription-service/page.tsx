@@ -243,7 +243,7 @@ export default function Page() {
           <PaddedFlexBox className="relative h-165">
             <div className="self-center relative h-151">
               <Image
-                className="relative w-full h-full z-30"
+                className="relative w-auto h-full z-30"
                 aria-hidden
                 src={iPhoneFrameImage}
                 alt="Wireframe"

@@ -83,7 +83,7 @@ export default function Page() {
         </TwoColumn>
         <PaddedFlexBox className="items-center justify-center">
           <Image 
-            src="/icons/flag.svg" 
+            src="/icons/Flag.svg" 
             alt="Goal Icon" 
             width={50} 
             height={50} 
