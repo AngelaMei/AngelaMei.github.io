@@ -69,7 +69,7 @@ export function SectionTitle({
       <span className="text-8xl font-medium">{id}</span>
       <span className="text-[36px] sm:text-[40px] font-medium">{title}</span>
       {
-        subtitle ? (<span className="text-xl">{subtitle}</span>) : ''
+        subtitle ? (<span className="text-base sm:text-xl">{subtitle}</span>) : ''
       }
       {children}
     </div>

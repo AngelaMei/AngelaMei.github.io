@@ -3,6 +3,7 @@ import type { StaticImageData } from 'next/image';
 import coinTossCover from '@/public/media/homepage/Cover_Cointoss.png';
 import guideAppCover from '@/public/media/homepage/Cover_Guide.png';
 import patPetCover from '@/public/media/homepage/Cover_Patpet.png';
+import milkyCover from '@/public/media/homepage/Cover_Milky.png';
 
 type ProjectMetadata = {
   id: string;
@@ -70,17 +71,20 @@ export default [
     bannerText: 'What encourages/stops students from joining these events and organizations?',
     themeColor: '#820202',
   },
+  */
   {
     id: 'dairy-subscription-service',
     pageUrl: '/project/dairy-subscription-service',
-    imageUrl: '/media/homepage/Cover_Milky_4x.png',
+    coverImage: milkyCover,
     type: 'UX Project',
-    name: 'Dairy Subscription Service',
-    description: 'A Line Bot to reduce business human resources and narrow the gap between customer and business.',
-    iconUrl: '/icons/logo/Milk.png',
+    name: 'Milky Way',
+    role: 'Product Designer',
+    description: 'Collaborated with engineers to develop a Line Bot that streamlines customer service and reduce the customer service workforce by 50%.',
+    iconUrl: '/icons/logo/Milkyway.svg',
     bannerText: 'Improving Efficiency and Customer Satisfaction with a Line Bot Solution',
     themeColor: '#005DCA',
   },
+/*
   {
     id: 'future-trading-app',
     pageUrl: '/',
