@@ -301,7 +301,7 @@ export default function Page() {
         </TwoColumn>
         <SectionTitle id="06" title="Vlog"/>
         <PaddedFlexBox>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nV2b-Zpt7uo?si=ayiz1I_gWfxsttrX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </PaddedFlexBox>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nV2b-Zpt7uo?si=ayiz1I_gWfxsttrX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>        </PaddedFlexBox>
       </PageContentContainer>
     </div>
   );
