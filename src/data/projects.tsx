@@ -4,6 +4,7 @@ import coinTossCover from '@/public/media/homepage/Cover_Cointoss.png';
 import guideAppCover from '@/public/media/homepage/Cover_Guide.png';
 import patPetCover from '@/public/media/homepage/Cover_Patpet.png';
 import milkyCover from '@/public/media/homepage/Cover_Milky.png';
+import socialLifeCover from '@/public/media/homepage/Cover_UserResearch.png';
 
 type ProjectMetadata = {
   id: string;
@@ -59,19 +60,6 @@ export default [
     bannerText: 'Bring joy and connection to your world with an AR pet that learns, grows, and plays by your side!',
     themeColor: '#3382C4',
   },
-  /*
-  {
-    id: 'student-social-life',
-    pageUrl: '/project/student-social-life',
-    imageUrl: '/media/homepage/Cover_UserResearch_4x.png',
-    type: 'User Research',
-    name: 'Student Social Life',
-    description: 'Our research goal is to conduct a thorough investigation of the factors that impact student participation and engagement.',
-    iconUrl: '/icons/logo/UMD.png',
-    bannerText: 'What encourages/stops students from joining these events and organizations?',
-    themeColor: '#820202',
-  },
-  */
   {
     id: 'dairy-subscription-service',
     pageUrl: '/project/dairy-subscription-service',
@@ -84,7 +72,19 @@ export default [
     bannerText: 'Improving Efficiency and Customer Satisfaction with a Line Bot Solution',
     themeColor: '#005DCA',
   },
-/*
+  {
+    id: 'student-social-life',
+    pageUrl: '/project/student-social-life',
+    coverImage: socialLifeCover,
+    type: 'User Research',
+    name: 'Student Social Life',
+    description: 'Conducted as part of a User Research course, investigated the social lives of undergraduate Information Science students at the University of Maryland.',
+    iconUrl: '/icons/logo/UMD.png',
+    bannerText: 'What encourages/stops students from joining these events and organizations?',
+    themeColor: '#820202',
+    role: ''
+  },
+  /*
   {
     id: 'future-trading-app',
     pageUrl: '/',
