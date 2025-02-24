@@ -17,6 +17,7 @@ type ProjectMetadata = {
   iconUrl: string;
   bannerText: string;
   themeColor: string;
+  completed: boolean,
 };
 
 // Note: updating the project list may break the Footer grid layout
@@ -34,6 +35,7 @@ export default [
     bannerText: `Mark, Snip, and Succeed
       Make training and learning like TikTok`,
     themeColor: '#48399A',
+    completed: false,
   },
   {
     id: 'coin-toss',
@@ -47,6 +49,7 @@ export default [
     bannerText: `Have you ever felt overwhelmed by travel planning?
       You're not alone. Flip a coin!`,
     themeColor: '#6750A4',
+    completed: true,
   },
   {
     id: 'gesture-recognition-pet',
@@ -59,6 +62,7 @@ export default [
     iconUrl: '/icons/logo/Unity.png',
     bannerText: 'Bring joy and connection to your world with an AR pet that learns, grows, and plays by your side!',
     themeColor: '#3382C4',
+    completed: true,
   },
   {
     id: 'dairy-subscription-service',
@@ -71,6 +75,7 @@ export default [
     iconUrl: '/icons/logo/Milkyway.svg',
     bannerText: 'Improving Efficiency and Customer Satisfaction with a Line Bot Solution',
     themeColor: '#005DCA',
+    completed: true,
   },
   {
     id: 'student-social-life',
@@ -82,7 +87,8 @@ export default [
     iconUrl: '/icons/logo/UMD.png',
     bannerText: 'What encourages/stops students from joining these events and organizations?',
     themeColor: '#820202',
-    role: ''
+    role: 'UX Researcher',
+    completed: true,
   },
   /*
   {

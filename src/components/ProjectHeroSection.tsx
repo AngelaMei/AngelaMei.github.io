@@ -11,6 +11,7 @@ export type ProjectHeroSectionProps = {
   bannerText: string;
   themeColor: string;
   iconUrl: string;
+  completed: boolean;
 };
 
 export default function ProjectHeroSection(props: ProjectHeroSectionProps) {
@@ -28,8 +29,9 @@ export default function ProjectHeroSection(props: ProjectHeroSectionProps) {
       <span className="pb-4 text-xl font-medium">
         {props.type}
       </span>
-      <span className="pb-7 text-5xl font-semibold">
+      <span className="pb-7 text-5xl font-semibold flex gap-5 items-baseline">
         {props.name}
+        {props.completed ? '' : <Image src="/icons/Badge.svg" alt="Ongoing" width={120} height={50} />}
       </span>
       <div className="relative flex flex-col items-center h-[440px] w-full">
         <ImageClassNameContext.Provider value="h-full w-auto">
