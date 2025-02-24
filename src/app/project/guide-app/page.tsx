@@ -47,7 +47,7 @@ export default function Page() {
           </ImageWrapper>
         )}
       />
-
+      
       <PageContentContainer>
         <PaddedFlexBox>
           <Heading1>Project Overview</Heading1>
@@ -75,8 +75,8 @@ export default function Page() {
               <Heading2>Tool</Heading2>
               <BaseText>Figma, Adobe Illustrator, Figjam</BaseText>
             </IconBullet>
-            <IconBullet iconUrl="/icons/Eyes.svg">
-              <Heading2>Project Size</Heading2>
+            <IconBullet iconUrl="/icons/UsersThree.svg">
+              <Heading2>Team Size</Heading2>
               <BaseText>6 People Capstone Project</BaseText>
             </IconBullet>
           </PaddedFlexBox>
@@ -389,6 +389,18 @@ export default function Page() {
             </IconBullet>
           </PaddedFlexBox>
         </TwoColumn>
+        <SectionTitle id="06" title="Reflection"/>
+        <PaddedFlexBox>
+          <BaseText>
+            This is an ongoing project, we are still working on improvement and further research and usability test. 
+            <br/><br/>
+            This project provided invaluable experience in the full UX design process, from user research to prototyping and testing.  The Design Sprint methodology proved to be an effective way to rapidly develop and validate our design solutions.  Developing the "Mark & Snip" tool was particularly rewarding, as it directly addressed a significant user pain point. One of the key challenges was balancing the desire for advanced features with the need for a simple and intuitive user interface.
+            <br/><br/>
+            In future steps, I would dedicate more time to user testing, allowing for more iterative improvements based on user feedback. I would also explore more robust prototyping tools to better simulate complex interactions.  
+            <br/><br/>
+            This project highlighted the value of collaboration and communication within a design team and also with the client.  I learned how to effectively translate user needs into tangible design solutions and how to advocate for the user throughout the development process.
+          </BaseText>
+        </PaddedFlexBox>
       </PageContentContainer>
     </div>
   );
