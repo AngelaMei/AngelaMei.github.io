@@ -332,7 +332,7 @@ export default function Page() {
             </IconBullet>
           </PaddedFlexBox>
         </TwoColumn>
-        <SectionTitle id="05" title="Refelction"/>
+        <SectionTitle id="05" title="Reflection"/>
         <PaddedFlexBox>
           <BaseText>
           This hackathon project provided a valuable opportunity to rapidly develop a user-centered mobile application.  Working within a 10-day timeframe required efficient collaboration and focused execution.  The use of Generative AI (Gemini) was a key differentiator for Coin Toss, enabling us to provide highly personalized travel itineraries.

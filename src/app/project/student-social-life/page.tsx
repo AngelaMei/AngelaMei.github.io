@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import ProjectHeroSection from '@/components/ProjectHeroSection';
-import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, ThreeColumn, Heading1, Heading2, Heading3, BaseText } from '@/components/utilities';
+import { IconBullet, ImageWrapper, PaddedFlexBox, PageContentContainer, SectionTitle, TwoColumn, Heading1, Heading2, Heading3, BaseText } from '@/components/utilities';
 import projects from '@/data/projects';
 
 import macbookSVG from '@/public/media/mockup/Macbook.svg';
