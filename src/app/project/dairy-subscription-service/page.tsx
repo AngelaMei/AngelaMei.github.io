@@ -63,9 +63,9 @@ export default function Page() {
               <BaseText>Figma, Bing AI, Contextual Inquiry,<br/>
               Google App Script, Line Official Account</BaseText>
             </IconBullet>
-            <IconBullet iconUrl="/icons/Eyes.svg">
-              <Heading2>Project Size</Heading2>
-              <BaseText>Freelance Project, Team of 3 developers</BaseText>
+            <IconBullet iconUrl="/icons/UsersThree.svg">
+              <Heading2>Team Size</Heading2>
+              <BaseText>Freelance Project, Team of 3 people</BaseText>
             </IconBullet>
           </PaddedFlexBox>
         </TwoColumn>
@@ -307,6 +307,7 @@ export default function Page() {
               According to the backstage statistics, it helps reduce 50% of manual messages per month.The solution is not only simpler and cheaper than building a website but also more effective and solves the problems.
             </BaseText>
             <BaseText>
+              <br/>
               <a href="https://lin.ee/Fmte8N8" className="underline underline-offset-8 hover:text-sky-300" target="_blank" rel="noreferrer">Live Product</a>
             </BaseText>
           </PaddedFlexBox>
@@ -319,6 +320,18 @@ export default function Page() {
             />  
           </PaddedFlexBox>
         </TwoColumn>
+        <SectionTitle id="08" title="Reflection"/>
+        <PaddedFlexBox>
+          <BaseText>
+            This project was a valuable learning experience in understanding the importance of user-centered design and platform accessibility.  The initial prototype, while functional, failed to address the core needs and preferences of the target audience. The pivot to a Line integration was crucial to the project's success. 
+            <br/><br/>
+            It reinforced the importance of thorough user research and iterative design.  I learned how to effectively leverage AI tools for visual design and how to build a scalable and efficient backend system.  Furthermore, this project highlighted the power of integrating solutions within existing, widely used platforms to maximize adoption and minimize user friction.  
+            <br/><br/>
+            If I were to revisit this project, I would explore further opportunities for personalization within the Line bot, such as personalized delivery recommendations based on past orders and stock availability.  I would also conduct more rigorous A/B testing on different UI elements and conversational flows to further optimize the user experience.  
+            <br/><br/>
+            This project deeply ingrained in me how crucial user experience is to a product's success, which is why I'm now pursuing HCI studies to deepen my understanding of research methods and user-centric design.
+          </BaseText>
+        </PaddedFlexBox>
       </PageContentContainer>
     </div>
   );
