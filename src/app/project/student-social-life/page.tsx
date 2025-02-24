@@ -67,9 +67,9 @@ export default function Page() {
               <BaseText>Figma, Miro, Adobe Illustrator,<br/>
               Contextual Inquiry, Interview and Surveys</BaseText>
             </IconBullet>
-            <IconBullet iconUrl="/icons/Eyes.svg">
-              <Heading2>Project Size</Heading2>
-              <BaseText>Group assignment with 6 team members</BaseText>
+            <IconBullet iconUrl="/icons/UsersThree.svg">
+              <Heading2>Team Size</Heading2>
+              <BaseText>6-Member Group Project</BaseText>
             </IconBullet>
           </PaddedFlexBox>
         </TwoColumn>
@@ -299,7 +299,19 @@ export default function Page() {
             />
           </PaddedFlexBox>
         </TwoColumn>
-        <SectionTitle id="06" title="Vlog"/>
+        <SectionTitle id="06" title="Reflection"/>
+        <PaddedFlexBox>
+          <BaseText>
+            This project provided valuable experience in the user-centered design process, from initial research to conceptual design.  Developing personas and journey maps proved particularly helpful in understanding the diverse needs and motivations of our target users.  
+            <br/><br/>
+            The wall walk and brainstorming sessions fostered creativity and collaboration within our team.  One challenge we encountered was balancing the desire for a comprehensive platform with the need for simplicity and ease of use.  
+            <br/><br/>
+            If I were to revisit this project, I would focus on user testing the lo-fi prototype to gather feedback on usability and identify areas for improvement. I would also explore gamification elements to further incentivize student participation and engagement.  This project solidified my understanding of the crucial role user research plays in creating effective and user-friendly solutions.  It also highlighted the importance of iterative design and continuous feedback throughout the development process.  
+            <br/><br/>
+            I learned how to synthesize large amounts of qualitative data into actionable insights and translate those insights into tangible design solutions.  This experience has significantly strengthened my research and design skills and has fueled my passion for creating user-centered products.
+          </BaseText>
+        </PaddedFlexBox>
+        <SectionTitle id="07" title="Vlog"/>
         <PaddedFlexBox>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/nV2b-Zpt7uo?si=ayiz1I_gWfxsttrX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>        </PaddedFlexBox>
       </PageContentContainer>
