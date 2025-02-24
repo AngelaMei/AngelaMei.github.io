@@ -59,10 +59,10 @@ export default function Page() {
             </IconBullet>
             <IconBullet iconUrl="/icons/Wrench.svg">
               <Heading2>Tool</Heading2>
-              <BaseText>Figma, Adobe Illustrator, Gemini</BaseText>
+              <BaseText>Figma, Adobe Illustrator, Gemini, Pen</BaseText>
             </IconBullet>
-            <IconBullet iconUrl="/icons/Eyes.svg">
-              <Heading2>Project Size</Heading2>
+            <IconBullet iconUrl="/icons/UsersThree.svg">
+              <Heading2>Team Size & Timeline</Heading2>
               <BaseText>10 Days with 6 team members</BaseText>
             </IconBullet>
           </PaddedFlexBox>
@@ -247,7 +247,7 @@ export default function Page() {
           </PaddedFlexBox>
         </TwoColumn>
         <PaddedFlexBox>
-          <Heading2>Wireframes</Heading2>
+          <Heading2>Wireframes in Progress</Heading2>
           <Image
             className="w-full h-auto"
             aria-hidden
@@ -332,6 +332,17 @@ export default function Page() {
             </IconBullet>
           </PaddedFlexBox>
         </TwoColumn>
+        <SectionTitle id="05" title="Refelction"/>
+        <PaddedFlexBox>
+          <BaseText>
+          This hackathon project provided a valuable opportunity to rapidly develop a user-centered mobile application.  Working within a 10-day timeframe required efficient collaboration and focused execution.  The use of Generative AI (Gemini) was a key differentiator for Coin Toss, enabling us to provide highly personalized travel itineraries.
+          <br/><br/>If I were to revisit this project, I would focus on:
+          <br/><br/><li><strong>More Rigorous Prompt Engineering</strong>:  Refining the prompts for Gemini to further improve the quality and relevance of the generated itineraries.</li>
+          <br/><li><strong>User Testing with a Larger Sample Size</strong>:  Conducting more extensive user testing to gather feedback on usability and identify areas for improvement.</li>
+          <br/><li><strong>Integration with Other Travel Services</strong>:  Exploring integrations with booking platforms, transportation providers, and other travel-related services to create a more seamless user experience.</li>
+          <br/><br/>This project solidified my understanding of the importance of user research and iterative design, even within a short timeframe. It also demonstrated the potential of AI to enhance user experiences and solve real-world problems.  I learned how to effectively collaborate within a team to deliver a functional prototype under pressure.  This experience has further fueled my passion for UX design and my interest in exploring the intersection of AI and user-centered design.
+          </BaseText>
+        </PaddedFlexBox>
       </PageContentContainer>
       <Image
         className="self-center p-10 sm:p-40 max-w-sm sm:max-w-4xl h-auto"
