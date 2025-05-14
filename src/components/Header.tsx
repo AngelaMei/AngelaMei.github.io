@@ -25,13 +25,11 @@ export default function Header() {
             about me.
           </span>
         </MagicLink>
-        {/* TODO: re-enable this after the page is implemented
         <MagicLink href="/works">
           <span className="hover:underline hover:underline-offset-4 font-serif">
             all works.
           </span>
-        </MagicLink>
-        */}
+        </MagicLink>       
         <Link href="https://drive.google.com/file/d/17-CJW2dArsCYxxthyIYxR-XOy4KzTuFk/view" target="_blank" rel="noopener noreferrer">
           <span className="hover:underline hover:underline-offset-4 font-serif">
             résumé.

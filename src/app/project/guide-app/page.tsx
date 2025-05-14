@@ -13,12 +13,19 @@ import persona2Image from '@/public/media/project/guide-app/Persona2.png';
 import persona1Image from '@/public/media/project/guide-app/Persona1.png';
 import userJourneyImage from '@/public/media/project/guide-app/UserJourney.png';
 import competitiveImage from '@/public/media/project/guide-app/Competitive.png';
+import competitive2Image from '@/public/media/project/guide-app/Competitive2.png';
 import keyInsightsImage from '@/public/media/project/guide-app/KeyInsights.png';
 import canvasImage from '@/public/media/project/guide-app/Canvas.png';
 import designSprintImage from '@/public/media/project/guide-app/DesignSprint.jpg';
 import chart95 from '@/public/media/project/guide-app/chart-95.png';
 import chart80 from '@/public/media/project/guide-app/chart-80.png';
 import chart70 from '@/public/media/project/guide-app/chart-70.png';
+import thematicImage from '@/public/media/project/guide-app/Thematic.png';
+import secondaryImage from '@/public/media/project/guide-app/SecondaryResearch.png';
+import cardSortingImage from '@/public/media/project/guide-app/CardSorting.png';
+import cardSorting2Image from '@/public/media/project/guide-app/CardSorting2.png';
+import desktopInterationImage from '@/public/media/project/guide-app/DesktopIteration.png';
+import mobileInterationImage from '@/public/media/project/guide-app/MobileIteration.png';
 
 const projectName = 'guide-app';
 
@@ -118,7 +125,7 @@ export default function Page() {
               Through the following research, we found that a significant factor contributing to long editing times is the lack of integrated video editing tools within the Guide App. Due to the platform's video length restrictions, users often need to utilize external editing software to adjust their videos before uploading, adding an extra step to the content creation process.
             </BaseText>
         </PaddedFlexBox>
-        <TwoColumn>
+        {/* <TwoColumn>
           <PaddedFlexBox>
             <IconBullet iconUrl="/icons/NumberOne.svg">
               <Heading2>Stakeholder Interviews</Heading2>
@@ -147,7 +154,7 @@ export default function Page() {
               </BaseText>
             </IconBullet>
           </PaddedFlexBox>
-        </TwoColumn>
+        </TwoColumn> */}
         <TwoColumn>
           <PaddedFlexBox>
             <Heading2>Lean UX & BMC</Heading2>
@@ -389,7 +396,7 @@ export default function Page() {
             </IconBullet>
           </PaddedFlexBox>
         </TwoColumn>
-        <SectionTitle id="06" title="Reflection"/>
+        <SectionTitle id="06" title="Halfway Reflection"/>
         <PaddedFlexBox>
           <BaseText>
             This is an ongoing project, we are still working on improvement and further research and usability test. 
@@ -401,6 +408,181 @@ export default function Page() {
             This project highlighted the value of collaboration and communication within a design team and also with the client.  I learned how to effectively translate user needs into tangible design solutions and how to advocate for the user throughout the development process.
           </BaseText>
         </PaddedFlexBox>
+      </PageContentContainer>
+      <PaddedFlexBox className="items-center justify-center  w-full bg-[#48399A] pt-20 pb-20">
+          <Heading1 className='text-lime-300'>Client Changed the Direction</Heading1>
+          <Heading3 className='text-center'>
+            The Guide app changed their business proposition from a <br />
+            Learning Management System (LMS) → Post Therapy Mental Healthcare App <br />
+            aim to find a niche market.
+          </Heading3>
+      </PaddedFlexBox>
+      <PageContentContainer>
+        <SectionTitle id="07" title="The Detour: Adapting to New Direction">
+        </SectionTitle>
+        <TwoColumn>
+          <PaddedFlexBox>
+            <Heading2>Challenges</Heading2>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <Heading3>Research Misalignment</Heading3>
+              <BaseText>
+              Adapting to the change in focus was initially difficult. We need further research to understand the new target audience and ensure our work aligns with their needs.              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <Heading3>Niche Market Identification</Heading3>
+              <BaseText>
+              To validate the niche market potential and differentiate Guide, we conducted a comprehensive market analysis of existing mental healthcare applications.              </BaseText>
+            </IconBullet>
+          </PaddedFlexBox>
+          <PaddedFlexBox>
+            <Heading2>Restart the Research</Heading2>
+            <IconBullet iconUrl="/icons/NumberOne.svg">
+              <Heading3>Competitive analysis</Heading3>
+              <BaseText>
+              Conducted Competitive analysis of different apps and websites in the market with the similar purpose, including features and business model analysis.              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/NumberTwo.svg">
+              <Heading3>Thematic Analysis</Heading3>
+              <BaseText>
+              Conducted a thematic analysis of forum discussions to identify the patterns in therapists' experiences on Post Session.              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/NumberThree.svg">
+              <Heading3>Secondary Research</Heading3>
+              <BaseText>
+              We want to analyze video-editor embed platform's investment in in-app editing to understand why platforms build native tools despite existing alternatives.</BaseText>
+            </IconBullet>
+          </PaddedFlexBox>
+        </TwoColumn>  
+        <PaddedFlexBox>
+          <Heading2>Competitive Analysis</Heading2>
+          <BaseText>
+          I spearheaded the competitive analysis of mental health applications, identifying two distinct categories: therapist-facing and patient/user-facing. My analysis included a comprehensive review of the therapist-side application workflows, examining each feature in detail.
+          <br /><br /> We found a distinct niche emerges in therapist-focused platforms by expanding multimedia capabilities. While patient-focused apps often leverage videos, articles, and guided meditations, therapist-centric tools typically lack this engaging content. Integrating diverse multimedia within therapist-focused platforms could significantly improve patient engagement and adherence, creating a competitive advantage.
+          <br /><br />
+          </BaseText>
+          <Image
+            className="w-full h-auto"
+            aria-hidden
+            src={competitive2Image}
+            alt="Competitive Analysis Image"
+          />
+        </PaddedFlexBox>
+        <TwoColumn>
+          <PaddedFlexBox>
+            <Heading2>Thematic Analysis</Heading2>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <Heading3>Post-Session Enhances Progress, but Flexibility is Key</Heading3>
+              <BaseText>
+                Some therapists use structured platforms like Blueprint for progress tracking, while others focus on collaborative problem-solving and adapting to the client's pace.
+              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <Heading3>Visual Progress and Practical Tools Increase Motivation</Heading3>
+              <BaseText>
+              For sustained motivation, patients require platforms that offer visual progress tracking to increase the motivation and some tools or tips can also help them keep on track.
+              </BaseText>
+            </IconBullet>
+          </PaddedFlexBox>
+          <PaddedFlexBox>
+            <Image
+              className="w-full h-auto"
+              aria-hidden
+              src={thematicImage}
+              alt="Thematic Image"
+            />
+          </PaddedFlexBox>
+        </TwoColumn>
+        <TwoColumn>
+          <PaddedFlexBox>
+            <Heading2>Secondary Research</Heading2>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <Heading3> Why do video editing functions matter?</Heading3>
+              <BaseText>
+                We analyzed Instagram’s investment in in-app editing to understand why platforms build native tools despite existing alternatives. We found that seamless workflows, faster publishing, collaboration ease, and content polish were core benefits—validating our decision to build a lightweight editor within Guide.
+              <br /><br />
+              <li>Livemint. (2025, February 5). Instagram launched new video editing app: Know how Edits app will benefit users.</li>
+              <li>Upgrow. (2025, February 9). Meta’s Instagram Edits explained: A beginner’s guide to the new video app.</li>
+              </BaseText>
+            </IconBullet>
+          </PaddedFlexBox>
+          <PaddedFlexBox>
+            <Image
+              className="w-full h-auto"
+              aria-hidden
+              src={secondaryImage}
+              alt="secondary research Image"
+            />
+          </PaddedFlexBox>
+        </TwoColumn>
+        <SectionTitle id="08" title="Card Sorting: Redesigning the Navigation">
+          <BaseText>
+            After the first usability test, we found that many people have concern and differnt thought on the navigation categories, so we decided to conduct a further research on the navigation. We used card sorting to let people categorize the features.
+          </BaseText>
+        </SectionTitle>
+        <TwoColumn>
+          <PaddedFlexBox>
+            <Heading2>Key Insights</Heading2>
+            <IconBullet iconUrl="/icons/Folders.svg">
+              <Heading3>Remove 2 Categories</Heading3>
+              <BaseText>
+              Following the card sorting test results, we decided to remove the "Settings" and "Brand Assets" categories. Because the features within these categories could be integrated into existing ones, reducing cognitive load for users.
+              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/Question.svg">
+              <Heading3>Change Categories Name</Heading3>
+              <BaseText>
+              We also refined the category names for clarity. For instance, we renamed "Caption" to the more direct "Text."
+              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/MapPinSimple.svg">
+              <Heading3>Confusing about Chapter</Heading3>
+              <BaseText>
+              Users found the "Label Chapter" feature difficult to categorize. During our testing, 20% placed it under "Editing," 30% expressed confusion, and 50% categorized it within "Markers."              </BaseText>
+            </IconBullet>
+          </PaddedFlexBox>
+          <PaddedFlexBox className="items-center justify-center">
+          <Image
+              className="w-full h-auto"
+              aria-hidden
+              src={cardSortingImage}
+              alt="Card Sorting Image"
+            />
+            <Image
+              className="w-full h-auto"
+              aria-hidden
+              src={cardSorting2Image}
+              alt="Card Sorting Image"
+            />
+          </PaddedFlexBox>
+        </TwoColumn>
+        <SectionTitle id="09" title="Iteration & Cross-Platform Design">
+          <BaseText>
+            Based on the insights gained from the card sorting activity, we refined our navigation structure. Subsequently, we began developing the mobile low-fi Wireframing and iterated on our desktop high-fidelity design.
+          </BaseText>
+        </SectionTitle>
+          <Heading2>Desktop UI Iteration</Heading2>
+          <PaddedFlexBox className="items-center justify-center">
+          <Image
+              className="w-full h-auto"
+              aria-hidden
+              src={desktopInterationImage}
+              alt="Desktop Interation Image"
+            />
+          </PaddedFlexBox>
+          <Heading2>Mobile UI Iteration</Heading2>
+          <PaddedFlexBox className="items-center justify-center">
+          <Image
+              className="w-full h-auto"
+              aria-hidden
+              src={mobileInterationImage}
+              alt="Mobile Interation Image"
+            />
+          </PaddedFlexBox>
+          <SectionTitle id="10" title="Usability Testing">
+          <BaseText>
+            Based on the insights gained from the card sorting activity, we refined our navigation structure. Subsequently, we began developing the mobile low-fi Wireframing and iterated on our desktop high-fidelity design.
+          </BaseText>
+        </SectionTitle>
       </PageContentContainer>
     </div>
   );
