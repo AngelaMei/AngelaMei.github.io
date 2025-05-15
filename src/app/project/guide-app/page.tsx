@@ -28,7 +28,6 @@ import variablesImage from '@/public/media/project/guide-app/Variables.png';
 import crossPlatformImage from '@/public/media/project/guide-app/CrossPlatform.png';
 import workflowImgae from '@/public/media/project/guide-app/workflow.png';
 import FinalImage from '@/public/media/project/guide-app/Walkthrough.png';
-import mobileFinal1Image from '@/public/media/project/guide-app/MobileWalkthrough.png';
 import mobileFinal2Image from '@/public/media/project/guide-app/MobileWalkthrough2.png';
 
 const projectName = 'guide-app';
