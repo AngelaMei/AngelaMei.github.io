@@ -24,8 +24,12 @@ import thematicImage from '@/public/media/project/guide-app/Thematic.png';
 import secondaryImage from '@/public/media/project/guide-app/SecondaryResearch.png';
 import cardSortingImage from '@/public/media/project/guide-app/CardSorting.png';
 import cardSorting2Image from '@/public/media/project/guide-app/CardSorting2.png';
-import desktopInterationImage from '@/public/media/project/guide-app/DesktopIteration.png';
-import mobileInterationImage from '@/public/media/project/guide-app/MobileIteration.png';
+import variablesImage from '@/public/media/project/guide-app/Variables.png';
+import crossPlatformImage from '@/public/media/project/guide-app/CrossPlatform.png';
+import workflowImgae from '@/public/media/project/guide-app/workflow.png';
+import FinalImage from '@/public/media/project/guide-app/Walkthrough.png';
+import mobileFinal1Image from '@/public/media/project/guide-app/MobileWalkthrough.png';
+import mobileFinal2Image from '@/public/media/project/guide-app/MobileWalkthrough2.png';
 
 const projectName = 'guide-app';
 
@@ -514,9 +518,20 @@ export default function Page() {
             />
           </PaddedFlexBox>
         </TwoColumn>
+        <PaddedFlexBox>
+            <Heading2>Results</Heading2>
+              <BaseText>
+              Our research identifies a significant opportunity for the Guide App to establish a unique niche within the therapist-focused mental health application market.
+              <br /><br />
+              While existing therapist-centric platforms predominantly rely on traditional post-session worksheets, Guide App can differentiate itself by integrating diverse and engaging multimedia content, such as videos, articles, and guided meditations.
+              <br /><br />
+              Furthermore, Guide App can leverage its development by focusing on a user interface that balances simplicity with efficient access to advanced features, allowing them to capture a larger market share. By focusing on enriched multimedia content and a superior user experience, Guide App can create a competitive advantage, positioning itself as a leading platform for therapists seeking to enhance post-therapy patient support.
+              <br /><br />
+              </BaseText>
+        </PaddedFlexBox>
         <SectionTitle id="08" title="Card Sorting: Redesigning the Navigation">
           <BaseText>
-            After the first usability test, we found that many people have concern and differnt thought on the navigation categories, so we decided to conduct a further research on the navigation. We used card sorting to let people categorize the features.
+            After the first usability test, we found that many people have concern and different thought on the navigation categories, so we decided to conduct a further research on the navigation. We used card sorting to let people categorize the features.
           </BaseText>
         </SectionTitle>
         <TwoColumn>
@@ -560,29 +575,137 @@ export default function Page() {
             Based on the insights gained from the card sorting activity, we refined our navigation structure. Subsequently, we began developing the mobile low-fi Wireframing and iterated on our desktop high-fidelity design.
           </BaseText>
         </SectionTitle>
-          <Heading2>Desktop UI Iteration</Heading2>
+        <TwoColumn>
+          <PaddedFlexBox>
+            <IconBullet iconUrl="/icons/Lego.svg">
+              <Heading3>Information Architecture</Heading3>
+              <BaseText>
+              Based on competitive analysis, usability testing, and user flows, we organized key features into a clear information architecture to address user requirements. 
+              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/Palette.svg">
+              <Heading3>Design System Implement</Heading3>
+              <BaseText>
+              We implemented the spacing guidelines and icons from the client’s design system.
+              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/Swatches.svg">
+              <Heading3>Component Library & Guideline</Heading3>
+              <BaseText>
+              To ensure consistency across our team's work on the wireframes, we established a basic component library and design tokens.
+              </BaseText>
+            </IconBullet>
+          </PaddedFlexBox>
           <PaddedFlexBox className="items-center justify-center">
           <Image
               className="w-full h-auto"
               aria-hidden
-              src={desktopInterationImage}
-              alt="Desktop Interation Image"
+              src={variablesImage}
+              alt="Variables Image"
             />
           </PaddedFlexBox>
-          <Heading2>Mobile UI Iteration</Heading2>
+        </TwoColumn>
+        <TwoColumn>
           <PaddedFlexBox className="items-center justify-center">
           <Image
               className="w-full h-auto"
               aria-hidden
-              src={mobileInterationImage}
-              alt="Mobile Interation Image"
+              src={crossPlatformImage}
+              alt="cross PlatformImage Image"
             />
           </PaddedFlexBox>
-          <SectionTitle id="10" title="Usability Testing">
+          <PaddedFlexBox>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <Heading3>Consistency across Device</Heading3>
+              <BaseText>
+              We tried to align design interactions across devices for consistency for reducing learning curve across platform.
+              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <Heading3>Device-Optimized Interactions</Heading3>
+              <BaseText>
+              Implementing platform-specific interactions to accommodate the unique behaviors of each device.
+              </BaseText>
+            </IconBullet>
+          </PaddedFlexBox>
+        </TwoColumn>
+        <SectionTitle id="10" title="Usability Test and Iteration">
           <BaseText>
-            Based on the insights gained from the card sorting activity, we refined our navigation structure. Subsequently, we began developing the mobile low-fi Wireframing and iterated on our desktop high-fidelity design.
+          We conducted scenario-based usability testing on our mobile prototypes using Useberry. Following each scenario, we asked probing questions to gather deeper insights. The scenarios were designed to simulate a complete workflow, encompassing video upload, trimming, adding text and audio, publishing, playlist inclusion, and assignment to patients.
           </BaseText>
+          <Image
+              className="w-full h-auto pt-10"
+              aria-hidden
+              src={workflowImgae}
+              alt="workflow Image"
+            />
         </SectionTitle>
+        <TwoColumn>
+          <PaddedFlexBox>
+            <Heading2>Feedback</Heading2>
+            <IconBullet iconUrl="/icons/SmileyNervous.svg">
+              <Heading3>Confusion on Chapter</Heading3>
+              <BaseText>
+              3 out of 5 users were confused about the purpose and behavior of chapters. Suggesting guidance on how chapters relate to video structure.
+              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/SmileySad.svg">
+              <Heading3>Tag Creation Confusion</Heading3>
+              <BaseText>
+              Some users were confused about how to create a new tag, not realizing it could be done directly by typing into the search bar.
+              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/SmileyXEyes.svg">
+              <Heading3>Needs more Affordance</Heading3>
+              <BaseText>
+              Users indicated that the upload video icon is not extremely intuitive and should be clearer.
+              </BaseText>
+            </IconBullet>
+          </PaddedFlexBox>
+          <PaddedFlexBox>
+            <Heading2>Iteration</Heading2>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <Heading3>Add Couch Mark</Heading3>
+              <BaseText>
+              To assist first-time users who may lack video editing experience, we've implemented a coach mark upon their initial entry into the editing tools.
+              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <Heading3>Improving Clarity</Heading3>
+              <BaseText>
+              To make the create function clearer, we've updated the search button's wording to include "Create new tags."
+              </BaseText>
+            </IconBullet>
+            <IconBullet iconUrl="/icons/ArrowRight.svg">
+              <Heading3>Add “upload” with the button </Heading3>
+              <BaseText>
+              To enhance accessibility, we've added descriptive "Upload" text adjacent to the upload button.
+              </BaseText>
+            </IconBullet>
+          </PaddedFlexBox>
+        </TwoColumn>
+        <SectionTitle id="11" title="Final Deliverables">
+        </SectionTitle>
+        <PaddedFlexBox>
+        <Heading2>Desktop & Mobile Version - Therapist Side</Heading2>
+        <BaseText><a href="https://www.figma.com/proto/7A6CuvguAofyWxyv9hBldb/Wireframes?page-id=2114%3A44636&node-id=2313-57420&viewport=397%2C598%2C0.45&t=tArujBKnZW4TgkLn-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2313%3A57420&show-proto-sidebar=1">🔗 Figma file for the whole design</a></BaseText>
+          <Image
+              className="w-full h-auto pt-10 rounded-xl"
+              aria-hidden
+              src={FinalImage}
+              alt="Final Image"
+            />
+        </PaddedFlexBox>
+        <PaddedFlexBox>
+        <Heading2>Mobile Version - Patient Side</Heading2>
+        <BaseText><a href="https://www.figma.com/proto/7A6CuvguAofyWxyv9hBldb/Wireframes?page-id=2114%3A44636&node-id=2313-57420&viewport=397%2C598%2C0.45&t=tArujBKnZW4TgkLn-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2313%3A57420&show-proto-sidebar=1">🔗 Figma file for the whole design</a></BaseText>
+          <Image
+              className="w-full h-auto"
+              aria-hidden
+              src={mobileFinal2Image}
+              alt="Final Image"
+            />
+        </PaddedFlexBox>
       </PageContentContainer>
     </div>
   );
