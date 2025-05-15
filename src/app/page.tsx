@@ -85,7 +85,7 @@ export default function Home() {
           <span className="text-lg sm:text-2xl">I am a</span>
           <RotatingText
             className="flex items-center text-4xl sm:text-5xl font-picasso h-13 sm:h-15"
-            texts={['Frontend Wizard', 'UX Designer', 'Graphic Designer', 'Travel Lover']}
+            texts={['UX Designer', 'Graphic Designer', 'Frontend Wizard', 'Travel Lover']}
             colors={['#DFAC2B', '#9BB985', '#ED683F', '#E09F67']}
           />
           <span className="text-lg sm:text-2xl text-center">
