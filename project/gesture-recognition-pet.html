@@ -12,62 +12,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/site.css" />
+    <link rel="stylesheet" href="/styles/e3.css" />
+    <script>document.documentElement.classList.add("js");</script>
   </head>
-  <body>
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a class="brand" href="/"><span class="dot"></span>Angela Mei</a>
-        <nav class="nav">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a class="active" href="/works">Works</a>
-          <a
-            class="button-link"
-            href="https://drive.google.com/file/d/17-CJW2dArsCYxxthyIYxR-XOy4KzTuFk/view"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Résumé</a
-          >
-        </nav>
-      </div>
+  <body id="top">
+    <a class="skip-link mono" href="#main">Skip to content</a>
+    <header class="site-header mono">
+      <a href="/">[ Angela Mei ]</a>
+      <p class="meta muted">
+        Product &amp; UX Designer<br />Zürich, CH — <span data-clock>CET</span>
+      </p>
+      <nav class="nav" aria-label="Main">
+        <a href="/works" aria-current="page">Work (05)</a>
+        <a href="/#archive">Archive (03)</a>
+        <a href="/#about">About</a>
+      </nav>
+      <button class="menu-toggle mono" type="button" data-menu-open aria-haspopup="dialog" aria-expanded="false" aria-controls="menu">
+        [ Menu ]
+      </button>
     </header>
 
-    <main>
-      <section class="case-hero container">
-        <p class="eyebrow reveal">Augmented Reality · Class Project</p>
-        <h1 class="reveal" data-delay="60">Pat Pet</h1>
-        <p class="case-sub reveal" data-delay="120">
-          Bring joy and connection to your world with an AR pet that learns,
-          grows, and plays by your side. I designed and built an augmented-reality
-          companion with intuitive gesture interactions for training and play.
-        </p>
-        <div class="case-cover reveal" data-delay="160">
-          <img src="/media/homepage/Cover_Patpet.png" alt="Pat Pet cover" />
+    <dialog class="menu" id="menu" aria-label="Menu">
+      <div class="menu-top mono">
+        <span>[ Angela Mei ]</span>
+        <button class="menu-close mono" type="button" data-menu-close>[ Close ]</button>
+      </div>
+      <ul class="menu-links">
+        <li><a href="/works">Work <span class="mono muted">(05)</span></a></li>
+        <li><a href="/#archive">Archive <span class="mono muted">(03)</span></a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <p class="mono muted">Zürich, CH — <span data-clock>CET</span></p>
+    </dialog>
+
+    <main id="main">
+      <section class="case-hero" aria-labelledby="case-title">
+        <p class="mono muted">[ Case study (03) ] — Augmented Reality · Class Project</p>
+        <h1 class="case-title" id="case-title"><span class="mask"><span class="load-rise">Pat Pet</span></span></h1>
+        <div class="case-intro">
+          <p class="case-sub">Bring joy and connection to your world with an AR pet that learns, grows, and plays by your side. I designed and built an augmented-reality companion with intuitive gesture interactions for training and play.</p>
+          <dl class="case-meta mono">
+            <div><dt>Role</dt><dd>UI/UX Designer &amp; Developer</dd></div>
+            <div><dt>Tools</dt><dd>Figma, Unity, C#, Blender</dd></div>
+            <div><dt>Team</dt><dd>2-person AR class project</dd></div>
+            <div><dt>Type</dt><dd>Augmented Reality</dd></div>
+          </dl>
         </div>
       </section>
 
-      <div class="container">
-        <div class="case-meta reveal">
-          <div class="meta-item">
-            <div class="label">Role</div>
-            <p>UI/UX Designer &amp; Developer</p>
-          </div>
-          <div class="meta-item">
-            <div class="label">Tools</div>
-            <p>Figma, Unity, C#, Blender</p>
-          </div>
-          <div class="meta-item">
-            <div class="label">Team</div>
-            <p>2-person AR class project</p>
-          </div>
-          <div class="meta-item">
-            <div class="label">Type</div>
-            <p>Augmented Reality</p>
-          </div>
+      <div class="case-cover">
+        <div class="cover">
+          <span class="device"><img src="/media/covers/patpet-ar.jpg" alt="Pat Pet AR deer responding to a hand gesture" width="720" height="1558" /></span>
         </div>
       </div>
 
@@ -118,15 +117,15 @@
             </p>
           </div>
         </div>
-        <figure class="case-figure reveal" style="margin-top: 1.6rem">
+        <figure class="case-figure reveal">
           <img src="/media/project/gesture-recognition-pet/UserPersona.png" alt="User persona" />
           <figcaption>User persona.</figcaption>
         </figure>
-        <figure class="case-figure reveal" style="margin-top: 1.4rem">
+        <figure class="case-figure reveal">
           <img src="/media/project/gesture-recognition-pet/UserJourney.png" alt="User journey" />
           <figcaption>User journey map.</figcaption>
         </figure>
-        <div class="case-two reveal" style="margin-top: 1.6rem">
+        <div class="case-two reveal">
           <div style="align-self: center">
             <h3>User story</h3>
             <p>
@@ -211,7 +210,7 @@
           <h2>User feedback &amp; improvements</h2>
         </div>
         <figure class="case-figure plain reveal"><img src="/media/project/gesture-recognition-pet/UserFeedback.png" alt="User feedback" /></figure>
-        <div class="case-two reveal" style="margin-top: 1.6rem">
+        <div class="case-two reveal">
           <div class="insight-list">
             <div class="insight"><h4>Onboarding coach marks</h4><p>Interactive tutorials address the confusion of navigating AR, with clear instructions for interacting with AR elements.</p></div>
             <div class="insight"><h4>Gesture instruction guide</h4><p>An in-app guide demonstrates available gestures and rewards users for deepening the bond with their pet.</p></div>
@@ -230,7 +229,7 @@
         </div>
         <p class="section-intro reveal">The prototype after user testing.</p>
         <div class="reveal" style="display: flex; justify-content: center; margin-top: 1.2rem">
-          <div class="case-figure" style="max-width: 300px; border-radius: 26px">
+          <div class="case-figure" style="max-width: 300px">
             <video autoplay muted loop playsinline>
               <source src="/media/project/gesture-recognition-pet/Video1.mp4" type="video/mp4" />
             </video>
@@ -239,31 +238,29 @@
       </section>
 
       <div class="container">
-        <nav class="case-nav">
-          <a class="text-link" href="/project/coin-toss"><span class="arrow">←</span> Coin Toss</a>
-          <a class="text-link" href="/project/dairy-subscription-service">Next: Milky Way <span class="arrow">→</span></a>
+        <nav class="next-project" aria-label="Next project">
+          <a class="mono" href="/works">← All work</a>
+          <a class="next-link" href="/project/dairy-subscription-service">
+            <span class="mono muted">[ Next project ] (04)</span>
+            <span class="next-title">Milky Way <span class="nudge" aria-hidden="true">→</span></span>
+          </a>
         </nav>
       </div>
-
-      <section class="cta container narrow">
-        <h2 class="reveal">Curious about the <em>build</em>?</h2>
-        <p class="reveal" data-delay="80">Happy to talk through the Unity work, gesture detection, and AR design decisions.</p>
-        <div class="reveal" data-delay="140">
-          <a class="btn btn-primary" href="mailto:angela101475@gmail.com">Get in touch <span class="arrow">→</span></a>
-        </div>
-      </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-row">
-        <span class="copy">© 2026 Angela Mei — designed &amp; built with care.</span>
-        <div class="social">
-          <a href="mailto:angela101475@gmail.com">Email</a>
+    <footer class="site-footer" id="contact">
+      <p class="mono muted" data-copy-status aria-live="polite">[ Contact ] — click to copy</p>
+      <button class="email" type="button" data-copy="angela101475@gmail.com">angela101475<span class="accent">@</span>gmail.com</button>
+      <div class="footer-row mono">
+        <span>©2026 Angela Mei</span>
+        <span>
+          <a href="https://www.linkedin.com/in/angela-mei" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
           <a href="https://github.com/AngelaMei" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/angela-mei" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
+        </span>
+        <a href="https://drive.google.com/file/d/17-CJW2dArsCYxxthyIYxR-XOy4KzTuFk/view" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a>
+        <a href="#top">Back to top ↑</a>
       </div>
     </footer>
-    <script src="/styles/site.js" defer></script>
+    <script src="/styles/e3.js" defer></script>
   </body>
 </html>

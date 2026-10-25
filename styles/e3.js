@@ -49,6 +49,15 @@
     }, 60000 - (Date.now() % 60000));
   }
 
+  // Reduced motion: no autoplaying video; hand over the controls instead.
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll("video[autoplay]").forEach(function (v) {
+      v.removeAttribute("autoplay");
+      v.pause();
+      v.controls = true;
+    });
+  }
+
   // Menu overlay
   var menu = document.getElementById("menu");
   var toggle = document.querySelector("[data-menu-open]");
