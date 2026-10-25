@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MuPa | Angela Mei</title>
+    <meta
+      name="description"
+      content="MuPa — a digital museum stamp passport for Washington, D.C. Designed, illustrated and built in SwiftUI; live on the App Store."
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/e3.css" />
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body id="top">
+    <a class="skip-link mono" href="#main">Skip to content</a>
+    <header class="site-header mono">
+      <a href="/">[ Angela Mei ]</a>
+      <p class="meta muted">
+        Product &amp; UX Designer<br />Zürich, CH — <span data-clock>CET</span>
+      </p>
+      <nav class="nav" aria-label="Main">
+        <a href="/works" aria-current="page">Work (07)</a>
+        <a href="/#archive">Archive (03)</a>
+        <a href="/about">About</a>
+      </nav>
+      <button class="menu-toggle mono" type="button" data-menu-open aria-haspopup="dialog" aria-expanded="false" aria-controls="menu">
+        [ Menu ]
+      </button>
+    </header>
+
+    <dialog class="menu" id="menu" aria-label="Menu">
+      <div class="menu-top mono">
+        <span>[ Angela Mei ]</span>
+        <button class="menu-close mono" type="button" data-menu-close>[ Close ]</button>
+      </div>
+      <ul class="menu-links">
+        <li><a href="/works">Work <span class="mono muted">(07)</span></a></li>
+        <li><a href="/#archive">Archive <span class="mono muted">(03)</span></a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <p class="mono muted">Zürich, CH — <span data-clock>CET</span></p>
+    </dialog>
+
+    <main id="main">
+      <section class="case-hero" aria-labelledby="case-title">
+        <p class="mono muted">[ Case study (02) ] — iOS app · Personal project · Live on the App Store</p>
+        <h1 class="case-title" id="case-title"><span class="mask"><span class="load-rise">MuPa</span></span></h1>
+        <div class="case-intro">
+          <p class="case-sub">A digital stamp passport for the museums of Washington, D.C. I designed, illustrated and built an iOS app that lets people check in at 40+ museums with GPS and collect a hand-drawn stamp for every visit.</p>
+          <dl class="case-meta mono">
+            <div><dt>Role</dt><dd>Product Designer, Illustrator &amp; iOS Developer</dd></div>
+            <div><dt>Tools</dt><dd>SwiftUI, MapKit, Core Location, Adobe Illustrator</dd></div>
+            <div><dt>Timeline</dt><dd>Jul – Aug 2025</dd></div>
+            <div><dt>Status</dt><dd>Live on the App Store · v1.0.4</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <div class="case-cover">
+        <div class="cover cover--pair">
+          <span class="device"><img src="/media/covers/mupa-passport.jpg" alt="MuPa passport with seven collected museum stamps" width="720" height="1566" /></span>
+          <span class="device"><img src="/media/covers/mupa-map.jpg" alt="MuPa map of Washington, D.C. with museum pins" width="720" height="1566" /></span>
+        </div>
+      </div>
+
+      <section class="case-section container narrow">
+        <div class="case-block reveal">
+          <div>
+            <h3>Project overview</h3>
+            <p>
+              Washington, D.C. has dozens of museums — most of them free. That
+              makes them easy to visit and just as easy to forget. MuPa
+              (<em>Mu</em>seum <em>Pa</em>ssport) turns each visit into a
+              keepsake: walk in, check in, and a stamp lands in your passport.
+            </p>
+            <p>
+              It's built for people living in or visiting D.C. who want a light,
+              playful way to track and celebrate their cultural journey.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">01</span>
+          <h2>One idea: the passport stamp</h2>
+        </div>
+        <div class="case-block reveal">
+          <div>
+            <p>
+              Paper passport stamps are a small, physical reward for showing up.
+              I wanted the same feeling on a phone — so the check-in had to
+              depend on actually being there, and the reward had to be worth
+              collecting.
+            </p>
+          </div>
+        </div>
+        <div class="case-three reveal">
+          <div class="stat">
+            <div class="figure">40+</div>
+            <p>museums across D.C., Maryland and Virginia, each with its own stamp.</p>
+          </div>
+          <div class="stat">
+            <div class="figure">100 m</div>
+            <p>check-in radius — you can only collect a stamp when you're at the museum.</p>
+          </div>
+          <div class="stat">
+            <div class="figure">0</div>
+            <p>accounts or tracking — visits stay on the device; the app collects no data.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">02</span>
+          <h2>Four tabs, one journey</h2>
+        </div>
+        <div class="case-block reveal">
+          <div>
+            <p>
+              The app follows a visit from start to finish: find a museum, get
+              there, check in, look back. Each step got its own tab, with the
+              passport first because it's the reason to open the app.
+            </p>
+          </div>
+        </div>
+        <div class="cover cover--row reveal">
+          <span class="device"><img src="/media/project/mupa/passport.jpg" alt="Passport tab: progress rings for all museums and Smithsonian museums, and a grid of collected stamps" width="720" height="1566" loading="lazy" /></span>
+          <span class="device"><img src="/media/project/mupa/map.jpg" alt="Map tab: museums pinned by category icon across D.C." width="720" height="1566" loading="lazy" /></span>
+          <span class="device"><img src="/media/project/mupa/museums.jpg" alt="Museums tab: search, category filters and museum cards with hours, distance and a Free tag" width="720" height="1566" loading="lazy" /></span>
+          <span class="device"><img src="/media/project/mupa/stamp-log.jpg" alt="Stamp Log tab: a timeline of check-ins with edit and delete" width="720" height="1566" loading="lazy" /></span>
+        </div>
+        <div class="case-two reveal">
+          <div class="insight-list">
+            <div class="insight">
+              <h4>Passport</h4>
+              <p>Progress at a glance — all museums and Smithsonian museums as rings — then the stamp grid, with empty frames for the ones still to collect.</p>
+            </div>
+            <div class="insight">
+              <h4>Map</h4>
+              <p>Every museum pinned with its category icon (art, history, science, nature, culture), so you can plan a route along the Mall.</p>
+            </div>
+          </div>
+          <div class="insight-list">
+            <div class="insight">
+              <h4>Museums</h4>
+              <p>Search, category filters and a Nearby toggle. Cards show hours, distance and whether entry is free.</p>
+            </div>
+            <div class="insight">
+              <h4>Stamp Log</h4>
+              <p>A timeline of every visit. Records can be added manually, edited or deleted — for the days GPS doesn't cooperate.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">03</span>
+          <h2>A stamp for every museum</h2>
+        </div>
+        <div class="case-block reveal">
+          <div>
+            <p>
+              The stamps are the reward, so I drew each one by hand: a
+              perforated frame, a single bold symbol for the museum — a
+              dinosaur skull, a plane, a portrait — and its name in hand-lettered
+              type. Flat colour and a thick outline keep them readable at
+              thumbnail size and give the set one voice.
+            </p>
+          </div>
+        </div>
+        <div class="stamp-grid reveal">
+          <img src="/media/project/mupa/natural_history_stamp.svg" alt="Stamp: National Museum of Natural History, with a dinosaur skull" loading="lazy" />
+          <img src="/media/project/mupa/air_and_space_dc_stamp.svg" alt="Stamp: National Air and Space Museum, with a plane" loading="lazy" />
+          <img src="/media/project/mupa/portrait_gallery_stamp.svg" alt="Stamp: National Portrait Gallery, with a framed portrait" loading="lazy" />
+          <img src="/media/project/mupa/american_history_stamp.svg" alt="Stamp: National Museum of American History, with a flag" loading="lazy" />
+          <img src="/media/project/mupa/hirshhorn_stamp.svg" alt="Stamp: Hirshhorn Museum, with its round building" loading="lazy" />
+          <img src="/media/project/mupa/national_gallery_art_stamp.svg" alt="Stamp: National Gallery of Art, with a columned facade" loading="lazy" />
+          <img src="/media/project/mupa/african_american_history_stamp.svg" alt="Stamp: National Museum of African American History and Culture, with its tiered building" loading="lazy" />
+          <img src="/media/project/mupa/Smithsonian.svg" alt="Stamp: Smithsonian, with a sun" loading="lazy" />
+        </div>
+        <div class="case-two reveal">
+          <div class="cover cover--portrait">
+            <span class="device"><img src="/media/project/mupa/welcome.jpg" alt="MuPa welcome screen: the passport logo and “A digital stamp collection for exploring museums”" width="720" height="1566" loading="lazy" /></span>
+          </div>
+          <div style="align-self: center">
+            <h3>Brand</h3>
+            <p>
+              The same hand-drawn line carries into the logo — a passport with a
+              Capitol dome — the category icons and the tab bar, on a warm cream
+              background instead of plain white.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">04</span>
+          <h2>Designed and built end to end</h2>
+        </div>
+        <div class="case-block reveal">
+          <div>
+            <p>
+              I built the app myself in SwiftUI, which let me tune the details
+              directly in code: the check-in only unlocks within 100 metres of a
+              museum (Core Location), the map uses MapKit with custom pins, and
+              all visits are stored locally on the device.
+            </p>
+            <div class="insight-list">
+              <div class="insight">
+                <h4>v1.0 → v1.0.3</h4>
+                <p>Added more museums, manual records, an expanded museum view and a Google Maps option for directions.</p>
+              </div>
+              <div class="insight">
+                <h4>v1.0.4</h4>
+                <p>Fixed duplicate visits and added editing and deleting records.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">05</span>
+          <h2>Outcome</h2>
+        </div>
+        <div class="case-block reveal">
+          <div>
+            <p>
+              MuPa is live on the App Store as a free iPhone app, rated 5.0 by
+              its first reviewers. Next on the list: photos on each visit, sharing a finished passport, and seasonal stamps for
+              special exhibitions.
+            </p>
+            <p class="mono" style="margin-top: 24px">
+              <a href="https://apps.apple.com/us/app/mupa/id6748591797" target="_blank" rel="noopener noreferrer">View on the App Store <span class="nudge" aria-hidden="true">↗</span><span class="visually-hidden">(opens in a new tab)</span></a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <nav class="next-project" aria-label="Next project">
+          <a class="mono" href="/works">← All work</a>
+          <a class="next-link" href="/project/guide-app">
+            <span class="mono muted">[ Next project ] (03)</span>
+            <span class="next-title">Guide App <span class="nudge" aria-hidden="true">→</span></span>
+          </a>
+        </nav>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <p class="mono muted" data-copy-status aria-live="polite">[ Contact ] — click to copy</p>
+      <button class="email" type="button" data-copy="angela101475@gmail.com">angela101475<span class="accent">@</span>gmail.com</button>
+      <div class="footer-row mono">
+        <span>©2026 Angela Mei</span>
+        <span>
+          <a href="https://www.linkedin.com/in/angela-mei" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+          <a href="https://github.com/AngelaMei" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </span>
+        <a href="https://drive.google.com/file/d/17-CJW2dArsCYxxthyIYxR-XOy4KzTuFk/view" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <script src="/styles/e3.js" defer></script>
+  </body>
+</html>

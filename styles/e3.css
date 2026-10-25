@@ -1317,6 +1317,97 @@ a:hover .cover--pair .device:nth-child(1) {
   padding-top: 120px;
 }
 
+/* A row of app screens on one placeholder panel. */
+.cover--row {
+  aspect-ratio: 16 / 9;
+  gap: 3%;
+}
+
+.cover--row .device {
+  height: 70cqh;
+}
+
+.cover--portrait {
+  aspect-ratio: 4 / 5;
+}
+
+/* Hand-drawn stamps sit on the panel, no frames. */
+.stamp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  padding: 48px;
+  background: var(--placeholder);
+}
+
+.stamp-grid img {
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: contain;
+}
+
+/* Numbered steps joined by hairlines. */
+.flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.flow li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--ink);
+}
+
+.flow strong {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.flow li > span:last-child {
+  font-size: 16px;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .flow {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .flow li {
+    padding-bottom: 16px;
+    border-top-color: var(--line);
+  }
+
+  .stamp-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cover--row {
+    aspect-ratio: 4 / 3;
+    gap: 2.5%;
+  }
+
+  .cover--row .device {
+    height: 52cqh;
+    border-width: 1cqh;
+    border-radius: 5cqh;
+  }
+}
+
 .case-section h2,
 .callout h2 {
   margin: 0;

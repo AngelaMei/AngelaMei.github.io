@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Office | Angela Mei</title>
+    <meta
+      name="description"
+      content="Water Office — redesigning a poker companion app around a Hero + Sheet layout, from six homepage rounds to a clickable prototype, specs and a Design Hub for design, PM and dev."
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/e3.css" />
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body id="top">
+    <a class="skip-link mono" href="#main">Skip to content</a>
+    <header class="site-header mono">
+      <a href="/">[ Angela Mei ]</a>
+      <p class="meta muted">
+        Product &amp; UX Designer<br />Zürich, CH — <span data-clock>CET</span>
+      </p>
+      <nav class="nav" aria-label="Main">
+        <a href="/works" aria-current="page">Work (07)</a>
+        <a href="/#archive">Archive (03)</a>
+        <a href="/about">About</a>
+      </nav>
+      <button class="menu-toggle mono" type="button" data-menu-open aria-haspopup="dialog" aria-expanded="false" aria-controls="menu">
+        [ Menu ]
+      </button>
+    </header>
+
+    <dialog class="menu" id="menu" aria-label="Menu">
+      <div class="menu-top mono">
+        <span>[ Angela Mei ]</span>
+        <button class="menu-close mono" type="button" data-menu-close>[ Close ]</button>
+      </div>
+      <ul class="menu-links">
+        <li><a href="/works">Work <span class="mono muted">(07)</span></a></li>
+        <li><a href="/#archive">Archive <span class="mono muted">(03)</span></a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <p class="mono muted">Zürich, CH — <span data-clock>CET</span></p>
+    </dialog>
+
+    <main id="main">
+      <section class="case-hero" aria-labelledby="case-title">
+        <p class="mono muted">[ Case study (01) ] — Product design · Poker companion app · In development</p>
+        <h1 class="case-title" id="case-title"><span class="mask"><span class="load-rise">Water Office</span></span></h1>
+        <div class="case-intro">
+          <p class="case-sub">A redesign of a poker companion app people use one-handed, at the table, in low light. I proposed a new layout language, explored the homepage over six rounds, built the clickable prototype and wrote the specs engineering builds from — plus a Design Hub that keeps design, PM and dev on the same page.</p>
+          <dl class="case-meta mono">
+            <div><dt>Role</dt><dd>Product Designer (sole designer)</dd></div>
+            <div><dt>Team</dt><dd>Designer · PM · Frontend developer</dd></div>
+            <div><dt>Tools</dt><dd>HTML prototypes, Next.js, Supabase, Claude Code</dd></div>
+            <div><dt>Timeline</dt><dd>Oct 2026 — ongoing</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <div class="case-cover">
+        <div class="cover cover--pair">
+          <span class="device"><img src="/media/covers/water-home.jpg" alt="Water Office home: an Ask Water hero, today's fortune card, and the two main actions, Record a hand and Table notes" width="720" height="1608" /></span>
+          <span class="device"><img src="/media/covers/water-bankroll.jpg" alt="Water Office bankroll: monthly total, trend chart and recent records" width="710" height="1584" /></span>
+        </div>
+      </div>
+
+      <section class="case-section container narrow">
+        <div class="case-block reveal">
+          <div>
+            <h3>Project overview</h3>
+            <p>
+              Water Office helps poker players record hands, take notes on
+              opponents, follow tournament series, track their bankroll and ask
+              an AI coach about a spot. Players often open it mid-game: one hand
+              on the phone, the room dim, a decision coming.
+            </p>
+            <p>
+              The old interface gave every feature the same dark card at the
+              same size, and the homepage looked the same whether you were at a
+              table or planning a trip. I led the redesign from proposal to
+              developer handoff.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">01</span>
+          <h2>Problem &amp; goals</h2>
+        </div>
+        <div class="case-three reveal">
+          <div class="fact">
+            <h3>Main actions get lost</h3>
+            <p>Recording a hand and taking table notes are the most frequent tasks, but they were the same size as everything else and moved around.</p>
+          </div>
+          <div class="fact">
+            <h3>Every page looks alike</h3>
+            <p>Home, events and hands were all lists of dark cards. You had to read the title to know where you were.</p>
+          </div>
+          <div class="fact">
+            <h3>The AI coach is hidden</h3>
+            <p>The feature that sets the app apart lived in a single input in the header, with no clear entry on the homepage.</p>
+          </div>
+        </div>
+        <div class="callout reveal">
+          <p class="eyebrow">The goals</p>
+          <h2>One tap. One glance. One question away.</h2>
+          <p>Frequent actions in one tap, in thumb reach · every page recognisable at a glance · the AI coach visible and used.</p>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">02</span>
+          <h2>Six rounds on the homepage</h2>
+        </div>
+        <p class="section-intro reveal">
+          The homepage carries the most weight, so I explored it widely before
+          narrowing — from four dark-mode directions to a behaviour-led layout,
+          then a deliberate range of styles.
+        </p>
+        <figure class="case-figure reveal">
+          <img src="/media/project/water/round01.jpg" alt="Round 01: four dark-mode homepage directions, starting with Deep Current (results first) and Felt &amp; Brass (action first)" width="1400" height="1069" loading="lazy" />
+          <figcaption>Round 01 — four directions: results-first, action-first, editorial, AI-first</figcaption>
+        </figure>
+        <div class="case-block reveal">
+          <div>
+            <div class="insight-list">
+              <div class="insight">
+                <h4>Rounds 01–02 · Directions</h4>
+                <p>Seven directions, each pairing a layout strategy with a palette — from a results dashboard to an opponent carousel and a bento grid.</p>
+              </div>
+              <div class="insight">
+                <h4>Round 03 · Behaviour first</h4>
+                <p>I stepped back from style and mapped the contexts — at the table, off the table, brand new — into placement rules, then critiqued rounds 01–02 against them. This became the recommended direction.</p>
+              </div>
+              <div class="insight">
+                <h4>Rounds 04–06 · Fidelity and style</h4>
+                <p>High-fidelity variants, then nine styles across three screens each (home, tournament list, tournament detail), and a deep dive on the one we chose.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figure class="case-figure reveal">
+          <img src="/media/project/water/round05.jpg" alt="Round 05: the Casino Noir style shown on the home, tournament list and tournament detail screens" width="1400" height="1069" loading="lazy" />
+          <figcaption>Round 05 — style range, every style tested on the same three screens</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">03</span>
+          <h2>Hero + Sheet: one layout language</h2>
+        </div>
+        <div class="case-two reveal">
+          <figure class="case-figure">
+            <img src="/media/project/water/home.jpg" alt="Redesigned home: the blue Ask hero on top, a draggable sheet with the fortune card and two large action tiles, and a floating navigation bar" width="720" height="1608" loading="lazy" style="max-width: 340px; margin: 0 auto" />
+          </figure>
+          <div style="align-self: center">
+            <p>
+              Every page is built from the same three layers, so people always
+              know where to look:
+            </p>
+            <div class="insight-list">
+              <div class="insight">
+                <h4>Hero — what this page is</h4>
+                <p>A full-bleed colour block with one giant word, at most 45% of the first screen. Each area keeps its own colour: blue for home and AI, green for events, coral for hands.</p>
+              </div>
+              <div class="insight">
+                <h4>Sheet — the content</h4>
+                <p>Lists and tools on a sheet that overlaps the hero and can be dragged up. Order: main action, then personal info, then lists.</p>
+              </div>
+              <div class="insight">
+                <h4>Dock — the main action</h4>
+                <p>Primary actions and navigation stay in the thumb zone. One lime primary button per page at most.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">04</span>
+          <h2>A clickable prototype of the whole app</h2>
+        </div>
+        <p class="section-intro reveal">
+          Instead of static frames, I built one clickable HTML prototype with a
+          real navigation stack, sheets and micro-interactions — record a hand
+          from setup to result, browse a tournament schedule, seat opponents at
+          a table, settle a stake group, chat with the AI coach. It's now on its
+          third version.
+        </p>
+        <div class="cover cover--row reveal">
+          <span class="device"><img src="/media/project/water/table-01-table.jpg" alt="Table notes: a poker table with named seats and colour labels" width="710" height="1584" loading="lazy" /></span>
+          <span class="device"><img src="/media/project/water/players-01-list.jpg" alt="Player database: searchable list with colour labels and tags" width="710" height="1584" loading="lazy" /></span>
+          <span class="device"><img src="/media/project/water/stake-01-home.jpg" alt="Stake groups: who owes whom across backers, settled and unsettled" width="710" height="1584" loading="lazy" /></span>
+          <span class="device"><img src="/media/project/water/bankroll-09-result.jpg" alt="Record result: a shareable WIN card with the amount and a toggle to hide it" width="710" height="1584" loading="lazy" /></span>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">05</span>
+          <h2>Specs engineers can build from</h2>
+        </div>
+        <div class="case-two reveal">
+          <div>
+            <p>
+              For each function I wrote a spec: every screen and state captured
+              straight from the prototype, the rules (with worked examples for
+              anything that calculates money), open PM questions with a design
+              default, engineering notes and analytics events.
+            </p>
+            <p>
+              Screenshots are produced by driving the prototype in a headless
+              browser, so the spec and the prototype never drift apart.
+            </p>
+          </div>
+          <div class="case-three">
+            <div class="stat">
+              <div class="figure">10</div>
+              <p>specs, from homepage to share image</p>
+            </div>
+            <div class="stat">
+              <div class="figure">41</div>
+              <p>prototype versions moved into the hub at launch</p>
+            </div>
+            <div class="stat">
+              <div class="figure">76</div>
+              <p>PM questions moved into the hub at launch</p>
+            </div>
+          </div>
+        </div>
+        <figure class="case-figure plain reveal">
+          <img src="/media/project/water/share-01-showdown-win.jpg" alt="Hand share image: a poker table at showdown with each street's actions below" width="710" height="1584" loading="lazy" style="max-width: 360px; margin: 0 auto" />
+          <figcaption style="text-align: center">The hand share image — its own spec covers layout, coordinates and number rules</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">06</span>
+          <h2>The Design Hub</h2>
+        </div>
+        <div class="case-block reveal">
+          <div>
+            <p>
+              Halfway through, the process itself became the bottleneck:
+              prototypes lived on my laptop, PM questions were scattered,
+              decisions weren't written down, and the developer had no single
+              place to see what was ready. So I designed and built a small
+              internal site to fix it — Next.js on Vercel, Supabase for data and
+              sign-in.
+            </p>
+          </div>
+        </div>
+        <ol class="flow reveal" aria-label="How a change moves through the Design Hub">
+          <li><span class="mono muted">(1)</span><strong>Prototype</strong><span>New version registered, with a changelog line for every change</span></li>
+          <li><span class="mono muted">(2)</span><strong>PM question</strong><span>Open → discussing → decided</span></li>
+          <li><span class="mono muted">(3)</span><strong>Decision</strong><span>One click from an answer, noting what must change</span></li>
+          <li><span class="mono muted">(4)</span><strong>Dev task</strong><span>Pinned to a prototype version; flagged when a newer one exists</span></li>
+          <li><span class="mono muted">(5)</span><strong>Shipped</strong><span>Moved across the board, linked to the commit</span></li>
+        </ol>
+        <div class="case-block reveal">
+          <div>
+            <div class="insight-list">
+              <div class="insight">
+                <h4>Rules, not reminders</h4>
+                <p>A function can't move to "ready to dev" while it still has open questions — the database refuses and lists them.</p>
+              </div>
+              <div class="insight">
+                <h4>Roles</h4>
+                <p>Designer and PM edit everything; the developer moves tasks, adds commit links and answers questions.</p>
+              </div>
+              <div class="insight">
+                <h4>Private by default</h4>
+                <p>Prototypes are served only to signed-in teammates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">07</span>
+          <h2>Where it stands</h2>
+        </div>
+        <div class="case-block reveal">
+          <div>
+            <p>
+              The redesign is in development. The Hero + Sheet language now runs
+              through the prototype's homepage, events, hands, table notes, bankroll and
+              stake groups, and every PM decision and dev task lives in the
+              Design Hub instead of a chat thread.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <nav class="next-project" aria-label="Next project">
+          <a class="mono" href="/works">← All work</a>
+          <a class="next-link" href="/project/mupa">
+            <span class="mono muted">[ Next project ] (02)</span>
+            <span class="next-title">MuPa <span class="nudge" aria-hidden="true">→</span></span>
+          </a>
+        </nav>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <p class="mono muted" data-copy-status aria-live="polite">[ Contact ] — click to copy</p>
+      <button class="email" type="button" data-copy="angela101475@gmail.com">angela101475<span class="accent">@</span>gmail.com</button>
+      <div class="footer-row mono">
+        <span>©2026 Angela Mei</span>
+        <span>
+          <a href="https://www.linkedin.com/in/angela-mei" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+          <a href="https://github.com/AngelaMei" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </span>
+        <a href="https://drive.google.com/file/d/17-CJW2dArsCYxxthyIYxR-XOy4KzTuFk/view" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <script src="/styles/e3.js" defer></script>
+  </body>
+</html>
