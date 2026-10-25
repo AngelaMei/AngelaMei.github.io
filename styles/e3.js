@@ -78,14 +78,18 @@
     var timer;
     copy.addEventListener("click", function () {
       var value = copy.getAttribute("data-copy");
-      if (!value || !navigator.clipboard) return;
+      if (!value) return;
+      var mail = function () {
+        window.location.href = "mailto:" + value;
+      };
+      if (!navigator.clipboard) return mail();
       navigator.clipboard.writeText(value).then(function () {
         status.textContent = "[ Contact ] — Copied";
         clearTimeout(timer);
         timer = setTimeout(function () {
           status.textContent = original;
         }, 2000);
-      });
+      }, mail);
     });
   }
 
