@@ -3,287 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angela Mei | Product & UX Designer</title>
+    <title>Angela Mei — Product &amp; UX Designer, Zürich</title>
     <meta
       name="description"
-      content="Angela Mei is a product and UX designer focused on research-driven, human-centered digital experiences."
+      content="Angela Mei (Mei Yu-Chi) is a product and UX designer in Zürich designing calm, human software — research-driven, detail-minded."
     />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/site.css" />
+    <link rel="stylesheet" href="/styles/e3.css" />
+    <script>document.documentElement.classList.add("js");</script>
   </head>
-  <body class="theme-cool">
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a class="brand" href="/"><span class="dot"></span>Angela Mei</a>
-        <nav class="nav">
-          <a class="active" href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/works">Works</a>
-          <a
-            class="button-link"
-            href="https://drive.google.com/file/d/17-CJW2dArsCYxxthyIYxR-XOy4KzTuFk/view"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Résumé</a
-          >
-        </nav>
-      </div>
+  <body id="top">
+    <a class="skip-link mono" href="#main">Skip to content</a>
+
+    <header class="site-header mono">
+      <a href="/" aria-current="page">[ Angela Mei ]</a>
+      <p class="meta muted">
+        Product &amp; UX Designer<br />Zürich, CH — <span data-clock>CET</span>
+      </p>
+      <nav class="nav" aria-label="Main">
+        <a href="/works">Work (05)</a>
+        <a href="/#archive">Archive (03)</a>
+        <a href="/#about">About</a>
+      </nav>
+      <button class="menu-toggle mono" type="button" data-menu-open aria-haspopup="dialog" aria-expanded="false" aria-controls="menu">
+        [ Menu ]
+      </button>
     </header>
 
-    <main>
-      <section class="hero-personal container">
-        <div>
-          <span class="hero-hello reveal">
-            <span class="eyes-badge"><img src="/eyes.svg" alt="" /></span>
-            Hi, I'm Angela — nice to meet you.
-          </span>
-          <h1 class="reveal" data-delay="60">
-            A designer who turns messy problems into things that feel
-            <em>obvious</em>.
-          </h1>
-          <p class="hero-lead reveal" data-delay="120">
-            I'm a product &amp; UX designer with an HCI background. I love the
-            quiet part of the work — listening to people, untangling the
-            knots, and sweating the details until software feels calm and
-            human.
+    <dialog class="menu" id="menu" aria-label="Menu">
+      <div class="menu-top mono">
+        <span>[ Angela Mei ]</span>
+        <button class="menu-close mono" type="button" data-menu-close>[ Close ]</button>
+      </div>
+      <ul class="menu-links">
+        <li><a href="/works">Work <span class="mono muted">(05)</span></a></li>
+        <li><a href="/#archive">Archive <span class="mono muted">(03)</span></a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <p class="mono muted">Zürich, CH — <span data-clock>CET</span></p>
+    </dialog>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="name">
+        <div class="hero-top">
+          <p class="hero-intro">
+            <span class="mask"><span class="load-rise" style="--d: 0.5s">I design calm, human software —</span></span>
+            <span class="mask"><span class="load-rise" style="--d: 0.6s">from the messy middle out.</span></span>
+            <span class="mask"><span class="load-rise serif" style="--d: 0.7s">Usually better than expected.</span></span>
           </p>
-          <div class="hero-actions reveal" data-delay="180">
-            <a class="btn btn-primary" href="/works"
-              >See what I've made <span class="arrow">→</span></a
-            >
-            <a class="btn btn-secondary" href="/about">More about me</a>
-            <span class="status"
-              ><span class="ping"></span>Open to 2026 design roles</span
-            >
-          </div>
+          <p class="hero-facts mono muted">
+            <span>Portfolio ’26</span>
+            <span>M.S. HCI, Univ. of Maryland</span>
+            <span class="availability"><span class="dot" aria-hidden="true"></span>Available for 2026 roles</span>
+          </p>
         </div>
 
-        <div class="hero-portrait reveal" data-delay="120">
-          <span class="sticker">that's me ✌️</span>
-          <figure class="frame">
-            <img src="/media/about/img3.jpg" alt="Angela on a snowy mountain" />
-            <figcaption class="cap">somewhere cold &amp; happy ❄️</figcaption>
-          </figure>
+        <h1 class="name" id="name">
+          <span class="mask"><span class="load-rise">Angela</span></span>
+          <span class="mask"><span class="load-rise accent" style="--d: 0.14s">Mei</span></span>
+        </h1>
+
+        <div class="hero-foot mono muted">
+          <p class="meaning">
+            <svg viewBox="0 0 40 40" width="28" height="28" aria-hidden="true">
+              <circle cx="20" cy="20" r="14" fill="none" stroke="#0A0A0A" stroke-width="1" stroke-dasharray="2 3" />
+              <g class="orbit"><circle cx="20" cy="6" r="3.5" fill="#C4553D" /></g>
+            </svg>
+            <span>Mei Yu-Chi — a name that means “unexpected”</span>
+          </p>
+          <a class="scroll-cue" href="#work">Scroll ↓</a>
         </div>
       </section>
 
-      <section class="container">
-        <div class="now-strip">
-          <div class="now-card reveal">
-            <div class="label">📍 Based in</div>
-            <div class="value">
-              College Park, MD
-              <span class="sub" data-clock>— : — ET</span>
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-head mono">
+          <h2 class="mask reveal-line" id="work-title"><span>[ Selected work ]</span></h2>
+          <span class="muted hide-sm">2024 — 2026</span>
+          <a href="/works">See all <span class="nudge" aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="work-grid">
+          <a class="case case--guide reveal" href="/project/guide-app">
+            <div class="cover cover--screen">
+              <img src="/media/project/guide-app/Walkthrough.png" alt="Guide App course editor on desktop and mobile" width="1116" height="600" />
             </div>
-          </div>
-          <div class="now-card reveal" data-delay="60">
-            <div class="label">🎓 Currently</div>
-            <div class="value">M.S. in HCI <span class="sub">University of Maryland</span></div>
-          </div>
-          <div class="now-card reveal" data-delay="120">
-            <div class="label">🏓 Off the clock</div>
-            <div class="value">Table tennis <span class="sub">&amp; film photography</span></div>
-          </div>
-          <div class="now-card reveal" data-delay="180">
-            <div class="label">☕ Fueled by</div>
-            <div class="value">Oat milk lattes <span class="sub">&amp; good questions</span></div>
-          </div>
+            <div class="case-caption mono">
+              <h3>(01) Guide App</h3>
+              <span class="muted">UX Research · Product</span>
+              <span class="accent-text">−30% editing time</span>
+            </div>
+          </a>
+
+          <a class="case case--coin reveal" href="/project/coin-toss" style="--d: 0.12s">
+            <div class="cover cover--pair">
+              <span class="device"><img src="/media/covers/coin-title.jpg" alt="Coin Toss welcome screen" width="720" height="1556" loading="lazy" /></span>
+              <span class="device"><img src="/media/covers/coin-plan.jpg" alt="Coin Toss upcoming trip plan screen" width="720" height="1556" loading="lazy" /></span>
+            </div>
+            <div class="case-caption mono">
+              <h3>(02) Coin Toss</h3>
+              <span class="muted">AI · Hackathon</span>
+            </div>
+          </a>
+
+          <a class="case case--patpet reveal" href="/project/gesture-recognition-pet">
+            <div class="cover">
+              <span class="device"><img src="/media/covers/patpet-ar.jpg" alt="Pat Pet AR deer responding to a hand gesture" width="720" height="1558" loading="lazy" /></span>
+            </div>
+            <div class="case-caption mono">
+              <h3>(03) Pat Pet</h3>
+              <span class="muted">AR · Gesture</span>
+            </div>
+          </a>
+
+          <a class="case case--milky reveal" href="/project/dairy-subscription-service" style="--d: 0.12s">
+            <div class="cover cover--pair">
+              <span class="device"><img src="/media/covers/milky-loading.jpg" alt="Milky Way loading screen with the sheepdog mascot" width="720" height="1558" loading="lazy" /></span>
+              <span class="device"><img src="/media/covers/milky-plans.jpg" alt="Milky Way subscription plan picker" width="720" height="1566" loading="lazy" /></span>
+            </div>
+            <div class="case-caption mono">
+              <h3>(04) Milky Way</h3>
+              <span class="muted">Service design</span>
+            </div>
+          </a>
         </div>
       </section>
 
-      <div class="marquee reveal">
+      <div class="marquee" role="region" aria-label="Principles">
         <div class="marquee-track">
-          <span>User Research</span><span>Interaction Design</span
-          ><span>Prototyping</span><span>Information Architecture</span
-          ><span>Usability Testing</span><span>Visual Design</span>
-          <span>User Research</span><span>Interaction Design</span
-          ><span>Prototyping</span><span>Information Architecture</span
-          ><span>Usability Testing</span><span>Visual Design</span>
+          <p>Clarity over cleverness <span class="accent" aria-hidden="true">✳</span> Research earns the design <span class="accent" aria-hidden="true">✳</span> Details carry the feeling <span class="accent" aria-hidden="true">✳</span></p>
+          <p aria-hidden="true">Clarity over cleverness <span class="accent">✳</span> Research earns the design <span class="accent">✳</span> Details carry the feeling <span class="accent">✳</span></p>
         </div>
       </div>
 
-      <section class="section container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow reveal">Selected work</p>
-            <h2 class="reveal" data-delay="60">Things I'm proud of</h2>
-            <p class="section-intro reveal" data-delay="120">
-              End-to-end projects across learning, travel, and interactive
-              experiences — framed by research and shipped with craft.
-            </p>
-          </div>
-          <a class="text-link reveal" data-delay="160" href="/works"
-            >All projects <span class="arrow">→</span></a
-          >
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-head mono">
+          <h2 class="mask reveal-line" id="about-title"><span>[ About ]</span></h2>
+          <span class="muted">Off the canvas</span>
         </div>
 
-        <div class="work-list">
-          <article class="work-card featured reveal">
-            <a class="work-media" href="/project/guide-app">
-              <span class="work-num">01</span>
-              <img src="/media/homepage/Cover_Guide.png" alt="Guide App preview" />
-            </a>
-            <div class="work-body">
-              <h3>Guide App</h3>
-              <div class="work-tags">
-                <span class="tag">UX Research</span>
-                <span class="tag">Product Design</span>
-                <span class="tag">Design Sprint</span>
-              </div>
-              <p class="work-desc">
-                Redesigned core workflows in a learning platform to cut course
-                editing time by 30% — from research and competitive analysis
-                through prototyping and usability testing.
-              </p>
-              <a class="work-meta" href="/project/guide-app"
-                ><span>UX Designer &amp; Researcher</span
-                ><span class="arrow">→</span></a
-              >
-            </div>
-          </article>
+        <div class="about-grid">
+          <svg class="paddle" viewBox="0 0 400 300" role="img" aria-label="One-line drawing of a hand holding a table-tennis paddle, with a ball in the air">
+            <path class="paddle-line" d="M40 260 C90 250 120 200 150 170 C170 150 160 120 185 115 C210 110 205 150 225 150 C250 150 245 110 270 112 C300 114 280 160 300 165 C330 172 340 120 350 90 C356 70 320 60 315 85 C312 100 330 110 345 100" fill="none" stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <ellipse cx="335" cy="60" rx="42" ry="48" fill="none" stroke="#0A0A0A" stroke-width="2.5" />
+            <g class="ball"><circle cx="150" cy="70" r="11" fill="#C4553D" /></g>
+          </svg>
 
-          <div class="work-grid">
-            <article class="work-card reveal">
-              <a class="work-media" href="/project/coin-toss">
-                <span class="work-num">02</span>
-                <img src="/media/homepage/Cover_Cointoss.png" alt="Coin Toss preview" />
-              </a>
-              <div class="work-body">
-                <h3>Coin Toss</h3>
-                <div class="work-tags">
-                  <span class="tag">Product Design</span>
-                  <span class="tag">AI</span>
-                  <span class="tag">Hackathon</span>
-                </div>
-                <p class="work-desc">
-                  An AI travel-planning concept taken from interviews to
-                  prototype in a fast-paced hackathon cycle.
-                </p>
-                <a class="work-meta" href="/project/coin-toss"
-                  ><span>Product Designer</span><span class="arrow">→</span></a
-                >
-              </div>
-            </article>
-
-            <article class="work-card reveal" data-delay="80">
-              <a class="work-media" href="/project/gesture-recognition-pet">
-                <span class="work-num">03</span>
-                <img src="/media/homepage/Cover_Patpet.png" alt="Pat Pet preview" />
-              </a>
-              <div class="work-body">
-                <h3>Pat Pet</h3>
-                <div class="work-tags">
-                  <span class="tag">AR</span>
-                  <span class="tag">Interaction</span>
-                  <span class="tag">Prototyping</span>
-                </div>
-                <p class="work-desc">
-                  Gesture-based AR interactions for a playful, intuitive
-                  companion experience.
-                </p>
-                <a class="work-meta" href="/project/gesture-recognition-pet"
-                  ><span>Product Designer &amp; Developer</span
-                  ><span class="arrow">→</span></a
-                >
-              </div>
-            </article>
+          <div class="about-body">
+            <p class="about-lede reveal">
+              Finance taught me <span class="serif">systems.</span> HCI taught me
+              <span class="serif">people.</span> Table tennis taught me to read the
+              <span class="accent">spin</span> before it lands.
+            </p>
+            <dl class="facts reveal" style="--d: 0.12s">
+              <div><dt class="mono">Now</dt><dd>Product &amp; UX design, Zürich</dd></div>
+              <div><dt class="mono">Study</dt><dd>M.S. Human-Computer Interaction, University of Maryland</dd></div>
+              <div><dt class="mono">Roots</dt><dd>Finance — thinking in systems and trade-offs</dd></div>
+            </dl>
           </div>
         </div>
       </section>
 
-      <section class="section container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow reveal">A little more human</p>
-            <h2 class="reveal" data-delay="60">Life outside the artboard</h2>
-            <p class="section-intro reveal" data-delay="120">
-              I think the best designers are curious people first. Here's me
-              chasing mountains, light, and the occasional film photo.
-            </p>
-          </div>
+      <section class="section" id="archive" aria-labelledby="archive-title">
+        <div class="section-head mono">
+          <h2 class="mask reveal-line" id="archive-title"><span>[ Archive ]</span></h2>
+          <span class="muted hide-sm">Experiments, research &amp; side builds</span>
         </div>
-        <div class="polaroids">
-          <figure class="polaroid reveal">
-            <img src="/media/about/img4.jpg" alt="Angela jumping in front of the Matterhorn" />
-            <figcaption class="cap">leaping before the Matterhorn 🏔️</figcaption>
-          </figure>
-          <figure class="polaroid reveal" data-delay="80">
-            <img src="/media/about/img5.jpg" alt="Angela taking a photo with a film camera" />
-            <figcaption class="cap">shooting on film 📷</figcaption>
-          </figure>
-          <figure class="polaroid reveal" data-delay="160">
-            <img src="/media/about/img1.png" alt="Young Angela on a bike" />
-            <figcaption class="cap">peace signs since day one ✌️</figcaption>
-          </figure>
-        </div>
-      </section>
 
-      <section class="section container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow reveal">How I work</p>
-            <h2 class="reveal" data-delay="60">Three things I design by</h2>
-          </div>
-        </div>
-        <div class="beliefs">
-          <div class="belief reveal">
-            <span class="num">01</span>
-            <h3>Clarity over cleverness</h3>
-            <p>
-              The best interface gets out of the way. I pursue clarity
-              relentlessly so people reach their goal without thinking about the
-              tool.
-            </p>
-          </div>
-          <div class="belief reveal" data-delay="80">
-            <span class="num">02</span>
-            <h3>Research earns the design</h3>
-            <p>
-              Every decision should trace back to a real person and a real
-              problem. I test concepts early and let evidence steer the craft.
-            </p>
-          </div>
-          <div class="belief reveal" data-delay="160">
-            <span class="num">03</span>
-            <h3>Details carry the feeling</h3>
-            <p>
-              Trust lives in the small moments — the copy, the motion, the empty
-              state. I sweat the details so the whole feels effortless.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta container narrow">
-        <h2 class="reveal">Let's make something <em>thoughtful</em>.</h2>
-        <p class="reveal" data-delay="80">
-          I'm currently looking for product and UX design opportunities. If
-          you're building something people will use every day, I'd love to chat.
-        </p>
-        <div class="reveal" data-delay="140">
-          <a class="btn btn-primary" href="mailto:angela101475@gmail.com"
-            >Say hello <span class="arrow">→</span></a
-          >
-        </div>
+        <table class="archive">
+          <thead class="mono">
+            <tr><th scope="col">Name</th><th scope="col">Detail</th><th scope="col">Date</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="/project/student-social-life">Student Social Life</a></td>
+              <td>UX research · Service design</td>
+              <td>[YEAR]</td>
+            </tr>
+            <tr class="is-highlight">
+              <td><a href="https://19-galaxy-generator-iota-pink.vercel.app/" target="_blank" rel="noopener noreferrer">Galaxy Generator <span class="ext nudge" aria-hidden="true">↗</span><span class="visually-hidden">(opens in a new tab)</span></a></td>
+              <td>Creative coding · WebGL</td>
+              <td>[YEAR]</td>
+            </tr>
+            <tr>
+              <td><a href="https://go-for-a-ride.vercel.app/" target="_blank" rel="noopener noreferrer">Go for a Ride <span aria-hidden="true">↗</span><span class="visually-hidden">(opens in a new tab)</span></a></td>
+              <td>Front-end · Motion</td>
+              <td>[YEAR]</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-row">
-        <span class="copy">© 2026 Angela Mei — designed &amp; built with care.</span>
-        <div class="social">
-          <a href="mailto:angela101475@gmail.com">Email</a>
+    <footer class="site-footer" id="contact">
+      <p class="mono muted" data-copy-status aria-live="polite">[ Contact ] — click to copy</p>
+      <!-- TODO(Angela): set the address in data-copy and the visible text. -->
+      <button class="email" type="button" data-copy="">[your<span class="accent">@</span>email]</button>
+      <div class="footer-row mono">
+        <span>©2026 Angela Mei</span>
+        <span>
+          <a href="https://www.linkedin.com/in/angela-mei" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
           <a href="https://github.com/AngelaMei" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/angela-mei" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
+        </span>
+        <a href="https://drive.google.com/file/d/17-CJW2dArsCYxxthyIYxR-XOy4KzTuFk/view" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a>
+        <a href="#top">Back to top ↑</a>
       </div>
     </footer>
-    <script src="/styles/site.js" defer></script>
+
+    <script src="/styles/e3.js" defer></script>
   </body>
 </html>
