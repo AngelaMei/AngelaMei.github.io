@@ -3,234 +3,224 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Angela Mei</title>
+    <title>About — Angela Mei</title>
     <meta
       name="description"
-      content="About Angela Mei, a product and UX designer with a background in finance and human-computer interaction."
+      content="Angela Mei (Mei Yu-Chi) — product and UX designer in Zürich with an M.S. in HCI from the University of Maryland and a background in Finance."
     />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/site.css" />
+    <link rel="stylesheet" href="/styles/e3.css" />
+    <script>document.documentElement.classList.add("js");</script>
   </head>
-  <body>
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a class="brand" href="/"><span class="dot"></span>Angela Mei</a>
-        <nav class="nav">
-          <a href="/">Home</a>
-          <a class="active" href="/about">About</a>
-          <a href="/works">Works</a>
-          <a
-            class="button-link"
-            href="https://drive.google.com/file/d/17-CJW2dArsCYxxthyIYxR-XOy4KzTuFk/view"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Résumé</a
-          >
-        </nav>
-      </div>
+  <body id="top">
+    <a class="skip-link mono" href="#main">Skip to content</a>
+
+    <header class="site-header mono">
+      <a href="/">[ Angela Mei ]</a>
+      <p class="meta muted">
+        Product &amp; UX Designer<br />Zürich, CH — <span data-clock>CET</span>
+      </p>
+      <nav class="nav" aria-label="Main">
+        <a href="/works">Work (05)</a>
+        <a href="/#archive">Archive (03)</a>
+        <a href="/about" aria-current="page">About</a>
+      </nav>
+      <button class="menu-toggle mono" type="button" data-menu-open aria-haspopup="dialog" aria-expanded="false" aria-controls="menu">
+        [ Menu ]
+      </button>
     </header>
 
-    <main>
-      <section class="hero container">
-        <p class="eyebrow reveal">About me</p>
-        <h1 class="reveal" data-delay="60">
-          Unexpected by name, <em>intentional</em> by design.
+    <dialog class="menu" id="menu" aria-label="Menu">
+      <div class="menu-top mono">
+        <span>[ Angela Mei ]</span>
+        <button class="menu-close mono" type="button" data-menu-close>[ Close ]</button>
+      </div>
+      <ul class="menu-links">
+        <li><a href="/works">Work <span class="mono muted">(05)</span></a></li>
+        <li><a href="/#archive">Archive <span class="mono muted">(03)</span></a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <p class="mono muted">Zürich, CH — <span data-clock>CET</span></p>
+    </dialog>
+
+    <main id="main">
+      <section class="page-hero" aria-labelledby="page-title">
+        <p class="mono muted">[ About ] — Off the canvas</p>
+        <h1 class="page-title" id="page-title">
+          <span class="mask"><span class="load-rise">About</span></span>
         </h1>
-        <p class="hero-lead reveal" data-delay="120">
-          My Mandarin name means "unexpected" — which became my design
-          philosophy: deliver outcomes that are better than people expect,
-          through rigor, empathy, and craft.
+        <p class="page-lede">
+          <span class="mask"><span class="load-rise" style="--d: 0.2s">Unexpected by name, <span class="serif">intentional</span> by design.</span></span>
+          <span class="mask"><span class="load-rise muted" style="--d: 0.3s">My Mandarin name, Mei Yu-Chi, means “unexpected” —</span></span>
+          <span class="mask"><span class="load-rise muted" style="--d: 0.4s">so I aim for outcomes better than people expect.</span></span>
         </p>
       </section>
 
-      <section class="section container">
-        <div class="about-grid split">
-          <div class="about-portrait reveal">
-            <img src="/media/about/img2.png" alt="Portrait of Angela Mei" />
-          </div>
-          <div class="prose reveal" data-delay="100">
-            <p class="lead">
-              I'm a product &amp; UX designer who likes to sit with the messy
-              middle of a problem before reaching for a solution.
+      <section class="section" aria-labelledby="bio-title">
+        <div class="section-head mono">
+          <h2 class="mask reveal-line" id="bio-title"><span>[ Bio ]</span></h2>
+          <span class="muted">Zürich, CH</span>
+        </div>
+
+        <div class="about-grid about-grid--bio">
+          <figure class="portrait reveal">
+            <img src="/media/about/portrait.jpg" alt="Angela Mei smiling, holding a runner-up trophy from a women's volleyball tournament" width="1100" height="1464" loading="lazy" />
+          </figure>
+          <div class="about-body">
+            <p class="about-lede reveal">
+              I like to sit with the <span class="serif">messy middle</span> of a problem
+              before reaching for a solution.
             </p>
-            <p>
-              With training in both Finance and Human-Computer Interaction, I
-              bring structured thinking to ambiguous product challenges. I'm
-              comfortable moving between a spreadsheet and a Figma file, between
-              a research synthesis and a pixel-level interaction.
-            </p>
-            <p>
-              These days I focus on user-centered design for tools and digital
-              experiences that need to feel clear, efficient, and human — the
-              kind of products people return to without friction.
-            </p>
-            <p>
-              Outside of design, I'm a competitive table-tennis player, a
-              curious traveler, and a perpetual collector of small details worth
-              stealing for the next project.
-            </p>
+            <div class="prose reveal" style="--d: 0.12s">
+              <p>
+                With training in both Finance and Human-Computer Interaction, I
+                bring structured thinking to ambiguous product challenges. I'm
+                comfortable moving between a spreadsheet and a Figma file, between
+                a research synthesis and a pixel-level interaction.
+              </p>
+              <p>
+                These days I focus on user-centered design for tools and digital
+                experiences that need to feel clear, efficient, and human — the
+                kind of products people return to without friction.
+              </p>
+              <p>
+                Outside of design, I'm a competitive table-tennis player, a
+                curious traveler, and a perpetual collector of small details worth
+                stealing for the next project.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow reveal">What I believe</p>
-            <h2 class="reveal" data-delay="60">Principles I keep coming back to</h2>
-          </div>
+      <div class="marquee" role="region" aria-label="Principles">
+        <div class="marquee-track">
+          <p>Clarity over cleverness <span class="accent" aria-hidden="true">✳</span> Research earns the design <span class="accent" aria-hidden="true">✳</span> Details carry the feeling <span class="accent" aria-hidden="true">✳</span></p>
+          <p aria-hidden="true">Clarity over cleverness <span class="accent">✳</span> Research earns the design <span class="accent">✳</span> Details carry the feeling <span class="accent">✳</span></p>
         </div>
-        <div class="beliefs">
-          <div class="belief reveal">
-            <span class="num">01</span>
+      </div>
+
+      <section class="section" aria-labelledby="principles-title">
+        <div class="section-head mono">
+          <h2 class="mask reveal-line" id="principles-title"><span>[ Principles ]</span></h2>
+          <span class="muted hide-sm">Ones I keep coming back to</span>
+        </div>
+
+        <ol class="principles">
+          <li class="reveal">
+            <span class="mono muted">(01)</span>
             <h3>Tirelessly pursue clarity</h3>
-            <p>
-              If a person has to stop and think about how to use something, I
-              haven't finished the work yet.
-            </p>
-          </div>
-          <div class="belief reveal" data-delay="80">
-            <span class="num">02</span>
+            <p>If a person has to stop and think about how to use something, I haven't finished the work yet.</p>
+          </li>
+          <li class="reveal" style="--d: 0.08s">
+            <span class="mono muted">(02)</span>
             <h3>Design for real moments</h3>
-            <p>
-              I design for the tired, distracted, first-time human — not the
-              ideal user in a perfect demo.
-            </p>
-          </div>
-          <div class="belief reveal" data-delay="160">
-            <span class="num">03</span>
+            <p>I design for the tired, distracted, first-time human — not the ideal user in a perfect demo.</p>
+          </li>
+          <li class="reveal" style="--d: 0.16s">
+            <span class="mono muted">(03)</span>
             <h3>Do everything with care</h3>
-            <p>
-              Craft compounds. The small things done well are what make a
-              product feel trustworthy.
-            </p>
-          </div>
-        </div>
+            <p>Craft compounds. The small things done well are what make a product feel trustworthy.</p>
+          </li>
+        </ol>
       </section>
 
-      <section class="section container">
-        <div class="about-grid split">
-          <div>
-            <p class="eyebrow reveal">The path</p>
-            <h2 class="reveal" data-delay="60" style="font-size: clamp(1.8rem, 3.6vw, 2.8rem)">
-              A bit of background
-            </h2>
-          </div>
-          <div class="timeline reveal" data-delay="100">
-            <div class="timeline-item">
-              <span class="when">Now</span>
-              <div>
-                <h3>M.S. in Human-Computer Interaction</h3>
-                <p>
-                  University of Maryland — building projects that blend research,
-                  interaction design, and implementation.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="when">Design</span>
-              <div>
-                <h3>Product &amp; UX Design</h3>
-                <p>
-                  End-to-end case studies across learning platforms, travel, AR,
-                  and service design — from discovery to validated prototypes.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="when">Roots</span>
-              <div>
-                <h3>Background in Finance</h3>
-                <p>
-                  Where I learned to think in systems, weigh trade-offs, and tie
-                  every decision back to outcomes that matter.
-                </p>
-              </div>
-            </div>
-          </div>
+      <section class="section" aria-labelledby="path-title">
+        <div class="section-head mono">
+          <h2 class="mask reveal-line" id="path-title"><span>[ Background ]</span></h2>
+          <span class="muted hide-sm">The path</span>
         </div>
+
+        <dl class="facts facts--long reveal">
+          <div>
+            <dt class="mono">Now</dt>
+            <dd>
+              <h3>Product &amp; UX design, Zürich</h3>
+              <p>End-to-end case studies across learning platforms, travel, AR, and service design — from discovery to validated prototypes.</p>
+            </dd>
+          </div>
+          <div>
+            <dt class="mono">Study</dt>
+            <dd>
+              <h3>M.S. Human-Computer Interaction, University of Maryland</h3>
+              <p>Building projects that blend research, interaction design, and implementation.</p>
+            </dd>
+          </div>
+          <div>
+            <dt class="mono">Roots</dt>
+            <dd>
+              <h3>Finance</h3>
+              <p>Where I learned to think in systems, weigh trade-offs, and tie every decision back to outcomes that matter.</p>
+            </dd>
+          </div>
+        </dl>
       </section>
 
-      <section class="section container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow reveal">Toolkit</p>
-            <h2 class="reveal" data-delay="60" style="font-size: clamp(1.8rem, 3.6vw, 2.8rem)">
-              How I work &amp; what I use
-            </h2>
-          </div>
+      <section class="section" aria-labelledby="toolkit-title">
+        <div class="section-head mono">
+          <h2 class="mask reveal-line" id="toolkit-title"><span>[ Toolkit ]</span></h2>
+          <span class="muted hide-sm">How I work &amp; what I use</span>
         </div>
-        <div class="fact-grid">
-          <article class="fact reveal">
-            <h3>My process</h3>
+
+        <div class="toolkit">
+          <div class="reveal">
+            <h3 class="mono muted">Process</h3>
             <ul>
               <li>Frame problems around user and business goals</li>
               <li>Test concepts early through prototypes and feedback</li>
               <li>Iterate with measurable outcomes and design rationale</li>
             </ul>
-          </article>
-          <article class="fact reveal" data-delay="80">
-            <h3>Core skills</h3>
-            <div class="chip-row">
-              <span class="chip">User Research</span>
-              <span class="chip">Interaction Design</span>
-              <span class="chip">Information Architecture</span>
-              <span class="chip">Wireframing</span>
-              <span class="chip">Usability Testing</span>
-              <span class="chip">Visual Design</span>
-            </div>
-          </article>
-          <article class="fact reveal">
-            <h3>Tools</h3>
-            <div class="chip-row">
-              <span class="chip">Figma</span>
-              <span class="chip">FigJam</span>
-              <span class="chip">Adobe Illustrator</span>
-              <span class="chip">Protopie</span>
-              <span class="chip">HTML / CSS / JS</span>
-            </div>
-          </article>
-          <article class="fact reveal" data-delay="80">
-            <h3>Beyond the screen</h3>
-            <p>
-              Competitive table tennis, travel sketchbooks, and an ongoing hunt
-              for delightful micro-interactions in the wild.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="cta container narrow">
-        <h2 class="reveal">Curious to <em>work together</em>?</h2>
-        <p class="reveal" data-delay="80">
-          I'm always happy to talk about research, design, or a project you're
-          dreaming up.
-        </p>
-        <div class="reveal" data-delay="140">
-          <a class="btn btn-primary" href="mailto:angela101475@gmail.com"
-            >Get in touch <span class="arrow">→</span></a
-          >
-          <a class="btn btn-secondary" href="/works">See my work</a>
+          </div>
+          <div class="reveal" style="--d: 0.08s">
+            <h3 class="mono muted">Core skills</h3>
+            <ul>
+              <li>User Research</li>
+              <li>Interaction Design</li>
+              <li>Information Architecture</li>
+              <li>Wireframing</li>
+              <li>Usability Testing</li>
+              <li>Visual Design</li>
+            </ul>
+          </div>
+          <div class="reveal" style="--d: 0.16s">
+            <h3 class="mono muted">Tools</h3>
+            <ul>
+              <li>Figma</li>
+              <li>FigJam</li>
+              <li>Adobe Illustrator</li>
+              <li>Protopie</li>
+              <li>HTML / CSS / JS</li>
+            </ul>
+          </div>
+          <div class="reveal" style="--d: 0.24s">
+            <h3 class="mono muted">Beyond the screen</h3>
+            <p>Competitive table tennis, travel sketchbooks, and an ongoing hunt for delightful micro-interactions in the wild.</p>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-row">
-        <span class="copy">© 2026 Angela Mei — designed &amp; built with care.</span>
-        <div class="social">
-          <a href="mailto:angela101475@gmail.com">Email</a>
+    <footer class="site-footer" id="contact">
+      <p class="mono muted" data-copy-status aria-live="polite">[ Contact ] — click to copy</p>
+      <button class="email" type="button" data-copy="angela101475@gmail.com">angela101475<span class="accent">@</span>gmail.com</button>
+      <div class="footer-row mono">
+        <span>©2026 Angela Mei</span>
+        <span>
+          <a href="https://www.linkedin.com/in/angela-mei" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
           <a href="https://github.com/AngelaMei" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/angela-mei" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
+        </span>
+        <a href="https://drive.google.com/file/d/17-CJW2dArsCYxxthyIYxR-XOy4KzTuFk/view" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a>
+        <a href="#top">Back to top ↑</a>
       </div>
     </footer>
-    <script src="/styles/site.js" defer></script>
+
+    <script src="/styles/e3.js" defer></script>
   </body>
 </html>
