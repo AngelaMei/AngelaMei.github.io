@@ -15,6 +15,7 @@ Read this whole file before writing code. When something here conflicts with the
 
 - Stay **static: plain HTML + one CSS file + one small vanilla JS file**. No framework, no build step, no npm dependencies.
 - Rewrite `styles/site.css` and `styles/site.js` (or create `styles/e3.css` / `styles/e3.js` and switch pages over). Keep one shared header/footer markup pattern, copied per page.
+- Every page links `/styles/e3.css?v=YYYYMMDD` and `/styles/e3.js?v=YYYYMMDD`. When either file changes, bump the date on all pages at once so returning visitors don't get a cached copy.
 - Fonts from Google Fonts only: `Inter Tight` (400/500/600/800), `Instrument Serif` (regular + italic), `IBM Plex Mono` (400).
 - All motion must respect `prefers-reduced-motion: reduce` (disable marquee, orbit, bob, pulse, nudge, rise; show final state).
 - Responsive down to 360px wide: grids collapse to one column, the header grid stacks, no horizontal scroll.
