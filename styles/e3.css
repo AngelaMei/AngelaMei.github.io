@@ -616,39 +616,40 @@ a:hover .cover--pair .device:nth-child(1) {
   font: inherit;
 }
 
-.case--guide {
+/* Staggered slots: wide, narrow offset down, then mirrored. */
+.case--a {
   grid-column: span 8;
 }
 
-.case--guide .cover {
+.case--a .cover {
   aspect-ratio: 912 / 640;
 }
 
-.case--coin {
+.case--b {
   grid-column: span 4;
   margin-top: 240px;
 }
 
-.case--coin .cover {
+.case--b .cover {
   aspect-ratio: 448 / 400;
 }
 
-.case--patpet {
-  grid-column: 2 / span 4;
+.case--c {
+  grid-column: 2 / span 6;
   margin-top: 40px;
 }
 
-.case--patpet .cover {
-  aspect-ratio: 448 / 460;
+.case--c .cover {
+  aspect-ratio: 696 / 520;
 }
 
-.case--milky {
-  grid-column: 7 / span 6;
+.case--d {
+  grid-column: 9 / span 4;
   margin-top: 160px;
 }
 
-.case--milky .cover {
-  aspect-ratio: 696 / 520;
+.case--d .cover {
+  aspect-ratio: 448 / 460;
 }
 
 @media (max-width: 900px) {
@@ -664,6 +665,10 @@ a:hover .cover--pair .device:nth-child(1) {
 
   .work-grid .case .cover {
     aspect-ratio: 4 / 3;
+  }
+
+  .work-grid .cover--row .device {
+    height: 68cqh;
   }
 }
 
