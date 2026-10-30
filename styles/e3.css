@@ -729,21 +729,21 @@ a:hover .cover--pair .device:nth-child(1) {
   margin-top: 48px;
 }
 
-.paddle {
+.sketch {
   grid-column: span 5;
   width: 100%;
   height: 320px;
 }
 
-.paddle-line {
+.sketch-line {
   stroke-dasharray: 900;
 }
 
-.js .paddle .paddle-line {
+.js .sketch .sketch-line {
   stroke-dashoffset: 900;
 }
 
-.js .paddle.is-in .paddle-line {
+.js .sketch.is-in .sketch-line {
   animation: draw 3s ease-out both;
 }
 
@@ -796,12 +796,12 @@ a:hover .cover--pair .device:nth-child(1) {
     gap: 40px;
   }
 
-  .paddle,
+  .sketch,
   .about-body {
     grid-column: 1;
   }
 
-  .paddle {
+  .sketch {
     height: 240px;
   }
 
@@ -1756,7 +1756,7 @@ a:hover .cover--pair .device:nth-child(1) {
     transform: none;
   }
 
-  .js .paddle .paddle-line {
+  .js .sketch .sketch-line {
     stroke-dashoffset: 0;
   }
 

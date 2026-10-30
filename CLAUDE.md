@@ -46,7 +46,7 @@ Read this whole file before writing code. When something here conflicts with the
 ```
 
 - Type: giant name 800 weight, letter-spacing −0.06em, uppercase. Body 18–22px. Labels: mono 12px uppercase, often in brackets: `[ Selected work ]`, `[ Menu ]`, counters like `(01)`, `Work (05)`.
-- Accent appears only on: "MEI", the italic tagline, availability dot, `[ Menu ]`, key metric (−30%), ✳ marks, the paddle ball, the word "spin", the "@" in the email. Nothing else.
+- Accent appears only on: "MEI", the italic tagline, availability dot, `[ Menu ]`, key metric (−30%), ✳ marks, the volleyball, the word "spin", the "@" in the email. Nothing else.
 - No rounded cards, no shadows, no gradients. Hairlines, white space, big type.
 
 ## 5. Homepage sections (in order)
@@ -55,7 +55,7 @@ Read this whole file before writing code. When something here conflicts with the
 2. **Hero** — left: 3-line intro ("I design calm, human software — / from the messy middle out. / *Usually better than expected.*"); right: mono "Portfolio ’26 / M.S. HCI, Univ. of Maryland / ● Available for 2026 roles" with pulsing dot. Then the giant **ANGELA MEI** (font-size ≈ 15.4vw, wraps to two lines on narrow screens — "MEI" must never be clipped). Under it: small orbiting-dot icon + "Mei Yu-Chi — a name that means 'unexpected'" and a bobbing "Scroll ↓".
 3. **Selected work** — staggered 12-col grid of 4 cases (Guide App 8 cols; Coin Toss 4 cols offset down; Pat Pet cols 2–5; Milky Way cols 7–12 offset down). Caption row in mono: `(01) Guide App · UX Research · Product · −30% editing time`. Images: subtle scale/ripple on hover (CSS only is fine; WebGL optional later).
 4. **Principles marquee** — Instrument Serif italic ~96px, infinite scroll: "Clarity over cleverness ✳ Research earns the design ✳ Details carry the feeling ✳".
-5. **About** — `[ About ]` label. Left: one-line SVG hand + table-tennis paddle that draws in on scroll (stroke-dashoffset), accent ball bobbing. Right: "Finance taught me *systems.* HCI taught me *people.* Table tennis taught me to read the **spin** before it lands." + 3 hairline rows: Now — Product & UX design, Zürich / Study — M.S. HCI, University of Maryland / Roots — Finance.
+5. **About** — `[ About ]` label. Left: one-line SVG hand reaching up to a volleyball; the line draws in on scroll (stroke-dashoffset), the accent ball bobs. Right: "Finance taught me *systems.* HCI taught me *people.* Volleyball taught me to read the **spin** before it lands." + 3 hairline rows: Now — Product & UX design, Zürich / Study — M.S. HCI, University of Maryland / Roots — Finance.
 6. **Archive** — table Name · Detail · Date: Student Social Life; Galaxy Generator ↗ (highlight row); Go for a Ride ↗. Links: reuse URLs from current `works.html`.
 7. **Footer** — `[ Contact ] — click to copy` + huge email (click copies to clipboard, shows "Copied"), then 4-col mono row: ©2026 Angela Mei · LinkedIn · GitHub · Résumé (PDF) · Back to top ↑.
 
@@ -67,10 +67,10 @@ Read this whole file before writing code. When something here conflicts with the
 | Section headings / cards | same rise, triggered by IntersectionObserver once |
 | Availability dot | pulse 2s infinite |
 | Name-meaning icon | dot orbits a dashed circle, 6s linear |
-| "Scroll ↓", paddle ball | bob 2.4s / 1.8s |
+| "Scroll ↓", volleyball | bob 2.4s / 1.8s |
 | "→" / "↗" arrows | nudge 5px, 1.6s |
 | Marquee | translateX 0 → −50%, 30s linear, content duplicated |
-| Paddle line drawing | stroke-dashoffset 900 → 0, 3s on enter |
+| Hand line drawing | stroke-dashoffset 900 → 0, 3s on enter |
 
 Keep it calm — nothing faster than these values, no scroll-jacking.
 

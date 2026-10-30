@@ -103,7 +103,7 @@
   }
 
   // Scroll reveal (once). Reduced motion: CSS already shows the final state.
-  var items = document.querySelectorAll(".reveal, .reveal-line, .paddle");
+  var items = document.querySelectorAll(".reveal, .reveal-line, .sketch");
   if (!("IntersectionObserver" in window)) {
     items.forEach(function (el) {
       el.classList.add("is-in");
