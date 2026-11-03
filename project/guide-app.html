@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/e3.css?v=20261103j" />
+    <link rel="stylesheet" href="/styles/e3.css?v=20261103k" />
     <script>document.documentElement.classList.add("js");</script>
   </head>
   <body id="top">
@@ -163,22 +163,27 @@
             <img src="/media/project/guide-app/Canvas.png" alt="Business Model Canvas" />
           </figure>
         </div>
-        <figure class="case-figure reveal">
-          <img src="/media/project/guide-app/KeyInsights.png" alt="Key insights from user interviews" />
-          <figcaption>Key insights synthesized from user interviews.</figcaption>
-        </figure>
-        <div class="case-three reveal">
+        <p class="mono muted reveal">Key insights synthesized from user interviews</p>
+        <div class="case-three stat-grid reveal">
           <div class="stat">
             <div class="figure">95%</div>
-            <p>showed strong interest in micro-learning formats.</p>
+            <p>responded positively to micro-learning.</p>
+          </div>
+          <div class="stat">
+            <div class="figure">90%</div>
+            <p>found their company’s current learning system tedious.</p>
+          </div>
+          <div class="stat">
+            <div class="figure">85%</div>
+            <p>edit video with desktop tools rather than mobile ones.</p>
           </div>
           <div class="stat">
             <div class="figure">80%</div>
-            <p>found locating the right video to edit most time-consuming.</p>
+            <p>found locating the right video to edit the most time-consuming part.</p>
           </div>
           <div class="stat">
             <div class="figure">70%</div>
-            <p>wanted easier performance tracking and timely feedback.</p>
+            <p>wanted to track training performance more easily and get timely feedback.</p>
           </div>
         </div>
         <div class="case-block reveal">
@@ -299,8 +304,15 @@
         </p>
         <div class="case-two reveal">
           <figure class="case-figure">
-            <img src="/media/project/guide-app/Chart.png" alt="6 scenario ease score" />
-            <figcaption>6-scenario ease scores.</figcaption>
+            <ol class="score-chart" aria-label="Ease score per scenario, out of 5">
+              <li><span class="mono">S1</span><span class="score-bar" aria-hidden="true"><span style="width: 80%"></span></span><span class="mono">4.0</span></li>
+              <li><span class="mono">S2</span><span class="score-bar" aria-hidden="true"><span style="width: 72%"></span></span><span class="mono">3.6</span></li>
+              <li><span class="mono">S3</span><span class="score-bar" aria-hidden="true"><span style="width: 70%"></span></span><span class="mono">3.5</span></li>
+              <li><span class="mono">S4</span><span class="score-bar" aria-hidden="true"><span style="width: 100%"></span></span><span class="mono">5.0</span></li>
+              <li><span class="mono">S5</span><span class="score-bar" aria-hidden="true"><span style="width: 100%"></span></span><span class="mono">5.0</span></li>
+              <li><span class="mono">S6</span><span class="score-bar" aria-hidden="true"><span style="width: 80%"></span></span><span class="mono">4.0</span></li>
+            </ol>
+            <figcaption>Ease score per scenario (S1–S6), out of 5.</figcaption>
           </figure>
           <figure class="case-figure">
             <img src="/media/project/guide-app/heatmap.png" alt="Interaction heatmap" />
@@ -526,9 +538,13 @@
           covering a full workflow: upload, trim, add text and audio, publish,
           add to a playlist, and assign to patients.
         </p>
-        <figure class="case-figure plain reveal">
-          <img src="/media/project/guide-app/workflow.png" alt="Tested workflow" />
-        </figure>
+        <ol class="fact-grid flow-steps reveal" aria-label="Tested workflow">
+          <li class="fact"><h3>01 · Studio Dashboard</h3><p>The central hub for all video work.</p></li>
+          <li class="fact"><h3>02 · Import Material</h3><p>Therapists upload their own video files or pick existing content from the library to start editing.</p></li>
+          <li class="fact"><h3>03 · Mark &amp; Snip</h3><p>In the edit screen, therapists trim, annotate and enhance the video.</p></li>
+          <li class="fact"><h3>04 · Publish Video</h3><p>Once editing is done, therapists publish the video and add hashtags.</p></li>
+          <li class="fact"><h3>05 · Patient Assignment</h3><p>The finished video or playlist goes straight to individual patients for personalised viewing.</p></li>
+        </ol>
         <div class="case-two reveal">
           <div>
             <h3>Feedback</h3>
@@ -638,6 +654,6 @@
         <a href="#top">Back to top ↑</a>
       </div>
     </footer>
-    <script src="/styles/e3.js?v=20261103j" defer></script>
+    <script src="/styles/e3.js?v=20261103k" defer></script>
   </body>
 </html>

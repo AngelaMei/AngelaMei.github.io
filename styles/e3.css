@@ -1910,6 +1910,50 @@ html:not(.js) .device--cycle img + img {
   font-size: 16px;
 }
 
+/* Ease scores as plain bars: label, track, value. */
+.score-chart {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.score-chart li {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) 32px;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.score-bar {
+  height: 10px;
+  background: var(--line);
+}
+
+.score-bar span {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+}
+
+.flow-steps {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flow-steps p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.stat-grid {
+  margin-top: 24px;
+}
+
 .callout {
   margin-top: 120px;
   padding: 48px 0;
