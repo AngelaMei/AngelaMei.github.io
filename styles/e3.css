@@ -623,7 +623,12 @@ p {
   }
 
   .scroll-cue {
-    display: none;
+    flex: none;
+  }
+
+  .pixel-cue {
+    width: 42px;
+    height: 57px;
   }
 }
 
