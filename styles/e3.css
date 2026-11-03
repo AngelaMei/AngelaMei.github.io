@@ -1836,6 +1836,11 @@ html:not(.js) .device--cycle img + img {
   margin-left: 0;
 }
 
+/* Small reference images (sticky-note boards) — never wider than a column of text. */
+.case-figure--small {
+  max-width: 360px;
+}
+
 .case-figure img,
 .case-figure video {
   width: 100%;
