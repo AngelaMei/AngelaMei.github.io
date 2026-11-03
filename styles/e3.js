@@ -102,6 +102,16 @@
     });
   }
 
+  // Hairline under the sticky header once the page has scrolled.
+  var header = document.querySelector(".site-header");
+  if (header) {
+    var onScroll = function () {
+      header.classList.toggle("is-scrolled", window.scrollY > 8);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
   // Scroll reveal (once). Reduced motion: CSS already shows the final state.
   var items = document.querySelectorAll(".reveal, .reveal-line, .sketch");
   if (!("IntersectionObserver" in window)) {
