@@ -923,12 +923,13 @@ a:hover .cover--pair .device:nth-child(1) {
   box-shadow: var(--pad) 0 0 var(--row-hl);
 }
 
-.archive .ext {
+.archive tr.is-highlight .ext {
   color: var(--accent);
 }
 
 @media (max-width: 600px) {
   .archive td:first-child {
+    width: auto;
     font-size: 22px;
   }
 
