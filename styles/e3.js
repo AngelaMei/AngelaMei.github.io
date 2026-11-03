@@ -459,14 +459,20 @@
     resize();
   }
 
-  // Live hero covers: cross-fade one phone's screens while on screen; [ Pause ] stops it all.
+  // Live hero covers: play the walkthrough / cross-fade screens while on screen; [ Pause ] stops it.
   document.querySelectorAll("[data-live]").forEach(function (live) {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     var shots = live.querySelectorAll("[data-cycle] img");
+    var video = live.querySelector("video");
     var toggle = live.querySelector("[data-live-toggle]");
     var at = 0;
     var paused = false;
     var seen = true;
+    var sync = function () {
+      if (!video) return;
+      if (paused || !seen) video.pause();
+      else video.play().catch(function () {});
+    };
     setInterval(function () {
       if (paused || !seen || document.hidden || shots.length < 2) return;
       shots[at].classList.remove("is-on");
@@ -476,6 +482,7 @@
     if ("IntersectionObserver" in window) {
       new IntersectionObserver(function (entries) {
         seen = entries[0].isIntersecting;
+        sync();
       }).observe(live);
     }
     if (toggle) {
@@ -484,6 +491,7 @@
         live.classList.toggle("is-paused", paused);
         toggle.setAttribute("aria-pressed", String(paused));
         toggle.textContent = paused ? "[ Play ]" : "[ Pause ]";
+        sync();
       });
     }
   });

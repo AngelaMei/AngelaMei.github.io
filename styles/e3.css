@@ -1520,8 +1520,8 @@ a:hover .cover--pair .device:nth-child(1) {
   aspect-ratio: 4 / 5;
 }
 
-/* Live hero cover (Water, MuPa): phones rise in, then float; one phone
-   cross-fades through screens; MuPa stamps press onto the panel. */
+/* Live hero cover (Water, MuPa): phones rise in, then show the product —
+   a recorded walkthrough (Water) or screens changing (MuPa); MuPa stamps press onto the panel. */
 @keyframes device-in {
   from {
     transform: translateY(40cqh);
@@ -1530,15 +1530,6 @@ a:hover .cover--pair .device:nth-child(1) {
   to {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-@keyframes float {
-  from {
-    translate: 0 0;
-  }
-  to {
-    translate: 0 -2.5cqh;
   }
 }
 
@@ -1556,17 +1547,19 @@ a:hover .cover--pair .device:nth-child(1) {
 .cover--live .device {
   position: relative;
   z-index: 1;
-  animation:
-    device-in 1.1s 0.3s var(--ease) both,
-    float 3s 1.4s ease-in-out infinite alternate;
+  animation: device-in 1.1s 0.3s var(--ease) both;
 }
 
 .cover--live .device:nth-of-type(2) {
-  animation-delay: 0.45s, 2.4s;
+  animation-delay: 0.45s;
 }
 
-.cover--live.is-paused .device {
-  animation-play-state: running, paused;
+.device video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .device--cycle img {
