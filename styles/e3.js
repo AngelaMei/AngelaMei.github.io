@@ -1,4 +1,4 @@
-// E3 — splash, clock, scroll reveal, menu overlay, copy email, playground game.
+// E3 — splash, clock, scroll reveal, menu overlay, copy email, playground game, live covers.
 (function () {
   "use strict";
 
@@ -458,6 +458,35 @@
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(draw);
     resize();
   }
+
+  // Live hero covers: cross-fade one phone's screens while on screen; [ Pause ] stops it all.
+  document.querySelectorAll("[data-live]").forEach(function (live) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var shots = live.querySelectorAll("[data-cycle] img");
+    var toggle = live.querySelector("[data-live-toggle]");
+    var at = 0;
+    var paused = false;
+    var seen = true;
+    setInterval(function () {
+      if (paused || !seen || document.hidden || shots.length < 2) return;
+      shots[at].classList.remove("is-on");
+      at = (at + 1) % shots.length;
+      shots[at].classList.add("is-on");
+    }, 3200);
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        seen = entries[0].isIntersecting;
+      }).observe(live);
+    }
+    if (toggle) {
+      toggle.addEventListener("click", function () {
+        paused = !paused;
+        live.classList.toggle("is-paused", paused);
+        toggle.setAttribute("aria-pressed", String(paused));
+        toggle.textContent = paused ? "[ Play ]" : "[ Pause ]";
+      });
+    }
+  });
 
   // Hairline under the sticky header once the page has scrolled.
   var header = document.querySelector(".site-header");

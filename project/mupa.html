@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/e3.css?v=20261103g" />
+    <link rel="stylesheet" href="/styles/e3.css?v=20261103h" />
     <script>document.documentElement.classList.add("js");</script>
   </head>
   <body id="top">
@@ -66,9 +66,18 @@
       </section>
 
       <div class="case-cover">
-        <div class="cover cover--pair">
+        <div class="cover cover--pair cover--live" data-live>
+          <img class="cover-stamp" src="/media/project/mupa/hirshhorn_stamp.svg" alt="" style="--x: 7%; --y: 12%; --r: -12deg; --d: 1.2s" />
+          <img class="cover-stamp" src="/media/project/mupa/natural_history_stamp.svg" alt="" style="--x: 13%; --y: 58%; --r: 8deg; --d: 1.6s" />
+          <img class="cover-stamp" src="/media/project/mupa/air_and_space_dc_stamp.svg" alt="" style="--x: 77%; --y: 10%; --r: 10deg; --d: 2s" />
+          <img class="cover-stamp" src="/media/project/mupa/portrait_gallery_stamp.svg" alt="" style="--x: 81%; --y: 56%; --r: -6deg; --d: 2.4s" />
           <span class="device"><img src="/media/covers/mupa-passport.jpg" alt="MuPa passport with seven collected museum stamps" width="720" height="1566" /></span>
-          <span class="device"><img src="/media/covers/mupa-map.jpg" alt="MuPa map of Washington, D.C. with museum pins" width="720" height="1566" /></span>
+          <span class="device device--cycle" data-cycle>
+            <img class="is-on" src="/media/covers/mupa-map.jpg" alt="MuPa map of Washington, D.C. with museum pins" width="720" height="1566" />
+            <img src="/media/project/mupa/museums.jpg" alt="" width="720" height="1566" loading="lazy" />
+            <img src="/media/project/mupa/stamp-log.jpg" alt="" width="720" height="1566" loading="lazy" />
+          </span>
+          <button class="cover-toggle mono" type="button" data-live-toggle aria-pressed="false">[ Pause ]</button>
         </div>
       </div>
 
@@ -276,6 +285,6 @@
         <a href="#top">Back to top ↑</a>
       </div>
     </footer>
-    <script src="/styles/e3.js?v=20261103g" defer></script>
+    <script src="/styles/e3.js?v=20261103h" defer></script>
   </body>
 </html>
