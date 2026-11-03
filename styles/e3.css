@@ -570,20 +570,28 @@ p {
   line-height: 0;
 }
 
-.pixel-cue .p-k {
+.p-k {
   fill: var(--ink);
 }
 
-.pixel-cue .p-a {
+.p-a {
   fill: var(--accent);
 }
 
-.pixel-cue .p-s {
+.p-s {
   fill: #e9c9a8;
 }
 
-.pixel-cue .p-m {
+.p-m {
   fill: var(--muted);
+}
+
+.p-w {
+  fill: #ffffff;
+}
+
+.p-l {
+  fill: var(--line);
 }
 
 .pixel-cue-arm,
@@ -882,20 +890,49 @@ a:hover .cover--pair .device:nth-child(1) {
   height: 320px;
 }
 
-.sketch-line {
-  stroke-dasharray: 900;
+/* Pixel volleyball: the ball goes up and comes back to the hands in steps;
+   the character hops on each touch. One rally = 1.8s. */
+.pixel-ball {
+  animation: rally 1.8s steps(1, end) infinite;
 }
 
-.js .sketch .sketch-line {
-  stroke-dashoffset: 900;
+.pixel-hero {
+  animation: set-hop 1.8s steps(1, end) infinite;
 }
 
-.js .sketch.is-in .sketch-line {
-  animation: draw 3s ease-out both;
+@keyframes rally {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-3px);
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+  45% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-6px);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+  90% {
+    transform: translateY(-1px);
+  }
 }
 
-.ball {
-  animation: bob 1.8s ease-in-out infinite;
+@keyframes set-hop {
+  0%,
+  100% {
+    transform: translateY(-1px);
+  }
+  10% {
+    transform: translateY(0);
+  }
 }
 
 .about-body {
@@ -2155,10 +2192,6 @@ html:not(.js) .device--cycle img + img {
   .js .reveal-line > span {
     opacity: 1;
     transform: none;
-  }
-
-  .js .sketch .sketch-line {
-    stroke-dashoffset: 0;
   }
 
   .marquee {
