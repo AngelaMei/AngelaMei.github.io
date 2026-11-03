@@ -564,10 +564,47 @@ p {
   animation: orbit 6s linear infinite;
 }
 
+/* Scroll cue: the Playground's pixel character points down at the work. */
 .scroll-cue {
   display: inline-block;
-  color: var(--muted);
-  animation: bob 2.4s ease-in-out infinite;
+  line-height: 0;
+}
+
+.pixel-cue .p-k {
+  fill: var(--ink);
+}
+
+.pixel-cue .p-a {
+  fill: var(--accent);
+}
+
+.pixel-cue .p-s {
+  fill: #e9c9a8;
+}
+
+.pixel-cue .p-m {
+  fill: var(--muted);
+}
+
+.pixel-cue-arm,
+.pixel-cue-arrow {
+  animation: poke 2.4s steps(1, end) infinite;
+}
+
+.pixel-cue-arrow {
+  animation-name: poke-arrow;
+}
+
+@keyframes poke {
+  50% {
+    transform: translateY(1px);
+  }
+}
+
+@keyframes poke-arrow {
+  50% {
+    transform: translateY(2px);
+  }
 }
 
 @media (max-width: 600px) {
