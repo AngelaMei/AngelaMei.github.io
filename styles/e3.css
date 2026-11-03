@@ -254,6 +254,77 @@ p {
   animation: nudge 1.6s ease-in-out infinite;
 }
 
+/* ---------- Splash (homepage, once per visit) ---------- */
+
+.splash {
+  display: none;
+}
+
+.is-splash,
+.is-splash body {
+  overflow: hidden;
+}
+
+/* Hold the hero's entrance until the splash lifts. */
+.is-splash .load-rise {
+  animation-play-state: paused;
+}
+
+.is-splash .splash,
+.splash.is-done {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px var(--pad);
+  background: var(--bg);
+}
+
+.splash.is-done {
+  transform: translateY(-100%);
+  transition: transform 0.9s var(--ease);
+}
+
+.splash-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.splash-count {
+  margin-top: 8px;
+  font-size: clamp(120px, 22vw, 320px);
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  font-variant-numeric: tabular-nums;
+}
+
+.splash-pct {
+  margin-left: 0.15em;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  vertical-align: top;
+}
+
+.splash-bar {
+  height: 1px;
+  margin-top: 32px;
+  background: var(--line);
+}
+
+.splash-bar span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
 /* ---------- Header ---------- */
 
 .site-header {
@@ -949,17 +1020,12 @@ a:hover .cover--pair .device:nth-child(1) {
   margin-top: 48px;
 }
 
-.game-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 32px;
-}
 
 /* The scene is drawn in e3.js; this only sizes it. */
 .game-stage {
   display: block;
   width: 100%;
-  height: 260px;
+  height: 190px;
   margin-top: 24px;
   border-bottom: 1px solid var(--ink);
   image-rendering: pixelated;
@@ -1008,7 +1074,7 @@ a:hover .cover--pair .device:nth-child(1) {
 
 @media (max-width: 600px) {
   .game-stage {
-    height: 200px;
+    height: 130px;
   }
 
   .game-bar {

@@ -15,10 +15,34 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/e3.css?v=20261103d" />
-    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="/styles/e3.css?v=20261103e" />
+    <script>
+      document.documentElement.classList.add("js");
+      // Splash once per visit; the timeout is a failsafe if e3.js never runs.
+      try {
+        if (!sessionStorage.getItem("e3-splash")) {
+          document.documentElement.classList.add("is-splash");
+          setTimeout(function () { document.documentElement.classList.remove("is-splash"); }, 6000);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body id="top">
+    <div class="splash" aria-hidden="true" data-splash>
+      <div class="splash-row mono">
+        <span>[ Angela Mei ]</span>
+        <span class="muted">Portfolio ’26</span>
+      </div>
+      <div class="splash-main">
+        <p class="splash-name mono muted">Mei Yu-Chi — loading the unexpected</p>
+        <p class="splash-count"><span data-splash-count>0</span><span class="splash-pct mono">%</span></p>
+        <div class="splash-bar"><span data-splash-bar></span></div>
+      </div>
+      <div class="splash-row mono muted">
+        <span>Product &amp; UX Designer</span>
+        <span>Zürich, CH</span>
+      </div>
+    </div>
     <a class="skip-link mono" href="#main">Skip to content</a>
 
     <header class="site-header mono">
@@ -182,8 +206,8 @@
         </div>
 
         <div class="game reveal" data-game>
-          <p class="game-meta mono muted"><span>5 levels</span><span>1 player</span><span>Walk to the gate to enter</span></p>
-          <canvas class="game-stage" data-game-stage role="img" aria-label="Pixel scene: a small character in an orange beanie on the left, a volleyball in the middle, and a gate marked Playground on the right."></canvas>
+          <p class="game-meta mono muted">Walk to the gate to enter playground</p>
+          <canvas class="game-stage" data-game-stage role="img" aria-label="Pixel scene: a small character in an orange beanie on the left, a volleyball in the middle, and an arcade machine on the right."></canvas>
           <div class="game-bar mono">
             <div class="game-pad" aria-hidden="true">
               <button class="game-btn" type="button" tabindex="-1" data-walk="-1">◀</button>
@@ -210,6 +234,6 @@
       </div>
     </footer>
 
-    <script src="/styles/e3.js?v=20261103d" defer></script>
+    <script src="/styles/e3.js?v=20261103e" defer></script>
   </body>
 </html>
