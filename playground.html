@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground — Angela Mei</title>
+    <meta name="description" content="Angela Mei's playground: side builds in 3D, creative code and physical computing." />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/e3.css?v=20261103c" />
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body id="top">
+    <a class="skip-link mono" href="#main">Skip to content</a>
+
+    <header class="site-header mono">
+      <a href="/">[ Angela Mei ]</a>
+      <p class="meta muted">
+        Product &amp; UX Designer<br />Zürich, CH — <span data-clock>CET</span>
+      </p>
+      <nav class="nav" aria-label="Main">
+        <a href="/works">Work <span class="nav-count">(07)</span></a>
+        <a href="/playground" aria-current="page">Playground <span class="nav-count">(05)</span></a>
+        <a href="/about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle mono" type="button" data-menu-open aria-haspopup="dialog" aria-expanded="false" aria-controls="menu">
+        [ Menu ]
+      </button>
+    </header>
+
+    <dialog class="menu" id="menu" aria-label="Menu">
+      <div class="menu-top mono">
+        <span>[ Angela Mei ]</span>
+        <button class="menu-close mono" type="button" data-menu-close>[ Close ]</button>
+      </div>
+      <ul class="menu-links">
+        <li><a href="/works">Work <span class="mono muted">(07)</span></a></li>
+        <li><a href="/playground">Playground <span class="mono muted">(05)</span></a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <p class="mono muted">Zürich, CH — <span data-clock>CET</span></p>
+    </dialog>
+
+    <main id="main">
+      <section class="page-hero" aria-labelledby="page-title">
+        <p class="mono muted">[ Playground ] — Side quests</p>
+        <h1 class="page-title page-title--long" id="page-title">
+          <span class="mask"><span class="load-rise">Playground</span></span>
+          <span class="mono page-count">(05)</span>
+        </h1>
+        <p class="page-lede">
+          <span class="mask"><span class="load-rise" style="--d: 0.2s">Things I built to learn a tool or follow a hunch —</span></span>
+          <span class="mask"><span class="load-rise muted" style="--d: 0.3s">3D on the web, creative code, and sensors.</span></span>
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="levels-title">
+        <div class="section-head mono">
+          <h2 class="mask reveal-line" id="levels-title"><span>[ Levels ]</span></h2>
+          <span class="muted hide-sm">Experiments, research &amp; side builds</span>
+        </div>
+
+        <table class="archive">
+          <thead class="mono">
+            <tr><th scope="col">Name</th><th scope="col">Detail</th><th scope="col">Date</th></tr>
+          </thead>
+          <tbody>
+            <tr class="is-highlight">
+              <td><a href="https://two-halves.vercel.app/" target="_blank" rel="noopener noreferrer">Two Halves <span class="ext nudge" aria-hidden="true">↗</span><span class="visually-hidden">(opens in a new tab)</span></a></td>
+              <td>Scroll story · Three.js · Blender</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.youtube.com/watch?v=DhTv3GA1IaI&amp;list=PLnXfXH33uN1v6SuTXA6VnGYZPcEQfoF3d" target="_blank" rel="noopener noreferrer">Aim &amp; Hit <span class="ext nudge" aria-hidden="true">↗</span><span class="visually-hidden">(video on YouTube, opens in a new tab)</span></a></td>
+              <td>Sensor game · ESP32 · Physical computing</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td><a href="https://go-for-a-ride.vercel.app/" target="_blank" rel="noopener noreferrer">Go for a Ride <span class="ext nudge" aria-hidden="true">↗</span><span class="visually-hidden">(opens in a new tab)</span></a></td>
+              <td>Driving scene · Three.js · Blender</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td><a href="https://19-galaxy-generator-iota-pink.vercel.app/" target="_blank" rel="noopener noreferrer">Galaxy Generator <span class="ext nudge" aria-hidden="true">↗</span><span class="visually-hidden">(opens in a new tab)</span></a></td>
+              <td>Creative coding · WebGL</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td><a href="/project/student-social-life">Student Social Life</a></td>
+              <td>UX research · Service design</td>
+              <td>2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <p class="mono muted" data-copy-status aria-live="polite">[ Contact ] — click to copy</p>
+      <button class="email" type="button" data-copy="angela101475@gmail.com">angela101475<span class="accent">@</span>gmail.com</button>
+      <div class="footer-row mono">
+        <span>©2026 Angela Mei</span>
+        <span>
+          <a href="https://www.linkedin.com/in/angela-mei" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+          <a href="https://github.com/AngelaMei" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </span>
+        <a href="https://drive.google.com/file/d/17-CJW2dArsCYxxthyIYxR-XOy4KzTuFk/view" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="/styles/e3.js?v=20261103c" defer></script>
+  </body>
+</html>

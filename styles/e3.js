@@ -1,4 +1,4 @@
-// E3 — clock, scroll reveal, menu overlay, copy email.
+// E3 — clock, scroll reveal, menu overlay, copy email, playground gate.
 (function () {
   "use strict";
 
@@ -99,6 +99,78 @@
           status.textContent = original;
         }, 2000);
       }, mail);
+    });
+  }
+
+  // Playground gate: a two-choice "start screen" on the homepage.
+  var gate = document.querySelector("[data-gate]");
+  if (gate) {
+    var yes = gate.querySelector("[data-gate-yes]");
+    var no = gate.querySelector("[data-gate-no]");
+    var gateStatus = gate.querySelector("[data-gate-status]");
+    var choices = [yes, no];
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var declined = 0;
+    var hint = window.matchMedia("(hover: hover)").matches
+      ? "← → to choose · Enter to start"
+      : "Tap to choose";
+    gateStatus.textContent = hint;
+
+    var select = function (el) {
+      choices.forEach(function (c) {
+        c.classList.toggle("is-active", c === el);
+      });
+    };
+
+    choices.forEach(function (c) {
+      c.addEventListener("mouseenter", function () { select(c); });
+      c.addEventListener("focus", function () { select(c); });
+    });
+
+    gate.addEventListener("keydown", function (e) {
+      var key = e.key.toLowerCase();
+      if (/^arrow(left|right|up|down)$/.test(key)) {
+        e.preventDefault();
+        (document.activeElement === yes ? no : yes).focus();
+      } else if (key === "y") {
+        yes.click();
+      } else if (key === "n") {
+        no.click();
+      }
+    });
+
+    no.addEventListener("click", function () {
+      declined += 1;
+      gate.classList.remove("is-starting");
+      gate.classList.add("is-resting");
+      gateStatus.textContent = declined === 1
+        ? "Okay — progress saved. It'll be here."
+        : "Still here whenever you are.";
+    });
+
+    yes.addEventListener("click", function (e) {
+      // New-tab clicks and reduced motion go straight through.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || reduce.matches) return;
+      e.preventDefault();
+      gate.classList.remove("is-resting");
+      gate.classList.add("is-starting");
+      var step = 0;
+      var load = setInterval(function () {
+        step += 1;
+        gateStatus.textContent =
+          "Loading " + "▮".repeat(step) + "▯".repeat(8 - step);
+        if (step === 8) {
+          clearInterval(load);
+          window.location.href = yes.href;
+        }
+      }, 110);
+    });
+
+    // Coming back with the browser's back button: reset the start screen.
+    window.addEventListener("pageshow", function () {
+      gate.classList.remove("is-starting", "is-resting");
+      gateStatus.textContent = hint;
+      select(yes);
     });
   }
 

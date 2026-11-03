@@ -943,6 +943,130 @@ a:hover .cover--pair .device:nth-child(1) {
   }
 }
 
+/* ---------- Playground gate (homepage) ---------- */
+
+.gate {
+  margin-top: 48px;
+  padding: 64px 0 56px;
+  border-bottom: 1px solid var(--line);
+}
+
+.gate-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 32px;
+}
+
+.gate-q {
+  margin-top: 24px;
+  font-size: clamp(56px, 10.5vw, 168px);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.gate-end {
+  white-space: nowrap;
+}
+
+.gate-q .serif {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.gate-ball {
+  display: inline-block;
+  width: 0.42em;
+  height: 0.42em;
+  margin-left: 0.08em;
+  vertical-align: 0.5em;
+  animation: bob 1.8s ease-in-out infinite;
+}
+
+.gate-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 64px;
+  margin-top: 48px;
+}
+
+.gate-choice {
+  position: relative;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 0 8px 32px;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-size: clamp(24px, 2.6vw, 36px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gate-choice::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.gate-choice.is-active::before {
+  opacity: 1;
+  animation: blink 1.2s step-end infinite;
+}
+
+.gate-key {
+  color: var(--muted);
+}
+
+.gate-status {
+  margin-top: 32px;
+  min-height: 1.5em;
+}
+
+/* "Yes": the ball is served out of frame before the page changes. */
+.gate.is-starting .gate-ball {
+  animation: serve 0.7s var(--ease) forwards;
+}
+
+/* "Not now": the ball comes to rest. */
+.gate.is-resting .gate-ball {
+  animation: none;
+  transform: translateY(0.12em);
+  transition: transform 0.6s var(--ease);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes serve {
+  to {
+    transform: translate(2em, -1.6em) rotate(200deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .gate {
+    padding: 40px 0;
+  }
+
+  .gate-choices {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 32px;
+  }
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -1048,6 +1172,11 @@ a:hover .cover--pair .device:nth-child(1) {
     display: inline;
     clip-path: none;
   }
+}
+
+/* Long one-word titles (Playground) shrink so the count still fits. */
+.page-title.page-title--long {
+  font-size: 12vw;
 }
 
 /* ---------- About page ---------- */
