@@ -900,6 +900,18 @@ a:hover .cover--pair .device:nth-child(1) {
   animation: set-hop 1.8s steps(1, end) infinite;
 }
 
+/* Scrolled down to the Playground: the ball falls out of this scene and into the game. */
+.pixel-scene.is-dropped .pixel-ball {
+  animation: drop-out 0.6s ease-in forwards;
+}
+
+@keyframes drop-out {
+  to {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+}
+
 @keyframes rally {
   0%,
   100% {

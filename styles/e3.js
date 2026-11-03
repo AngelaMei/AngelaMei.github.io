@@ -199,6 +199,10 @@
     var idleT = 1; // seconds since the last step; the dance starts at 1
     var danceT = 0;
     var ball = { x: 0, y: 0, vx: 0, vy: 0, placed: false };
+    // The About scene above holds the ball; it drops in here the first time
+    // the game comes into view, and goes back up if you scroll back to About.
+    var scene = document.querySelector(".pixel-scene");
+    ball.held = !!scene && !still.matches && "IntersectionObserver" in window;
     var input = 0;
     var held = {};
     var state = "play";
@@ -283,7 +287,7 @@
       drawArt(hero.up ? bodyUp : body, hx, y, flip, hero.alpha);
       drawArt(legs[hero.frame], hx, y + 11, flip, hero.alpha);
       var spin = Math.floor(ball.x / 3) % 2 === 1;
-      drawArt(ballArt, Math.round(ball.x), Math.round(ball.y), spin);
+      if (!ball.held) drawArt(ballArt, Math.round(ball.x), Math.round(ball.y), spin);
     };
 
     var enter = function () {
@@ -315,7 +319,7 @@
           gameStatus.textContent = "Keep going — the arcade is on the right.";
         }
         // Walking into the ball kicks it.
-        if (Math.abs(hero.x + 5 - (ball.x + 3)) < 6 && ball.y >= ground - 7) {
+        if (!ball.held && Math.abs(hero.x + 5 - (ball.x + 3)) < 6 && ball.y >= ground - 7) {
           ball.vx = input * 130;
           ball.vy = -90;
         }
@@ -343,7 +347,7 @@
         busy = state === "play" && onScreen && !still.matches; // keep counting idle time
       }
 
-      if (ball.vx || ball.vy || ball.y < ground - 6) {
+      if (!ball.held && (ball.vx || ball.vy || ball.y < ground - 6)) {
         ball.vy += 320 * dt;
         ball.x += ball.vx * dt;
         ball.y += ball.vy * dt;
@@ -379,10 +383,38 @@
     // horizontal scroll, so nothing else is listening for these keys.
     var onScreen = false;
     if ("IntersectionObserver" in window) {
+      // Back at About with the game out of sight: the ball returns to the About scene.
+      var sceneRatio = 0;
+      var maybeReturn = function () {
+        if (!scene || still.matches || ball.held || state !== "play") return;
+        var r = stage.getBoundingClientRect();
+        if (sceneRatio < 0.6 || (r.top < window.innerHeight && r.bottom > 0)) return;
+        ball.held = true;
+        ball.vx = 0;
+        ball.vy = 0;
+        scene.classList.remove("is-dropped");
+        draw();
+      };
       new IntersectionObserver(function (entries) {
         onScreen = entries[0].isIntersecting;
+        if (onScreen && ball.held) {
+          ball.held = false;
+          ball.y = -8;
+          ball.vx = 0;
+          ball.vy = 0;
+          scene.classList.add("is-dropped");
+        }
         if (onScreen) wake();
       }, { threshold: 0.5 }).observe(stage);
+      new IntersectionObserver(function () {
+        maybeReturn();
+      }, { threshold: 0 }).observe(stage);
+      if (scene) {
+        new IntersectionObserver(function (entries) {
+          sceneRatio = entries[0].intersectionRatio;
+          maybeReturn();
+        }, { threshold: [0, 0.6, 1] }).observe(scene);
+      }
     } else {
       onScreen = true;
     }
