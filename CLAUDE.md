@@ -51,12 +51,12 @@ Read this whole file before writing code. When something here conflicts with the
 
 ## 5. Homepage sections (in order)
 
-1. **Header** — sticky, white, hairline once scrolled. Desktop: `[ Angela Mei ]` · "Product & UX Designer / Zürich, CH — {live time} CET" · nav at the right in sans 16px/500 (`Work (07) Archive (03) About Contact`, counts small mono). Phones (≤900px): `[ Angela Mei ]` + `[ Menu ]` only, which opens the full-screen overlay nav (it also shows the clock). Live clock in Europe/Zurich via `Intl.DateTimeFormat`, updates each minute. Skip the "Sound" toggle unless Angela asks for sound.
+1. **Header** — sticky, white, hairline once scrolled. Desktop: `[ Angela Mei ]` · "Product & UX Designer / Zürich, CH — {live time} CET" · nav at the right in sans 16px/500 (`Work (07) Playground (03) About Contact`, counts small mono). Phones (≤900px): `[ Angela Mei ]` + `[ Menu ]` only, which opens the full-screen overlay nav (it also shows the clock). Live clock in Europe/Zurich via `Intl.DateTimeFormat`, updates each minute. Skip the "Sound" toggle unless Angela asks for sound.
 2. **Hero** — left: 3-line intro ("I design calm, human software — / from the messy middle out. / *Usually better than expected.*"); right: mono "Portfolio ’26 / M.S. HCI, Univ. of Maryland / ● Available for 2026 roles" with pulsing dot. Then the giant **ANGELA MEI** (font-size ≈ 15.4vw, wraps to two lines on narrow screens — "MEI" must never be clipped). Under it: small orbiting-dot icon + "Mei Yu-Chi — a name that means 'unexpected'" and a bobbing "Scroll ↓".
 3. **Selected work** — staggered 12-col grid of 4 cases (Guide App 8 cols; Coin Toss 4 cols offset down; Pat Pet cols 2–5; Milky Way cols 7–12 offset down). Caption row in mono: `(01) Guide App · UX Research · Product · −30% editing time`. Images: subtle scale/ripple on hover (CSS only is fine; WebGL optional later).
 4. **Principles marquee** — Instrument Serif italic ~96px, infinite scroll: "Clarity over cleverness ✳ Research earns the design ✳ Details carry the feeling ✳".
 5. **About** — `[ About ]` label. Left: one-line SVG hand reaching up to a volleyball; the line draws in on scroll (stroke-dashoffset), the accent ball bobs. Right: "Finance taught me *systems.* HCI taught me *people.* Volleyball taught me to read the **spin** before it lands." + 3 hairline rows: Now — Product & UX design, Zürich / Study — M.S. HCI, University of Maryland / Roots — Finance.
-6. **Archive** — table Name · Detail · Date: Student Social Life; Galaxy Generator ↗ (highlight row); Go for a Ride ↗. Links: reuse URLs from current `works.html`.
+6. **Playground** (was "Archive") — table Name · Detail · Date: Student Social Life; Galaxy Generator ↗ (highlight row); Go for a Ride ↗. Links: reuse URLs from current `works.html`.
 7. **Footer** — `[ Contact ] — click to copy` + huge email (click copies to clipboard, shows "Copied"), then 4-col mono row: ©2026 Angela Mei · LinkedIn · GitHub · Résumé (PDF) · Back to top ↑.
 
 ## 6. Motion spec
@@ -76,7 +76,7 @@ Keep it calm — nothing faster than these values, no scroll-jacking.
 
 ## 7. Other pages
 
-- `works.html`: same header/footer; `[ Work ]` index of all 5 case studies as large rows (number, title, tags, year, thumbnail on hover) + the Archive table.
+- `works.html`: same header/footer; `[ Work ]` index of all 5 case studies as large rows (number, title, tags, year, thumbnail on hover) + the Playground table.
 - `project/*.html`: case-study template — hero (title, role, timeline, team, tools in a mono meta grid), full-bleed cover, then sections Problem · Research · Insights · Design · Testing · Outcome, each with `[ label ]` + text column (max 680px) + full-width images; "Next project →" at the bottom. Keep the existing case-study text and images; only restyle.
 - `about.html`: can redirect to the homepage About section, or reuse its layout with the longer bio from the current about page.
 
