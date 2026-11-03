@@ -170,6 +170,15 @@
       "..kkkkkk..",
       "..kkkkkk..",
     ];
+    // Dance pose: same character, both arms up.
+    var bodyUp = body.slice();
+    bodyUp[2] = "s.aaaaaa.s";
+    bodyUp[3] = "k.kkssss.k";
+    bodyUp[4] = "k.ksssks.k";
+    bodyUp[5] = ".kkssss.k.";
+    bodyUp[6] = ".k.kkk..k.";
+    bodyUp[7] = "..kkkkkk..";
+    bodyUp[8] = "..kkkkkk..";
     var legs = [
       ["..kk..kk..", "..kk..kk..", "..kkk.kkk."],
       ["...kkkk...", "...kkkk...", "...kkkkk.."],
@@ -185,7 +194,10 @@
 
     var S, W, H, ground, arcX;
     var enterT = 0;
-    var hero = { x: 6, dir: 1, frame: 0, dist: 0, alpha: 1, lift: 0 };
+    var hero = { x: 0, dir: 1, frame: 0, dist: 0, alpha: 1, lift: 0, hop: 0, up: false, placed: false };
+    var still = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var idleT = 1; // seconds since the last step; the dance starts at 1
+    var danceT = 0;
     var ball = { x: 0, y: 0, vx: 0, vy: 0, placed: false };
     var input = 0;
     var held = {};
@@ -219,8 +231,13 @@
       stage.height = Math.round(rect.height * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.imageSmoothingEnabled = false;
+      // The character starts in the middle; the ball sits between it and the arcade.
+      if (!hero.placed) {
+        hero.x = Math.round(W / 2 - 5);
+        hero.placed = true;
+      }
       if (!ball.placed) {
-        ball.x = Math.round(W * 0.42);
+        ball.x = Math.round((W / 2 + arcX) / 2);
         ball.y = ground - 6;
         ball.placed = true;
       }
@@ -261,9 +278,9 @@
       ctx.clearRect(0, 0, W * S + S, H * S + S);
       drawArcade();
       var flip = hero.dir < 0;
-      var y = ground - 14 - Math.round(hero.lift);
+      var y = ground - 14 - Math.round(hero.lift) - hero.hop;
       var hx = Math.round(hero.x);
-      drawArt(body, hx, y, flip, hero.alpha);
+      drawArt(hero.up ? bodyUp : body, hx, y, flip, hero.alpha);
       drawArt(legs[hero.frame], hx, y + 11, flip, hero.alpha);
       var spin = Math.floor(ball.x / 3) % 2 === 1;
       drawArt(ballArt, Math.round(ball.x), Math.round(ball.y), spin);
@@ -284,6 +301,10 @@
       var busy = false;
 
       if (state === "play" && input) {
+        idleT = 0;
+        danceT = 0;
+        hero.up = false;
+        hero.hop = 0;
         hero.dir = input;
         hero.x = Math.max(0, Math.min(hero.x + input * 70 * dt, arcX - 12));
         hero.dist += 70 * dt;
@@ -306,8 +327,20 @@
         hero.lift += 24 * dt;
         hero.alpha = Math.max(0, hero.alpha - dt * 1.6);
         busy = true;
+      } else if (state === "play" && onScreen && !still.matches && (idleT += dt) >= 1) {
+        // Waiting for the player: a four-beat dance (arms up, hop, turn).
+        danceT += dt;
+        var beat = Math.floor(danceT / 0.4) % 4;
+        hero.up = beat % 2 === 1;
+        hero.hop = hero.up ? 1 : 0;
+        hero.frame = beat % 2;
+        hero.dir = beat < 2 ? 1 : -1;
+        busy = true;
       } else {
         hero.frame = 0;
+        hero.up = false;
+        hero.hop = 0;
+        busy = state === "play" && onScreen && !still.matches; // keep counting idle time
       }
 
       if (ball.vx || ball.vy || ball.y < ground - 6) {
@@ -348,6 +381,7 @@
     if ("IntersectionObserver" in window) {
       new IntersectionObserver(function (entries) {
         onScreen = entries[0].isIntersecting;
+        if (onScreen) wake();
       }, { threshold: 0.5 }).observe(stage);
     } else {
       onScreen = true;
@@ -406,11 +440,12 @@
       gameStatus.textContent = "Hold ◀ ▶ to walk";
     }
 
-    // Back button from /playground: start over at the left.
+    // Back button from /playground: start over in the middle.
     window.addEventListener("pageshow", function (e) {
       if (!e.persisted) return;
       state = "play";
-      hero.x = 6;
+      hero.x = Math.round(W / 2 - 5);
+      idleT = 1;
       hero.alpha = 1;
       hero.lift = 0;
       hero.dir = 1;
