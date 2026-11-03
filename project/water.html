@@ -6,7 +6,7 @@
     <title>Water | Angela Mei</title>
     <meta
       name="description"
-      content="Water — redesigning a poker companion app around a Hero + Sheet layout, from six homepage rounds to a clickable prototype, specs and a Design Hub for design, PM and dev."
+      content="Water — leading UI/UX design for a poker companion app, and moving the team's design system and iteration from Figma into code with Claude Code: clickable prototypes and a Design Hub for the frontend developer and PM."
     />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/e3.css?v=20261103f" />
+    <link rel="stylesheet" href="/styles/e3.css?v=20261103g" />
     <script>document.documentElement.classList.add("js");</script>
   </head>
   <body id="top">
@@ -52,14 +52,14 @@
 
     <main id="main">
       <section class="case-hero" aria-labelledby="case-title">
-        <p class="mono muted">[ Case study (01) ] — Product design · Poker companion app · In development</p>
+        <p class="mono muted">[ Case study (01) ] — Lead UI/UX design · Poker companion app · In development</p>
         <h1 class="case-title" id="case-title"><span class="mask"><span class="load-rise">Water</span></span></h1>
         <div class="case-intro">
-          <p class="case-sub">A redesign of a poker companion app people use one-handed, at the table, in low light. I proposed a new layout language, explored the homepage over six rounds, built the clickable prototype and wrote the specs engineering builds from — plus a Design Hub that keeps design, PM and dev on the same page.</p>
+          <p class="case-sub">I lead design for Water, a poker companion app people use one-handed, at the table, in low light. I redesigned the experience around one layout language — and changed how our team designs: the design system and every iteration moved from Figma into code with Claude Code, producing clickable prototypes and a Design Hub where the frontend developer and PM track work and answer questions.</p>
           <dl class="case-meta mono">
-            <div><dt>Role</dt><dd>Product Designer (sole designer)</dd></div>
-            <div><dt>Team</dt><dd>Designer · PM · Frontend developer</dd></div>
-            <div><dt>Tools</dt><dd>HTML prototypes, Next.js, Supabase, Claude Code</dd></div>
+            <div><dt>Role</dt><dd>Lead Designer (UI/UX)</dd></div>
+            <div><dt>Team</dt><dd>Lead designer (me) · PM · Frontend developer</dd></div>
+            <div><dt>Tools</dt><dd>Figma → Claude Code, HTML prototypes, React + Tailwind tokens, Next.js, Supabase</dd></div>
             <div><dt>Timeline</dt><dd>Oct 2026 — ongoing</dd></div>
           </dl>
         </div>
@@ -84,9 +84,10 @@
             </p>
             <p>
               The old interface gave every feature the same dark card at the
-              same size, and the homepage looked the same whether you were at a
-              table or planning a trip. I led the redesign from proposal to
-              developer handoff.
+              same size. As lead designer I owned the redesign end to end — the
+              UX direction, the layout language, the design system, the
+              prototype the team builds from — and the workflow that gets design
+              to the developer and PM.
             </p>
           </div>
         </div>
@@ -121,13 +122,102 @@
       <section class="case-section container">
         <div class="case-step reveal">
           <span class="step-num">02</span>
-          <h2>Six rounds on the homepage</h2>
+          <h2>Where Figma stopped keeping up</h2>
         </div>
         <p class="section-intro reveal">
-          The homepage carries the most weight, so I explored it widely before
-          narrowing — from four dark-mode directions to a behaviour-led layout,
-          then a deliberate range of styles.
+          We started the usual way: I built the design system and wireframes
+          in Figma. But with AI speeding up how code gets written, the design
+          file became the slowest step in the loop — and the hardest one to
+          hand over.
         </p>
+        <div class="case-three reveal">
+          <div class="fact">
+            <h3>Hand-off lost detail</h3>
+            <p>Static frames had to be re-read and rebuilt in code. Spacing, states and motion were interpreted, not shared.</p>
+          </div>
+          <div class="fact">
+            <h3>Iteration was slow</h3>
+            <p>Every review note meant redrawing frames, re-linking a prototype and exporting again — while the code side moved faster.</p>
+          </div>
+          <div class="fact">
+            <h3>Hard to try for real</h3>
+            <p>The PM and developer reviewed pictures of the flow, not the flow — so feedback came late, often after it was built.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">03</span>
+          <h2>Moving the design system into code</h2>
+        </div>
+        <p class="section-intro reveal">
+          So I moved the design system and our iteration into Claude Code. The
+          system now lives as a page the frontend developer copies from:
+          tokens and components written in the same stack the app uses.
+        </p>
+        <figure class="case-figure reveal">
+          <img src="/media/project/water/design-system.jpg" alt="Water Design System v2.1: a lime header listing 41 colour tokens, 39 components and the Next 15, React 19, Tailwind v4 stack, then the design principles: Hero + Sheet, one primary action, thumb zone, condensed numerals, readable status" width="1440" height="900" loading="lazy" />
+          <figcaption>Water Design System v2.1 — 41 colour tokens and 39 components, written for the team in Traditional Chinese</figcaption>
+        </figure>
+        <div class="case-block reveal">
+          <div>
+            <div class="insight-list">
+              <div class="insight">
+                <h4>Tokens the code uses</h4>
+                <p>Colour, type, spacing, radius, shadow and motion as Tailwind v4 theme tokens and plain CSS variables — plus a table mapping the old variables to the new ones, so the developer could migrate screen by screen.</p>
+              </div>
+              <div class="insight">
+                <h4>Components with their code</h4>
+                <p>Each component has a live preview identical to the prototype, its React + Tailwind code, a props table and usage notes. Hand-off is a copy, not a measurement.</p>
+              </div>
+              <div class="insight">
+                <h4>Principles you can check</h4>
+                <p>Hero + Sheet on every main page · one brand-green primary action per screen · navigation and actions in the thumb zone · condensed numerals for amounts and times · status never shown by colour alone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figure class="case-figure reveal">
+          <img src="/media/project/water/design-system-component.jpg" alt="The PageShell component in the design system: a phone preview of the Hero + Sheet layout next to its React code and a props table for hero, color, watermark, tone and height" width="1440" height="900" loading="lazy" />
+          <figcaption>A component entry — live preview, the React code and its props, side by side</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section container">
+        <div class="case-step reveal">
+          <span class="step-num">04</span>
+          <h2>Iterating in the prototype</h2>
+        </div>
+        <p class="section-intro reveal">
+          Iteration moved into code too. I describe a change to Claude Code,
+          check the result on my phone and refine it until it's right — every
+          version a clickable prototype instead of a set of frames.
+        </p>
+        <div class="case-three reveal">
+          <div class="fact">
+            <h3>Deliver easily</h3>
+            <p>A prototype is a link, not a file to export. The PM and developer open the same version; the developer reads real layout, spacing and states.</p>
+          </div>
+          <div class="fact">
+            <h3>Iterate quickly</h3>
+            <p>A note from a review becomes a sentence, not a redrawn set of frames. Changes land in the prototype the same day, each with a changelog line.</p>
+          </div>
+          <div class="fact">
+            <h3>Try out easily</h3>
+            <p>Everyone tests the real flow on their own phone — real taps, sheets, empty states and errors — so feedback is about using it, not imagining it.</p>
+          </div>
+        </div>
+        <div class="case-block reveal">
+          <div>
+            <p>
+              The speed went into exploration. The homepage carries the most
+              weight, so I explored it over six rounds before narrowing — from
+              four dark-mode directions to a behaviour-led layout, then a
+              deliberate range of styles, each tested on the same three screens.
+            </p>
+          </div>
+        </div>
         <figure class="case-figure reveal">
           <img src="/media/project/water/round01.jpg" alt="Round 01: four dark-mode homepage directions, starting with Deep Current (results first) and Felt &amp; Brass (action first)" width="1400" height="1069" loading="lazy" />
           <figcaption>Round 01 — four directions: results-first, action-first, editorial, AI-first</figcaption>
@@ -145,7 +235,7 @@
               </div>
               <div class="insight">
                 <h4>Rounds 04–06 · Fidelity and style</h4>
-                <p>High-fidelity variants, then nine styles across three screens each (home, tournament list, tournament detail), and a deep dive on the one we chose.</p>
+                <p>High-fidelity variants, then nine styles across home, tournament list and tournament detail, and a deep dive on the one we chose.</p>
               </div>
             </div>
           </div>
@@ -154,11 +244,20 @@
           <img src="/media/project/water/round05.jpg" alt="Round 05: the Casino Noir style shown on the home, tournament list and tournament detail screens" width="1400" height="1069" loading="lazy" />
           <figcaption>Round 05 — style range, every style tested on the same three screens</figcaption>
         </figure>
+        <div class="case-block reveal">
+          <div>
+            <p>
+              The design decisions stay mine: I set the direction, the layout
+              rules and the design system, and review every change. AI takes on
+              the production.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="case-section container">
         <div class="case-step reveal">
-          <span class="step-num">03</span>
+          <span class="step-num">05</span>
           <h2>Hero + Sheet: one layout language</h2>
         </div>
         <div class="case-two reveal">
@@ -190,103 +289,57 @@
 
       <section class="case-section container">
         <div class="case-step reveal">
-          <span class="step-num">04</span>
-          <h2>From Figma to AI: designing in the prototype</h2>
+          <span class="step-num">06</span>
+          <h2>A clickable prototype of the whole app</h2>
         </div>
         <p class="section-intro reveal">
-          For Water I moved my design process out of Figma. Instead of drawing
-          frames and handing them over, I design directly in HTML prototypes,
-          working with an AI coding assistant (Claude Code): I describe the
-          change, review the result on my phone, and refine it until it's right.
+          The result is one clickable prototype of the whole app, now on its
+          third version, built from about 50 prototype files: a real
+          navigation stack, sheets and micro-interactions.
         </p>
-        <div class="case-three reveal">
-          <div class="fact">
-            <h3>Deliver easily</h3>
-            <p>A prototype is a link, not a file to export. The PM and developer open the same version; the developer reads real layout, spacing and states instead of measuring a mockup.</p>
-          </div>
-          <div class="fact">
-            <h3>Iterate quickly</h3>
-            <p>A note from a review becomes a sentence, not a redrawn set of frames. Changes land in the prototype the same day, each with a changelog line.</p>
-          </div>
-          <div class="fact">
-            <h3>Try out easily</h3>
-            <p>Everyone tests the real flow on their own phone — real taps, sheets, empty states and errors — so feedback is about using it, not imagining it.</p>
-          </div>
-        </div>
-        <div class="case-block reveal">
-          <div>
-            <p>
-              The design decisions stay mine: I set the direction, the Hero +
-              Sheet rules and the design system, and review every change. AI
-              takes on the production. So far that's 50 prototype files and one clickable prototype of the whole app with a
-              real navigation stack, sheets and micro-interactions — record a
-              hand from setup to result, browse a tournament schedule, seat
-              opponents at a table, settle a stake group, chat with the AI
-              coach. It's now on its third version.
-            </p>
-          </div>
-        </div>
         <div class="cover cover--row reveal">
           <span class="device"><img src="/media/project/water/table-01-table.jpg" alt="Table notes: a poker table with named seats and colour labels" width="710" height="1584" loading="lazy" /></span>
           <span class="device"><img src="/media/project/water/players-01-list.jpg" alt="Player database: searchable list with colour labels and tags" width="710" height="1584" loading="lazy" /></span>
           <span class="device"><img src="/media/project/water/stake-01-home.jpg" alt="Stake groups: who owes whom across backers, settled and unsettled" width="710" height="1584" loading="lazy" /></span>
           <span class="device"><img src="/media/project/water/bankroll-09-result.jpg" alt="Record result: a shareable WIN card with the amount and a toggle to hide it" width="710" height="1584" loading="lazy" /></span>
         </div>
-      </section>
-
-      <section class="case-section container">
-        <div class="case-step reveal">
-          <span class="step-num">05</span>
-          <h2>Specs engineers can build from</h2>
-        </div>
         <div class="case-two reveal">
           <div>
+            <h3>Flows you can walk through</h3>
             <p>
-              For each function I wrote a spec: every screen and state captured
-              straight from the prototype, the rules (with worked examples for
-              anything that calculates money), open PM questions with a design
-              default, engineering notes and analytics events.
-            </p>
-            <p>
-              Screenshots are produced by driving the prototype in a headless
-              browser, so the spec and the prototype never drift apart.
+              Record a hand from setup to result, browse a tournament schedule,
+              seat opponents at a table, settle a stake group, chat with the AI
+              coach — including the empty, loading and error states.
             </p>
           </div>
-          <div class="case-three">
-            <div class="stat">
-              <div class="figure">10</div>
-              <p>specs, from homepage to share image</p>
-            </div>
-            <div class="stat">
-              <div class="figure">41</div>
-              <p>prototype versions moved into the hub at launch</p>
-            </div>
-            <div class="stat">
-              <div class="figure">76</div>
-              <p>PM questions moved into the hub at launch</p>
-            </div>
+          <div>
+            <h3>Specs drawn from the prototype</h3>
+            <p>
+              For each function I wrote a spec: every screen and state, the
+              rules (with worked examples for anything that calculates money),
+              open PM questions with a design default, engineering notes and
+              analytics events. Its screenshots are captured from the prototype
+              in a headless browser, so the two never drift apart.
+            </p>
           </div>
         </div>
-        <figure class="case-figure plain reveal">
-          <img src="/media/project/water/share-01-showdown-win.jpg" alt="Hand share image: a poker table at showdown with each street's actions below" width="710" height="1584" loading="lazy" style="max-width: 360px; margin: 0 auto" />
-          <figcaption style="text-align: center">The hand share image — its own spec covers layout, coordinates and number rules</figcaption>
-        </figure>
       </section>
 
       <section class="case-section container">
         <div class="case-step reveal">
-          <span class="step-num">06</span>
-          <h2>The Design Hub</h2>
+          <span class="step-num">07</span>
+          <h2>The Design Hub, for the frontend developer and PM</h2>
         </div>
         <div class="case-block reveal">
           <div>
             <p>
-              Halfway through, the process itself became the bottleneck:
-              prototypes lived on my laptop, PM questions were scattered,
-              decisions weren't written down, and the developer had no single
-              place to see what was ready. So I designed and built a small
-              internal site to fix it — Next.js on Vercel, Supabase for data and
-              sign-in.
+              Faster iteration created a new problem: more versions, more
+              questions. Prototypes lived on my laptop, PM questions were
+              scattered across chats, decisions weren't written down, and the
+              developer had no single place to see what was ready. So I designed
+              and built a small internal tool for my two teammates — Next.js on
+              Vercel, Supabase for data and sign-in — where they track work and
+              answer questions.
             </p>
           </div>
         </div>
@@ -301,45 +354,57 @@
           <li><span class="mono muted">(4)</span><strong>Dev task</strong><span>Pinned to a prototype version; flagged when a newer one exists</span></li>
           <li><span class="mono muted">(5)</span><strong>Shipped</strong><span>Moved across the board, linked to the commit</span></li>
         </ol>
+        <div class="case-two reveal">
+          <div>
+            <h3>For the PM</h3>
+            <p>
+              Every open question in one list, filtered by function. Each comes
+              with my design default, so the PM answers a proposal, not a blank
+              page — and a decision is one click.
+            </p>
+          </div>
+          <div>
+            <h3>For the frontend developer</h3>
+            <p>
+              A board of tasks, each pinned to the prototype version it was
+              designed in and flagged when the prototype moves on. A function
+              can't be marked "ready for dev" while it still has open questions.
+            </p>
+          </div>
+        </div>
         <figure class="case-figure reveal">
           <img src="/media/project/water/hub-pm-decisions.jpg" alt="PM decisions page: counts of open, discussing, decided and skipped questions, filters by function, and question cards with the design default, the PM reply and status buttons" width="1440" height="900" loading="lazy" />
-          <figcaption>PM decisions — each question carries my design default, so the PM answers a proposal, not a blank page</figcaption>
+          <figcaption>PM decisions — each question carries my design default and a one-click status</figcaption>
         </figure>
         <figure class="case-figure reveal">
           <img src="/media/project/water/hub-function.jpg" alt="A function page: a warning that it can't move to ready for dev while eight questions are open, and its dev tasks marked newer proto" width="1440" height="900" loading="lazy" />
           <figcaption>A function page — blocked from "ready for dev" while questions are open; tasks flag when the prototype has moved on</figcaption>
         </figure>
-        <div class="case-block reveal">
-          <div>
-            <div class="insight-list">
-              <div class="insight">
-                <h4>Rules, not reminders</h4>
-                <p>A function can't move to "ready to dev" while it still has open questions — the database refuses and lists them.</p>
-              </div>
-              <div class="insight">
-                <h4>Roles</h4>
-                <p>Designer and PM edit everything; the developer moves tasks, adds commit links and answers questions.</p>
-              </div>
-              <div class="insight">
-                <h4>Private by default</h4>
-                <p>Prototypes are served only to signed-in teammates.</p>
-              </div>
-            </div>
+        <div class="case-three reveal">
+          <div class="stat">
+            <div class="figure">10</div>
+            <p>function specs, from homepage to share image</p>
+          </div>
+          <div class="stat">
+            <div class="figure">41</div>
+            <p>prototype versions moved into the hub at launch</p>
+          </div>
+          <div class="stat">
+            <div class="figure">76</div>
+            <p>PM questions moved into the hub at launch</p>
           </div>
         </div>
       </section>
 
       <section class="case-section container">
         <div class="case-step reveal">
-          <span class="step-num">07</span>
+          <span class="step-num">08</span>
           <h2>Beyond the phone</h2>
         </div>
         <p class="section-intro reveal">
-          Water is built for the phone, so the desktop web version is for the
-          work people do after a session — reviewing hands, settling money,
-          tidying notes on players. The same Hero + Sheet language moves into a
-          sidebar layout, and every page nudges people back to the phone for
-          recording at the table.
+          The same design system carries the desktop web version — for the work
+          people do after a session, like reviewing hands and settling money —
+          and the logged-out landing page.
         </p>
         <figure class="case-figure reveal">
           <img src="/media/project/water/desktop-home.jpg" alt="Water desktop web home: sidebar navigation, the Ask hero, the fortune card, Hand records and Table notes tiles, recent hands and saved tournaments" width="1440" height="900" loading="lazy" />
@@ -349,40 +414,36 @@
           <img src="/media/project/water/landing.jpg" alt="Water landing page for logged-out visitors: a headline, buttons to open on the phone or log in on a computer, and the redesigned home on two phones" width="1440" height="760" loading="lazy" />
           <figcaption>Logged-out landing page — open on the phone with no download, or log in on a computer</figcaption>
         </figure>
-        <div class="case-block reveal">
-          <div>
-            <div class="insight-list">
-              <div class="insight">
-                <h4>Login &amp; sign-up</h4>
-                <p>One entry for both: Google in one tap, or an email with a six-digit code. People who sign up on the web are invited to add Water to their home screen.</p>
-              </div>
-              <div class="insight">
-                <h4>Splash &amp; loading</h4>
-                <p>Six splash variants and three loading animations, built around the water-drop mark.</p>
-              </div>
-              <div class="insight">
-                <h4>Poker tools</h4>
-                <p>Calculators for win rate and ICM, with the answer shown in the hero.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section class="case-section container">
         <div class="case-step reveal">
-          <span class="step-num">08</span>
-          <h2>Where it stands</h2>
+          <span class="step-num">09</span>
+          <h2>Where it stands &amp; what I learned</h2>
         </div>
         <div class="case-block reveal">
           <div>
             <p>
-              The redesign is in development. The Hero + Sheet language now runs
-              through the prototype's homepage, events, hands, table notes, bankroll and
-              stake groups, and on to login, the desktop web version and the
-              landing page. Every PM decision and dev task lives in the
-              Design Hub instead of a chat thread.
+              The redesign is in development. Hero + Sheet runs through the
+              homepage, events, hands, table notes, bankroll and stake groups,
+              on to login, desktop web and the landing page — and every PM
+              decision and dev task lives in the Design Hub instead of a chat
+              thread.
             </p>
+            <div class="insight-list">
+              <div class="insight">
+                <h4>The design file is no longer the deliverable</h4>
+                <p>What the team needs is something they can use and copy: a prototype to tap through and a design system written in their own code.</p>
+              </div>
+              <div class="insight">
+                <h4>Speed is only useful with structure</h4>
+                <p>Faster iteration produced more versions and questions than chat could hold. The Design Hub is what made the speed safe.</p>
+              </div>
+              <div class="insight">
+                <h4>AI changes the craft, not the role</h4>
+                <p>Claude Code produces; I still decide the direction, the rules and what's good enough — and the review is where the design happens.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -411,6 +472,6 @@
         <a href="#top">Back to top ↑</a>
       </div>
     </footer>
-    <script src="/styles/e3.js?v=20261103f" defer></script>
+    <script src="/styles/e3.js?v=20261103g" defer></script>
   </body>
 </html>
