@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/e3.css?v=20261103c" />
+    <link rel="stylesheet" href="/styles/e3.css?v=20261103d" />
     <script>document.documentElement.classList.add("js");</script>
   </head>
   <body id="top">
@@ -181,19 +181,17 @@
           <span class="muted hide-sm">Side quests — 3D, code &amp; sensors</span>
         </div>
 
-        <div class="gate reveal" data-gate>
-          <p class="gate-meta mono muted"><span>5 levels</span><span>1 player</span><span>No save required</span></p>
-          <p class="gate-q">
-            Want to <span class="gate-end"><span class="serif">play?</span><svg class="gate-ball" viewBox="270 28 60 60" aria-hidden="true">
-              <circle cx="300" cy="58" r="28" fill="#C4553D" />
-              <path d="M300 58 C306 48 304 38 295 30.4 M300 58 C312 60 320 66 326.3 67.6 M300 58 C292 66 286 72 278.5 76 M309 31.5 C316 42 316 52 312 58 M320 77 C308 76 300 72 294 66 M273 52 C280 46 290 46 296 50" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
-            </svg></span>
-          </p>
-          <div class="gate-choices" role="group" aria-label="Enter the Playground?">
-            <a class="gate-choice is-active" href="/playground" data-gate-yes><span class="gate-key mono" aria-hidden="true">[ Y ]</span> Yes, let me in</a>
-            <button class="gate-choice" type="button" data-gate-no><span class="gate-key mono" aria-hidden="true">[ N ]</span> Not now</button>
+        <div class="game reveal" data-game>
+          <p class="game-meta mono muted"><span>5 levels</span><span>1 player</span><span>Walk to the gate to enter</span></p>
+          <canvas class="game-stage" data-game-stage role="img" aria-label="Pixel scene: a small character in an orange beanie on the left, a volleyball in the middle, and a gate marked Playground on the right."></canvas>
+          <div class="game-bar mono">
+            <div class="game-pad" aria-hidden="true">
+              <button class="game-btn" type="button" tabindex="-1" data-walk="-1">◀</button>
+              <button class="game-btn" type="button" tabindex="-1" data-walk="1">▶</button>
+            </div>
+            <p class="game-hint muted" data-game-status aria-live="polite">← → to walk</p>
+            <a class="game-skip" href="/playground">Skip the walk <span class="nudge" aria-hidden="true">→</span></a>
           </div>
-          <p class="gate-status mono muted" data-gate-status aria-live="polite">← → to choose · Enter to start</p>
         </div>
       </section>
     </main>
@@ -212,6 +210,6 @@
       </div>
     </footer>
 
-    <script src="/styles/e3.js?v=20261103c" defer></script>
+    <script src="/styles/e3.js?v=20261103d" defer></script>
   </body>
 </html>

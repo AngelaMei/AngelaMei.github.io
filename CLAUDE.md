@@ -46,7 +46,7 @@ Read this whole file before writing code. When something here conflicts with the
 ```
 
 - Type: giant name 800 weight, letter-spacing −0.06em, uppercase. Body 18–22px. Labels: mono 12px uppercase, often in brackets: `[ Selected work ]`, `[ Menu ]`, counters like `(01)`, `Work (05)`.
-- Accent appears only on: "MEI", the italic tagline, availability dot, `[ Menu ]`, key metric (−30%), ✳ marks, the volleyball, the word "spin", the "@" in the email. Nothing else.
+- Accent appears only on: "MEI", the italic tagline, availability dot, `[ Menu ]`, key metric (−30%), ✳ marks, the volleyball, the word "spin", the "@" in the email, the pixel character's beanie and the gate flag in the Playground game. Nothing else.
 - No rounded cards, no shadows, no gradients. Hairlines, white space, big type.
 
 ## 5. Homepage sections (in order)
@@ -56,7 +56,7 @@ Read this whole file before writing code. When something here conflicts with the
 3. **Selected work** — staggered 12-col grid of 4 cases (Guide App 8 cols; Coin Toss 4 cols offset down; Pat Pet cols 2–5; Milky Way cols 7–12 offset down). Caption row in mono: `(01) Guide App · UX Research · Product · −30% editing time`. Images: subtle scale/ripple on hover (CSS only is fine; WebGL optional later).
 4. **Principles marquee** — Instrument Serif italic ~96px, infinite scroll: "Clarity over cleverness ✳ Research earns the design ✳ Details carry the feeling ✳".
 5. **About** — `[ About ]` label. Left: one-line SVG hand reaching up to a volleyball; the line draws in on scroll (stroke-dashoffset), the accent ball bobs. Right: "Finance taught me *systems.* HCI taught me *people.* Volleyball taught me to read the **spin** before it lands." + 3 hairline rows: Now — Product & UX design, Zürich / Study — M.S. HCI, University of Maryland / Roots — Finance.
-6. **Playground** (was "Archive") — not a list on the homepage: a game-style start screen ("5 levels · 1 player", giant "WANT TO *play?*" with the bobbing accent volleyball, choices `▸ [ Y ] Yes, let me in` / `[ N ] Not now`, ← → / Enter / Y / N keys). Yes serves the ball away + a short "Loading ▮▮▮▯" bar, then goes to `/playground` (straight through for reduced motion or modifier-clicks); No answers with a line of text and the ball comes to rest. The list itself lives on `playground.html`: Two Halves ↗ (highlight row); Aim & Hit ↗ (YouTube); Go for a Ride ↗; Galaxy Generator ↗; Student Social Life.
+6. **Playground** (was "Archive") — not a list on the homepage: a small pixel game drawn on a `<canvas>` in `e3.js`. A pixel character (orange beanie = accent) walks with ← → / A D (only while the game is on screen) or by holding the ◀ ▶ buttons; walking into the accent volleyball kicks it; walking through the "PLAYGROUND" gate (pixel slide inside) goes to `/playground`. Always keep the plain "Skip the walk →" link for keyboard / screen-reader users. The list itself lives on `playground.html`: Two Halves ↗ (highlight row); Aim & Hit ↗ (YouTube); Go for a Ride ↗; Galaxy Generator ↗; Student Social Life.
 7. **Footer** — `[ Contact ] — click to copy` + huge email (click copies to clipboard, shows "Copied"), then 4-col mono row: ©2026 Angela Mei · LinkedIn · GitHub · Résumé (PDF) · Back to top ↑.
 
 ## 6. Motion spec
