@@ -58,7 +58,7 @@
           <p class="case-sub">I lead design for Water, a poker companion app people use one-handed, at the table, in low light. I redesigned the experience around one layout language — and changed how our team designs: the design system and every iteration moved from Figma into code with Claude Code, producing clickable prototypes and a Design Hub where the frontend developer and PM track work and answer questions.</p>
           <dl class="case-meta mono">
             <div><dt>Role</dt><dd>Lead Designer (UI/UX)</dd></div>
-            <div><dt>Team</dt><dd>Lead designer (me) · Graphic designer · PM · Frontend developer</dd></div>
+            <div><dt>Team</dt><dd>Lead designer (me, remote from Zürich) · Graphic designer · PM · Frontend developer — client in Taiwan</dd></div>
             <div><dt>Tools</dt><dd>Figma → Claude Code, HTML prototypes, React + Tailwind tokens, Next.js, Supabase</dd></div>
             <div><dt>Timeline</dt><dd>Oct 2026 — ongoing</dd></div>
           </dl>
@@ -67,7 +67,7 @@
           <div><dt>Problem</dt><dd>In an app people use one-handed, mid-game, the main actions got lost, every page looked alike and the AI coach was hidden. Hand-off from Figma couldn’t keep up with the code.</dd></div>
           <div><dt>My role</dt><dd>Lead designer, directing a graphic designer and working with a PM and a frontend developer.</dd></div>
           <div><dt>What I did</dt><dd>Set one layout language (Hero + Sheet), moved the design system and iteration from Figma into code with Claude Code, and built a clickable prototype of the whole app plus a Design Hub for the PM and developer.</dd></div>
-          <div><dt>Result</dt><dd>Now in user acceptance testing. 41 prototype versions, 76 PM questions and 10 function specs live in one hub instead of chat threads.</dd></div>
+          <div><dt>Result</dt><dd>A review note now reaches the prototype in 1–2 days instead of 2–3 weeks. Now in user acceptance testing, with 41 prototype versions, 76 PM questions and 10 function specs live in one hub instead of chat threads.</dd></div>
         </dl>
       </section>
 
@@ -137,6 +137,10 @@
           file became the slowest step in the loop — and the hardest one to
           hand over.
         </p>
+        <figure class="case-figure reveal">
+          <img src="/media/project/water/before-figma-ai.jpg" alt="Before: the Ask Water AI chat designed in Figma — six screens from the empty state with suggested questions to an answer with an attached hand image and an upgrade prompt, each drawn twice for light and dark mode" width="1764" height="1386" loading="lazy" />
+          <figcaption>Before — the AI chat in Figma: every state drawn as a static frame, twice, for light and dark mode</figcaption>
+        </figure>
         <div class="case-three reveal">
           <div class="fact">
             <h3>Hand-off lost detail</h3>
@@ -144,7 +148,7 @@
           </div>
           <div class="fact">
             <h3>Iteration was slow</h3>
-            <p>Every review note meant redrawing frames, re-linking a prototype and exporting again — while the code side moved faster.</p>
+            <p>Every review note meant redrawing frames, re-linking a prototype and exporting again. A change took 2–3 weeks to reach something the team could try.</p>
           </div>
           <div class="fact">
             <h3>Hard to try for real</h3>
@@ -163,10 +167,16 @@
           system now lives as a page the frontend developer copies from:
           tokens and components written in the same stack the app uses.
         </p>
-        <figure class="case-figure reveal">
-          <img src="/media/project/water/design-system.jpg" alt="Water Design System v2.1: a lime header listing 41 colour tokens, 39 components and the Next 15, React 19, Tailwind v4 stack, then the design principles: Hero + Sheet, one primary action, thumb zone, condensed numerals, readable status" width="1440" height="900" loading="lazy" />
-          <figcaption>Water Design System v2.1 — 41 colour tokens and 39 components, written for the team in Traditional Chinese</figcaption>
-        </figure>
+        <div class="case-two reveal">
+          <figure class="case-figure">
+            <img src="/media/project/water/before-figma-variables.jpg" alt="Before: Figma variables panel with collections for font size, paddings and radius, 110 primitive colours and 77 semantic tokens, showing background tokens with light and dark values" width="1790" height="1212" loading="lazy" />
+            <figcaption>Before — Figma variables: 110 primitive colours, 77 semantic tokens, light and dark</figcaption>
+          </figure>
+          <figure class="case-figure">
+            <img src="/media/project/water/design-system.jpg" alt="Water Design System v2.1: a lime header listing 41 colour tokens, 39 components and the Next 15, React 19, Tailwind v4 stack, then the design principles: Hero + Sheet, one primary action, thumb zone, condensed numerals, readable status" width="1440" height="900" loading="lazy" />
+            <figcaption>After — Water Design System v2.1 in code: 41 colour tokens and 39 components, written for the team in Traditional Chinese</figcaption>
+          </figure>
+        </div>
         <div class="case-block reveal">
           <div>
             <div class="insight-list">
@@ -208,11 +218,21 @@
           </div>
           <div class="fact">
             <h3>Iterate quickly</h3>
-            <p>A note from a review becomes a sentence, not a redrawn set of frames. Changes land in the prototype the same day, each with a changelog line.</p>
+            <p>A note from a review becomes a sentence, not a redrawn set of frames. Changes usually land in the prototype within 1–2 days, each with a changelog line.</p>
           </div>
           <div class="fact">
             <h3>Try out easily</h3>
             <p>Everyone tests the real flow on their own phone — real taps, sheets, empty states and errors — so feedback is about using it, not imagining it.</p>
+          </div>
+        </div>
+        <div class="case-two reveal">
+          <div class="stat">
+            <div class="figure">2–3 weeks</div>
+            <p>from a review note to a prototype the team could try, in Figma</p>
+          </div>
+          <div class="stat">
+            <div class="figure">1–2 days</div>
+            <p>from a review note to the updated prototype, now in code</p>
           </div>
         </div>
         <div class="case-block reveal">
@@ -427,7 +447,7 @@
         <div class="case-block reveal">
           <div>
             <p>
-              The redesign is in development and now in user acceptance testing. Hero + Sheet runs through the
+              The redesign is in development and now in user acceptance testing. A review note now reaches the prototype in 1–2 days instead of 2–3 weeks. Hero + Sheet runs through the
               homepage, events, hands, table notes, bankroll and stake groups,
               on to login, desktop web and the landing page — and every PM
               decision and dev task lives in the Design Hub instead of a chat
